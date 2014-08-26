@@ -1,0 +1,17 @@
+---
+layout: default
+title: Hem
+markdown: 0
+---
+
+<h1 class="course-list-header">DA354A - Introduktion till programmering</h1>
+<ul class="course-list">
+    {% for module in site.data.modules %}
+    <li>
+        <a href="/modules/{{ module.number }}" title="Gå till kursen {{ module.name }}">
+            <span class="course-name">{{ module.name }}</span>
+            <span class="course-code">{{ module.description | upcase }}</span>
+        </a>
+    </li>
+    {% endfor %}
+</ul>

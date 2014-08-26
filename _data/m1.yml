@@ -1,0 +1,27 @@
+# Kursinformation
+name: Webbpublicering
+code: m1
+credits: 15.0
+
+# Laborationer
+exercises:
+    - name: 1. Bekanta dig med Python & IDLE
+      file: L01
+
+    - name: 2. Skriva Python-kod i egna filer
+      file: L02
+
+    - name: 3. Variabler & datatyper
+      file: L03
+
+    - name: 4. Användarinput i Python
+      file: L04
+
+    - name: 5. Ett valutakonverteringsprogram
+      file: L05
+
+    - name: 6. Identifiera felet i koden
+      file: L06
+
+    - name: 7. Slutövning
+      file: L07

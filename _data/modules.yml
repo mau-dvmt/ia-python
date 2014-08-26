@@ -1,0 +1,13 @@
+# Lista över moduler i kursen
+
+- name: Modul 1 - Introduktion till Python
+  number: m1
+  description: En introduktion till Pyhton och dess utvecklingsmiljö
+
+- name: Modul 2 - Funktioner i Python
+  number: m2
+  description: En introduktion till funktioner i Python
+
+- name: Modul 3 - Loopar/if-satser i Pyhton
+  number: m3
+  description: En introduktion till for-, while-, do while-loopar samt if-satser i Pyhton

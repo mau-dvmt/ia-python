@@ -1,0 +1,18 @@
+---
+layout: default
+title: Kurser
+markdown: 0
+---
+
+<h1 class="course-list-header">Moduler</h1>
+<ul class="course-list">
+    {% for modules in site.data.modules %}
+    <li>
+        <a href="/modules/{{ modules.number }}" title="Gå till kursen {{ modules.name }}">
+            <span class="course-name">{{ modules.name }}</span>
+            <span class="course-code">{{ modules.description | upcase }}</span>
+            <!--<span class="course-credits">{{ modules.credits }} hp</span>-->
+        </a>
+    </li>
+    {% endfor %}
+</ul>
