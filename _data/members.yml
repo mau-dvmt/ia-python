@@ -1,11 +1,11 @@
 # Personal
 
-- name: Anton Tibblin
-  github: tibbelit
-  email: anton.tibblin@mah.se
-  phone: 040-66 57672
-
 - name: Fredrik Ohlin
   github: fohlin
   email: fredrik.ohlin@mah.se
   phone: 040-66 57678
+  
+- name: Anton Tibblin
+  github: tibbelit
+  email: anton.tibblin@mah.se
+  phone: 040-66 57672

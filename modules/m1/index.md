@@ -53,10 +53,9 @@ En introduktion till variabler, användarinput och datatyper i Python. Avsnittet
 
 ##### Övningar
 
-1. [Variabler i Python]()
-2. [Datatyper i Python]()
-3. [Användarinput i Python]()
-4. [Konstruktion av ett valutakonverteringsprogram]()
+1. [Variabler & Datatyper i Python](exercises/L03.html)
+2. [Användarinput i Python](exercises/L04.html)
+3. [Konstruktion av ett valutakonverteringsprogram](exercises/L05.html)
 
 ##### Extra läsning
 
@@ -79,9 +78,7 @@ En snabb introduktion till hur man kan tolka Pythons felmeddelande, vid syntax-f
 
 ##### Övningar
 
-1. [Identifiera felet i koden (1)]()
-2. [Identifiera felet i koden (2)]()
-3. [Identifiera felet i koden (3)]()
+1. [Identifiera felet i koden (1, 2, 3)](exercises/L06.html)
 
 ##### Extra läsning
 
