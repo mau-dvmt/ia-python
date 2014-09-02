@@ -2,7 +2,7 @@
 
 - name: Modul 1 - Introduktion till Python
   number: m1
-  description: En introduktion till Pyhton och dess utvecklingsmiljö
+  description: En introduktion till Python och dess utvecklingsmiljö
 
 #- name: Modul 2 - Funktioner i Python
 #  number: m2
