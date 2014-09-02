@@ -432,7 +432,7 @@ code {
  **/
 @media (max-width: 1300px) {
     .sidebar {
-        margin-left: 3em;
+        margin-left: 1em;
     }
     .sidebar .course-name small {
         display: block;
