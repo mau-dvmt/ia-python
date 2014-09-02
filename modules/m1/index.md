@@ -1,4 +1,4 @@
-﻿---
+---
 layout: modules
 code: m1
 title: Modul 1 - Introdution till Python
