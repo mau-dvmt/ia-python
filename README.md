@@ -1,7 +1,14 @@
-Mah Webb
-==================
+# Introduction to programming with Python
 
-> [mah-webb.github.io](http://mah-webb.github.io)
+This site contains open educational resources for learning to program using Python. It is created for the Information Architecture program at Malmö University.
+
+Published at [programmering.iakurs.se](http://programmering.iakurs.se/)
+
+
+## Credits
+
+Thanks to Sebastian Bengtegård for creating the original Jekyll site, found at [mah-webb.github.io](http://mah-webb.github.io).
+
 
 ## Contribute
 
@@ -12,8 +19,8 @@ To get started:
 1. Clone this repository
 
     ```bash
-    git clone git@github.com:mah-webb/mah-webb.github.io.git
-    cd mah-webb.github.io
+    git clone git@github.com:mah-dv/ia-python.git
+    cd ia-python
     ```
 
 2. Install dependencies and modules
@@ -30,15 +37,6 @@ To get started:
 
 Now you're ready to start contributing!
 
-## Courses
-
-To add a new course:
-
-1. Add the new course to the list of courses in: `_data/courses.yml`
-2. Create a new course file (name should be in the form of the course code or an equivalent identifier)
-    * This file contains course meta information and lists of assignments, exercises, etc. (check existing courses for examples)
-3. Create a new directory in `courses` directory with the name of the course code
-4. Now you can create the course main page `index.md` and the subdirectories for assignments, exercises, etc. (check existing courses for examples)
 
 ## License
 
