@@ -53,10 +53,10 @@ En introduktion till variabler, användarinput och datatyper i Python. Avsnittet
 
 ##### Övningar
 
-1. [Variabler i Python]()
-2. [Datatyper i Python]()
-3. [Användarinput i Python]()
-4. [Konstruktion av ett valutakonverteringsprogram]()
+1. [Variabler i Python](exercises/L03.html)
+2. [Datatyper i Python](exercises/L04.html)
+3. [Användarinput i Python](exercises/L05.html)
+4. [Konstruktion av ett valutakonverteringsprogram](exercises/L06.html)
 
 ##### Extra läsning
 
