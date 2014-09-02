@@ -79,9 +79,9 @@ En snabb introduktion till hur man kan tolka Pythons felmeddelande, vid syntax-f
 
 ##### Övningar
 
-1. [Identifiera felet i koden (1)]()
-2. [Identifiera felet i koden (2)]()
-3. [Identifiera felet i koden (3)]()
+1. Identifiera felet i koden (1)
+2. Identifiera felet i koden (2)
+3. Identifiera felet i koden (3)
 
 ##### Extra läsning
 
