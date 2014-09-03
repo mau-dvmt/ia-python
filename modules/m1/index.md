@@ -4,7 +4,7 @@ code: m1
 title: Modul 1 - Introdution till Python
 ---
 
-# Modul 1 - Introdution till Python
+# Modul 1 - Introduktion till Python
 
 ## Översikt av modul 1
 
