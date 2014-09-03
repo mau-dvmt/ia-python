@@ -82,6 +82,6 @@ En snabb introduktion till hur man kan tolka Pythons felmeddelande, vid syntax-f
 
 ##### Extra läsning
 
-- [Interactive Python - How to be a Successful Programmer](http://interactivepython.org/runestone/static/thinkcspy/Debugging/debugIntro.html)
+- [Interactive Python - How to be a Successful Programmer](http://interactivepython.org/runestone/static/thinkcspy/Debugging/intro-HowtobeaSuccessfulProgrammer.html)
 
 Du uppmanas att aktivt gå igenom dessa delar, reflektera över vad du gör och diskutera eventuella frågor med kurskamrater och laborationshandlerade.
