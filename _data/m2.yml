@@ -1,0 +1,18 @@
+code: m1
+
+# Laborationer
+exercises:
+    - name: 1. Introduktion till funktioner
+      file: L01
+
+    - name: 2. Argument och parametrar
+      file: L02
+
+    - name: 3. Att returnera värden
+      file: L03
+
+    - name: 4. Struktur av program
+      file: L04
+
+#    - name: 5. Moduler i Python
+#      file: L05
