@@ -1,7 +1,7 @@
 ---
 layout: modules
 code: m2
-title: Modul 2 - Funktioner i Python
+title: Modul 2 - Funktioner
 ---
 
 # Modul 2 - Funktioner i Python
