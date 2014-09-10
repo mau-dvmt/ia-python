@@ -63,6 +63,8 @@ Vi kommer här att gå igenom moduler i Python. Till en början tittar vi på de
 
 Du uppmanas att aktivt gå igenom dessa delar, reflektera över vad du gör och diskutera eventuella frågor med kurskamrater och laborationshandlerade.
 
+---
+
 ### Inlämningsuppgift
 
-Här kommer inlämningsuppgiften att publiceras inom kort
+Inlämningsuppgiften hittar du [här](assignments/U1.html).
