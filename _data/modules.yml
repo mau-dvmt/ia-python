@@ -7,7 +7,7 @@
 - name: Modul 2 - Funktioner i Python
   number: m2
   description: En introduktion till funktioner i Python
-#
-#- name: Modul 3 - Loopar/if-satser i Python
-#  number: m3
-#  description: En introduktion till for-, while-, do while-loopar samt if-satser i Python
+
+- name: Modul 3 - Iteration och selektion
+  number: m3
+  description: En introduktion till for- och  while-loopar samt if-satser i Python
