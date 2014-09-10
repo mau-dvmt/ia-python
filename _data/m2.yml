@@ -14,5 +14,5 @@ exercises:
     - name: 4. Struktur av program
       file: L04
 
-#    - name: 5. Moduler i Python
-#      file: L05
+    - name: 5. Moduler i Python
+      file: L05

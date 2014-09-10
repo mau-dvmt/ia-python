@@ -45,7 +45,19 @@ Vidare tittar vi på hur man kan har paramtrar till sina funktioner och hur man 
 
 #### Del 2 - Moduler i Python
 
-Publiceras inom kort
+Vi kommer här att gå igenom moduler i Python. Till en början tittar vi på de standardmoduler som finns att tillgå i Python, hur vi importerar dessa och hur vi sedan kan använda deras funktioner. Vi kommer också att titta på hur man skriver egna moduler och använder dessa i ett program.
+
+##### Bra att läsa
+
+- [Think Python - Chapter 3  Functions](http://www.greenteapress.com/thinkpython/html/thinkpython004.html)
+
+##### Övningar
+
+1. [Moduler i Python](exercises/L05.html)
+
+##### Extra läsning
+
+- [Interactive Python - Python modules](http://interactivepython.org/runestone/static/thinkcspy/toc.html#python-modules)
 
 ---
 
