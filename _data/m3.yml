@@ -1,0 +1,19 @@
+code: m1
+
+# Laborationer
+exercises:
+    - name: 1. Introduktion till selektion
+      file: L01
+    - name: 2. Introduktion till iterationer
+      file: L02
+    - name: 3. Nästlade if-satser
+      file: L03
+    - name: 4. Nästlade iterationer
+      file: L04
+    - name: 5. Iteration och selektion
+      file: L05
+
+# Inlämningsuppgifter
+assignments:
+    - name: Inlämningsuppgift 2
+      file: U1
