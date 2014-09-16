@@ -4,10 +4,10 @@
   number: m1
   description: En introduktion till Python och dess utvecklingsmiljö
 
-- name: Modul 2 - Funktioner i Python
+- name: Modul 2 - Funktioner
   number: m2
   description: En introduktion till funktioner i Python
 
-- name: Modul 3 - iteration och selektion
+- name: Modul 3 - Iteration och selektion
   number: m3
-  description: En introduktion till for- och while-iterationer samt if-satser i Python
+  description: En introduktion till for- och while-loopar samt if-satser i Python

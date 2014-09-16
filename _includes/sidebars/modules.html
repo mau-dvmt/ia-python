@@ -8,24 +8,6 @@
     </h3>
 	
     <ul class="course-overview">
-        {% if site.data[page.code].assignments %}
-        <li>
-            <span class="course-overview-element">
-                Uppgifter
-                <span class="expand">+</span>
-            </span>
-            <ul class="course-overview-submenu">
-                {% for assignment in site.data[page.code].assignments %}
-                <li>
-                    <a href="/modules/{{ page.code }}/assignments/{{ assignment.file | append: '.html' }}" title="Gå till uppgiften {{ assignment.name }}">
-                        {{ assignment.name }} {% if assignment.credits %}<small>({{ assignment.credits }} hp)</small>{% endif %}
-                    </a>
-                </li>
-                {% endfor %}
-            </ul>
-        </li>
-        {% endif %}
-
         {% if site.data[page.code].exercises %}
         <li>
             <span class="course-overview-element">
@@ -37,6 +19,24 @@
                 <li>
                     <a href="/modules/{{ page.code }}/exercises/{{ exercise.file | append: '.html' }}" title="Gå till laborationen {{ exercise.name }}">
                         {{ exercise.name }}
+                    </a>
+                </li>
+                {% endfor %}
+            </ul>
+        </li>
+        {% endif %}
+        
+        {% if site.data[page.code].assignments %}
+        <li>
+            <span class="course-overview-element">
+                Uppgifter
+                <span class="expand">+</span>
+            </span>
+            <ul class="course-overview-submenu">
+                {% for assignment in site.data[page.code].assignments %}
+                <li>
+                    <a href="/modules/{{ page.code }}/assignments/{{ assignment.file | append: '.html' }}" title="Gå till uppgiften {{ assignment.name }}">
+                        {{ assignment.name }} {% if assignment.credits %}<small>({{ assignment.credits }} hp)</small>{% endif %}
                     </a>
                 </li>
                 {% endfor %}
