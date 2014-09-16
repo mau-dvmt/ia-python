@@ -6,7 +6,9 @@ title: Modul 3 - iteration och selektion
 
 # Modul 3 - iteration och selektion
 
-Här kommer övningar och uppgift för modul 3 att publiceras. Redan nu kan man ta sig an den relaterade läsningen:
+Övningarna är publicerade (se menyn), och inom kort kommer även uppgiften och en sammanhållen modulbeskrivning.
+
+Övergripande behandlas:
 
 * Selektion - if-satser
   - [Think Python - Conditionals and recursion](http://www.greenteapress.com/thinkpython/html/thinkpython006.html) (rekursion är överkurs, än så länge)
