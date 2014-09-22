@@ -1,0 +1,13 @@
+code: m1
+
+# Laborationer
+exercises:
+    - name: 1. Introduktion till listor
+      file: L01
+    - name: 2. Introduktion till lexikon
+      file: L02
+
+# Inlämningsuppgifter
+assignments:
+    - name: Inlämningsuppgift 3
+      file: U1
