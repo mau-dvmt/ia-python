@@ -6,6 +6,8 @@ exercises:
       file: L01
     - name: 2. Introduktion till lexikon
       file: L02
+    - name: 3. Listor och strängar
+      file: L03
 
 # Inlämningsuppgifter
 assignments:

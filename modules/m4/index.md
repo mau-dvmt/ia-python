@@ -25,6 +25,7 @@ Förutom det material som finns i övningarna finns här tips på mer material a
 #### Övningar
 
 - [Introduktion till listor](exercises/L01.html)
+- [Listor och strängar](exercises/L03.html)
 - [Nästlade listor](#), publiceras inom kort
 
 #### Extra läsning
