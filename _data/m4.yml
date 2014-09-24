@@ -11,4 +11,5 @@ exercises:
 
 # Inlämningsuppgifter
 assignments:
-    - assignment: Inlämningsuppgift 3
+    - name: Inlämningsuppgift 3
+      file: U1
