@@ -8,6 +8,8 @@ exercises:
       file: L02
     - name: 3. Listor och strängar
       file: L03
+    - name: 4. Nästlade listor
+      file: L04
 
 # Inlämningsuppgifter
 assignments:

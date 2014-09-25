@@ -26,7 +26,7 @@ Förutom det material som finns i övningarna finns här tips på mer material a
 
 - [Introduktion till listor](exercises/L01.html)
 - [Listor och strängar](exercises/L03.html)
-- [Nästlade listor](#), publiceras inom kort
+- [Nästlade listor](exercises/L03.html)
 
 #### Extra läsning
 
@@ -56,4 +56,4 @@ Förutom det material som finns i övningarna finns här tips på mer material a
  
 ### Inlämningsuppgift
  
- Inlämningsuppgiften hittar ni (inom kort) [här](assignments/U1.html).
+ Inlämningsuppgiften hittar ni [här](assignments/U1.html).
