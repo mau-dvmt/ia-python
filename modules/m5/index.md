@@ -49,4 +49,4 @@ Förutom det material som finns i övningarna finns här tips på mer material a
  
 ### Inlämningsuppgift
  
- Inlämningsuppgiften hittar ni [här](#) (publiceras inom kort).
+ Inlämningsuppgiften hittar ni [här](assignments/U1.html).
