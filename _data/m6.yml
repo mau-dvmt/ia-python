@@ -1,0 +1,13 @@
+code: m6
+
+# Laborationer
+exercises:
+    - name: 1. Introduktion till OOP
+      file: L01
+#    - name: 2. Flera klasser i OOP
+#      file: L02
+
+# Inlämningsuppgifter
+assignments:
+    - name: Inlämningsuppgift 5
+      file: U1
