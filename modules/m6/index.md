@@ -8,7 +8,7 @@ code: m6
 
 ## Översikt av modul 6
 
-I denna modul ska vi introducera objektorienterad programmering i Python. Detta genom övningar hur man skapara och använder klasser och objekt, samt genom en inlämningsuppgift som examinerar detta.
+I denna modul ska vi introducera objektorienterad programmering i Python. Detta genom övningar hur man skapar och använder klasser och objekt, samt genom en inlämningsuppgift som examinerar detta.
 
 ## Instruktioner
 
