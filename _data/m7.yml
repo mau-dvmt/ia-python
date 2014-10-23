@@ -11,3 +11,5 @@ exercises:
 assignments:
     - name: Inlämningsuppgift 6
       file: U1
+    - name: Inlämningsuppgift 6 - VG
+      file: U2
