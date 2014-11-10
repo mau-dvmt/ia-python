@@ -20,10 +20,10 @@
   number: m5
   description: Spara data i filer och hantera fel i Python
   
-- name: Modul 6 - Objektorientering
+- name: Modul 6 - Objektorientering (IA 2)
   number: m6
   description: Introduktion till klasser och objekt i Python
   
-- name: Modul 7 - Arv
+- name: Modul 7 - Arv (IA 2)
   number: m7
   description: Introduktion arv i Python
