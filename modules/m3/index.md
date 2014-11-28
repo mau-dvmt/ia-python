@@ -50,6 +50,12 @@ Förutom det material som finns i övningarna finns här tips på mer material a
 4. [Nästlade iterationer](exercises/L04.html)
 5. [Iteration och selection](exercises/L05.html)
 
+
+#### Fler exempel
+
+* [for-loopar](ex_for.html)
+* [while-loopar](ex_while.html)
+
 #### Extra läsning
 
  - [Codecademy - Loops](http://www.codecademy.com/en/tracks/python)
