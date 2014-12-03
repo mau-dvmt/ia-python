@@ -28,6 +28,10 @@ Förutom det material som finns i övningarna finns här tips på mer material a
 - [Listor och strängar](exercises/L03.html)
 - [Nästlade listor](exercises/L03.html)
 
+#### Flex exempel
+
+- [Listexempel från föreläsning](ex_list.html)
+
 #### Extra läsning
 
 - [Codecademy - LISTS & DICTIONARIES](http://www.codecademy.com/en/tracks/python)

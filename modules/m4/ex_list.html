@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="content-type" content="text/html;charset=utf-8">
+  <title>ex_list.py</title>
+  <link rel="stylesheet" href="/assets/css/pycco.css">
+</head>
+<body>
+<div id='container'>
+  <div id="background"></div>
+  
+  <table cellspacing=0 cellpadding=0>
+  <thead>
+    <tr>
+      <th class=docs><h1>ex_list.py</h1></th>
+      <th class=code></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr id='section-0'>
+      <td class=docs>
+        <div class="octowrap">
+          <a class="octothorpe" href="#section-0">#</a>
+        </div>
+        <p>Att skapa och sätta samman (konkatenera) listor är enkelt.</p>
+      </td>
+      <td class=code>
+        <div class='highlight'><pre><div class="highlight"><pre><span class="k">def</span> <span class="nf">ex1</span><span class="p">():</span>
+    <span class="n">list1</span> <span class="o">=</span> <span class="p">[</span><span class="mi">34</span><span class="p">,</span><span class="mi">6</span><span class="p">,</span><span class="mi">7</span><span class="p">]</span>
+    <span class="n">list2</span> <span class="o">=</span> <span class="p">[</span><span class="s">&quot;a&quot;</span><span class="p">,</span> <span class="s">&quot;few&quot;</span><span class="p">,</span> <span class="s">&quot;strings&quot;</span><span class="p">]</span>
+    <span class="n">list3</span> <span class="o">=</span> <span class="n">list1</span> <span class="o">+</span> <span class="n">list2</span>
+    <span class="k">print</span> <span class="s">&quot;list3:&quot;</span><span class="p">,</span> <span class="n">list3</span></pre></div></pre></div>
+      </td>
+    </tr><tr id='section-1'>
+      <td class=docs>
+        <div class="octowrap">
+          <a class="octothorpe" href="#section-1">#</a>
+        </div>
+        <p>När en textvariabel "kopieras" till en ny variabel, så skapas det faktiskt
+två separata textsträngar, i två separata minnesutrymme. Det samma gäller
+inte listor.
+Här "kopieras" <code>list1</code> till <code>list2</code>, som blir två referenser till samma
+listor i minnet.</p>
+      </td>
+      <td class=code>
+        <div class='highlight'><pre><div class="highlight"><pre><span class="k">def</span> <span class="nf">ex1b</span><span class="p">():</span>
+    <span class="n">list1</span> <span class="o">=</span> <span class="p">[</span><span class="mi">34</span><span class="p">,</span> <span class="mi">6</span><span class="p">,</span> <span class="mi">7</span><span class="p">,</span> <span class="s">&quot;a&quot;</span><span class="p">,</span> <span class="s">&quot;few&quot;</span><span class="p">,</span> <span class="s">&quot;strings&quot;</span><span class="p">]</span>
+    <span class="k">print</span> <span class="s">&quot;These refer to the exact same list object:&quot;</span>
+    <span class="n">list2</span> <span class="o">=</span> <span class="n">list1</span>
+    <span class="n">list2</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">=</span> <span class="s">&quot;A new first element!&quot;</span>
+    <span class="k">print</span> <span class="s">&quot;list1:&quot;</span><span class="p">,</span> <span class="n">list1</span>
+    <span class="k">print</span> <span class="s">&quot;list2:&quot;</span><span class="p">,</span> <span class="n">list2</span></pre></div></pre></div>
+      </td>
+    </tr><tr id='section-2'>
+      <td class=docs>
+        <div class="octowrap">
+          <a class="octothorpe" href="#section-2">#</a>
+        </div>
+        <p>Det är ganska vanligt att skapa en lista från en sträng, eller en sträng
+från en lista. I detta exempel görs båda sakerna.</p>
+      </td>
+      <td class=code>
+        <div class='highlight'><pre><div class="highlight"><pre><span class="k">def</span> <span class="nf">ex2</span><span class="p">():</span></pre></div></pre></div>
+      </td>
+    </tr><tr id='section-3'>
+      <td class=docs>
+        <div class="octowrap">
+          <a class="octothorpe" href="#section-3">#</a>
+        </div>
+        <p>Frågar användaren efter en textsträng, och skriver ut en förkortad version.
+T ex: "Some random input" -&gt; "S.R.I."</p>
+      </td>
+      <td class=code>
+        <div class='highlight'><pre><div class="highlight"><pre>    <span class="n">userStr</span> <span class="o">=</span> <span class="nb">raw_input</span><span class="p">(</span><span class="s">&quot;Enter a text to be shorted: &quot;</span><span class="p">)</span>
+    <span class="n">wordList</span> <span class="o">=</span> <span class="n">userStr</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s">&quot; &quot;</span><span class="p">)</span>
+    <span class="n">output</span> <span class="o">=</span> <span class="s">&quot;&quot;</span>
+    <span class="k">for</span> <span class="n">word</span> <span class="ow">in</span> <span class="n">wordList</span><span class="p">:</span>
+        <span class="n">output</span> <span class="o">+=</span> <span class="n">word</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">upper</span><span class="p">()</span> <span class="o">+</span> <span class="s">&quot;.&quot;</span>
+    <span class="k">print</span> <span class="n">output</span></pre></div></pre></div>
+      </td>
+    </tr><tr id='section-4'>
+      <td class=docs>
+        <div class="octowrap">
+          <a class="octothorpe" href="#section-4">#</a>
+        </div>
+        <hr />
+      </td>
+      <td class=code>
+        <div class='highlight'><pre><div class="highlight"><pre></pre></div></pre></div>
+      </td>
+    </tr><tr id='section-5'>
+      <td class=docs>
+        <div class="octowrap">
+          <a class="octothorpe" href="#section-5">#</a>
+        </div>
+        <p>Frågar användaren efter ett valfritt antal heltal och skriver ut
+medelvärdet av dessa tal.</p>
+      </td>
+      <td class=code>
+        <div class='highlight'><pre><div class="highlight"><pre><span class="k">def</span> <span class="nf">ex3</span><span class="p">():</span></pre></div></pre></div>
+      </td>
+    </tr><tr id='section-6'>
+      <td class=docs>
+        <div class="octowrap">
+          <a class="octothorpe" href="#section-6">#</a>
+        </div>
+        
+      </td>
+      <td class=code>
+        <div class='highlight'><pre><div class="highlight"><pre>    <span class="n">numbers</span> <span class="o">=</span> <span class="p">[]</span>
+    <span class="n">number</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s">&quot;Enter a number: &quot;</span><span class="p">)</span>
+    <span class="k">while</span> <span class="n">number</span> <span class="o">!=</span> <span class="mi">0</span><span class="p">:</span>
+        <span class="n">numbers</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">number</span><span class="p">)</span>
+        <span class="n">number</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s">&quot;Enter a number (stop by entering 0): &quot;</span><span class="p">)</span>
+    
+    <span class="k">print</span> <span class="s">&quot;You numbers where:&quot;</span><span class="p">,</span> <span class="n">numbers</span>
+    <span class="k">print</span> <span class="s">&quot;The average is&quot;</span><span class="p">,</span> <span class="n">calculate_avg</span><span class="p">(</span><span class="n">numbers</span><span class="p">)</span> <span class="c"># Se `calculate_avg` nedan</span></pre></div></pre></div>
+      </td>
+    </tr><tr id='section-7'>
+      <td class=docs>
+        <div class="octowrap">
+          <a class="octothorpe" href="#section-7">#</a>
+        </div>
+        <p>Tar emot en lista som argument och beräknar medelvärdet av alla element
+i listan. (Ingen felkontroll - funktionen kraschar alltså om listan inte
+innehåller tal.)</p>
+      </td>
+      <td class=code>
+        <div class='highlight'><pre><div class="highlight"><pre><span class="k">def</span> <span class="nf">calculate_avg</span><span class="p">(</span><span class="n">number_list</span><span class="p">):</span></pre></div></pre></div>
+      </td>
+    </tr><tr id='section-8'>
+      <td class=docs>
+        <div class="octowrap">
+          <a class="octothorpe" href="#section-8">#</a>
+        </div>
+        
+      </td>
+      <td class=code>
+        <div class='highlight'><pre><div class="highlight"><pre>    <span class="n">total</span> <span class="o">=</span> <span class="mf">0.0</span>
+    <span class="k">for</span> <span class="n">num</span> <span class="ow">in</span> <span class="n">number_list</span><span class="p">:</span>
+        <span class="n">total</span> <span class="o">+=</span> <span class="n">num</span>
+    <span class="n">average</span> <span class="o">=</span> <span class="n">total</span> <span class="o">/</span> <span class="nb">len</span><span class="p">(</span><span class="n">number_list</span><span class="p">)</span>
+    <span class="k">return</span> <span class="n">average</span></pre></div></pre></div>
+      </td>
+    </tr><tr id='section-9'>
+      <td class=docs>
+        <div class="octowrap">
+          <a class="octothorpe" href="#section-9">#</a>
+        </div>
+        <p>Tar emot en lista som argument och beräknar medelvärdet av alla element
+i listan. (Exakt samma som <code>calculate_avg</code>, men använder den inbyggda
+funktionen <code>sum</code>.)</p>
+      </td>
+      <td class=code>
+        <div class='highlight'><pre><div class="highlight"><pre><span class="k">def</span> <span class="nf">calculate_avg2</span><span class="p">(</span><span class="n">number_list</span><span class="p">):</span></pre></div></pre></div>
+      </td>
+    </tr><tr id='section-10'>
+      <td class=docs>
+        <div class="octowrap">
+          <a class="octothorpe" href="#section-10">#</a>
+        </div>
+        
+      </td>
+      <td class=code>
+        <div class='highlight'><pre><div class="highlight"><pre>    <span class="n">total</span> <span class="o">=</span> <span class="nb">float</span><span class="p">(</span><span class="nb">sum</span><span class="p">(</span><span class="n">number_list</span><span class="p">))</span>
+    <span class="k">return</span> <span class="n">total</span> <span class="o">/</span> <span class="nb">len</span><span class="p">(</span><span class="n">number_list</span><span class="p">)</span>
+
+</pre></div></pre></div>
+      </td>
+    </tr>
+  </table>
+</div>
+</body>
