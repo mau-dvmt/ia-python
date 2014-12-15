@@ -31,7 +31,9 @@ Istället för egenpåhittade övningar rekommenderas den [tutorial som finns p�
 
 ### Exempelprojekt
 
-Viktiga delar av funktionaliteten i Bottle visas även i [detta exempelprojekt](https://github.com/fohlin/bottleexample). Du kan även [ladda hem koden som en .zip](https://github.com/fohlin/bottleexample/archive/master.zip).
+Viktiga delar av funktionaliteten i Bottle visas även i [detta exempelprojekt](https://github.com/fohlin/bottleexample). Du kan även ladda hem koden som en [.zip](https://github.com/fohlin/bottleexample/archive/master.zip).
+
+[Så här ser det ut när man kör projektet](http://fohlin.pythonanywhere.com). (Publicerat gratis via [PythonAnywhere](https://www.pythonanywhere.com).)
 
 ## Uppgift
 
