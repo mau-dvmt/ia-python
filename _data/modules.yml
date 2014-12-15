@@ -27,3 +27,7 @@
 - name: Modul 7 - Arv (IA 2)
   number: m7
   description: Introduktion arv i Python
+
+- name: Webbapplikationer
+  number: web
+  description: Introduktion till webbprogrammering

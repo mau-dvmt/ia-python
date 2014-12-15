@@ -1,0 +1,13 @@
+code: web
+
+# Laborationer
+#exercises:
+#    - name: 1. Introduktion till Arv
+#      file: L01
+#    - name: 2. Flera klasser i OOP
+#      file: L02
+
+# Inlämningsuppgifter
+assignments:
+    - name: Inlämningsuppgift - Wiki
+      file: wiki
