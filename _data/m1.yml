@@ -26,3 +26,5 @@ exercises:
 lectures:
     - name: Kursintroduktion
       file: F01
+    - name: Intro till Python
+      file: F02
