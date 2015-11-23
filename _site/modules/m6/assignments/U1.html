@@ -1,0 +1,224 @@
+<!doctype html>
+<html>
+    <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    
+        <title>Modul 6 - Objektorientering | Introduktion till programmering</title>
+    
+
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600|Lato|Inconsolata" rel="stylesheet" type="text/css">
+
+    <link href="/assets/css/normalize.css" rel="stylesheet">
+	<!--
+    <link href="/assets/css/main.css" rel="stylesheet">
+	-->
+	<link href="http://mah-webb.github.io/assets/css/main.css" rel="stylesheet">
+</head>
+
+    <body class="instructions">
+        <header id="header" class="header">
+<div class="header-inner">
+    <a class="brand" href="/" title="Gå till startsidan">Introduktion till programmering</a>
+
+    <ul class="navigation">
+        <li>
+            <a href="/contact" title="Gå till kontaktsidan">Kontakt</a>
+        </li>
+    </ul>
+</div>
+</header>
+
+        <div id="sidebar" class="sidebar">
+    <div id="toggle-sidebar" class="toggle-sidebar">...</div>
+
+    <h3 class="course-name">
+        <a href="/modules/m6" title="Gå till kursöversikt över ">
+            Modul 6 - Objektorientering
+        </a>
+    </h3>
+	
+    <ul class="course-overview">
+        
+        <li>
+            <span class="course-overview-element">
+                Övningar
+                <span class="expand">+</span>
+            </span>
+            <ul class="course-overview-submenu">
+                
+                <li>
+                    <a href="/modules/m6/exercises/L01.html" title="Gå till laborationen 1. Introduktion till OOP">
+                        1. Introduktion till OOP
+                    </a>
+                </li>
+                
+            </ul>
+        </li>
+        
+        
+        
+        <li>
+            <span class="course-overview-element">
+                Uppgifter
+                <span class="expand">+</span>
+            </span>
+            <ul class="course-overview-submenu">
+                
+                <li>
+                    <a href="/modules/m6/assignments/U1.html" title="Gå till uppgiften Inlämningsuppgift 5">
+                        Inlämningsuppgift 5 
+                    </a>
+                </li>
+                
+            </ul>
+        </li>
+        
+
+        
+
+        
+    </ul>
+</div>
+
+
+        <div class="content">
+        
+            <h1 id="inlmningsuppgift-5">Inlämningsuppgift 5</h1>
+
+<h2 id="introduktion">1. Introduktion</h2>
+
+<p>Denna inlämningsuppgift har som syfte att examinera modul 6 som har fokus på objektorienterad programmering.</p>
+
+<p>Inlämningsuppgiften är individuell. Det betyder att studenten enskilt ska utforma och skriva sin inlämning samt kunna redogöra för alla delar av den. Det är så klart inte förbjudet att diskutera uppgiften. Men viktigt är alltså att det man lämnar in representerar ens egna arbete.</p>
+
+<h2 id="uppgiftsbeskrivning">2. Uppgiftsbeskrivning</h2>
+
+<p>Vi ska i denna uppgift bygga ett litet program som ska hantera böcker och författare. Hanteringen ska ske genom två klasser:</p>
+
+<ol>
+  <li>Book</li>
+  <li>Author</li>
+</ol>
+
+<p>Klasserna ska sedan ha följande attribut:</p>
+
+<ol>
+  <li>Book
+    <ul>
+      <li>Attribut: <code>title</code> (string)</li>
+      <li>Attribut: <code>author</code> (objekt, av typen author)</li>
+      <li>Attribut: <code>price</code> (int)</li>
+      <li>Metod: <code>get_title</code></li>
+      <li>Metod: <code>set_title</code></li>
+      <li>Metod: <code>get_author</code></li>
+      <li>Metod: <code>set_author</code></li>
+      <li>Metod: <code>get_price</code></li>
+      <li>Metod: <code>set_price</code></li>
+      <li>Metod: <code>__str__</code></li>
+    </ul>
+  </li>
+  <li>Author
+    <ul>
+      <li>Attribut: <code>name</code> (string)</li>
+      <li>Attribut: <code>born_year</code> (string)</li>
+      <li>Metod: <code>get_name</code></li>
+      <li>Metod: <code>set_name</code></li>
+      <li>Metod: <code>get_born_year</code></li>
+      <li>Metod: <code>set_born_year</code></li>
+      <li>Metod: <code>__str__</code></li>
+    </ul>
+  </li>
+</ol>
+
+<p>Ni ska påvisa användning av er klasser genom att skapa minst tre böcker, med tillhörande författare. Varje bok ska alltså kopplas till en författare genom bokens attribut <code>author</code> (som ska innehålla ett <code>Author</code>-objekt).</p>
+
+<p>En exempelkörning för att skapa en bok med tillhörande författare skulle t.ex. kunna se ut såhär då:</p>
+
+<div class="highlight"><pre><code class="language-python" data-lang="python"><span class="lineno">1</span> <span class="n">author</span> <span class="o">=</span> <span class="n">Author</span><span class="p">(</span><span class="s">&quot;Jules Verne&quot;</span><span class="p">)</span>
+<span class="lineno">2</span> <span class="n">book</span> <span class="o">=</span> <span class="n">Book</span><span class="p">(</span><span class="s">&quot;En världsomsegling under havet&quot;</span><span class="p">,</span> <span class="n">author</span><span class="p">,</span> <span class="mi">99</span><span class="p">)</span></code></pre></div>
+
+<p>Där vi först skapar ett objekt av klassen <code>Author</code>, en författare, i detta fall <em>Jules Verne</em> och sedan en bok som han skrivit. Till boken anger vi då titeln, författaren och priset på boken. <em>Böckerna ska sedan läggas i en <strong>lista</strong> som heter <code>books</code></em>.</p>
+
+<h4 id="krav-fr-testkrning-av-er-kod">Krav för testkörning av er kod</h4>
+
+<p>Era böcker ska alltså ligga i en lista som heter <code>books</code> och ska fungera med följande kod:</p>
+
+<div class="highlight"><pre><code class="language-python" data-lang="python"><span class="lineno">1</span> <span class="k">for</span> <span class="n">book</span> <span class="ow">in</span> <span class="n">books</span><span class="p">:</span>
+<span class="lineno">2</span>     <span class="k">print</span> <span class="n">book</span></code></pre></div>
+
+<p>Som ger en liknande utskrift som denna:</p>
+
+<p><img src="images/idle.png" alt="Idle" /></p>
+
+<p><em>För den som vill jobba vidare med objektorientering går det även bra att hantera “boklistan” med hjälp av en ny klass. Det kan t ex finnas klassen <code>BookRegistry</code> eller <code>Library</code>, som internt hanterar en lista med böcker.</em></p>
+
+<p>Ni ska också har fungerande <code>get</code> och <code>set</code>-funktioner för klasser. Så man t.ex. i en körning kan ändra värde på attributen i era objekt:</p>
+
+<p><img src="images/idle2.png" alt="Idle" /></p>
+
+<h3 id="exempelkrning">Exempelkörning</h3>
+
+<p>Detta är en exempelkörning hur ert program (minimum) ska fungera:</p>
+
+<p><img src="images/idle3.png" alt="Idle" /></p>
+
+<h2 id="bedmning">Bedömning</h2>
+
+<p>Uppgiften kan ge betyget godkänt. För att nå detta betyg behöver programmet uppfylla uppgiftsbeskrivningen, vara välstrukturerat och väldokumenterat. Extra viktiga punkter är:</p>
+
+<ul>
+  <li>Koden ska vara strukturerad med ett antal funktioner, där varje funktion har begränsat syfte och omfattning</li>
+  <li>Koden ska vara tydlig och lättläst med avseende på namngivning, strukturering och kommentarer. Funktioner som inte är självförklarande ska ha en beskrivning i form av <em>docstrings</em> (<code>''' Kommentar för funktionen '''</code>-kommentarer).</li>
+</ul>
+
+<h3 id="specifika-krav-fr-uppgiften">Specifika krav för uppgiften</h3>
+
+<ul>
+  <li>Ni ska använda er utav två klasser (<code>Book</code> och <code>Author</code>) för att bygga programmets funktionalitet.</li>
+  <li>Ni ska inkludera en exempelkörning (skriva en egen) på användandet av era klasser (minimum det som visas under sektionen <em>exempelkörning</em>)</li>
+</ul>
+
+<h2 id="redovisning">Redovisning</h2>
+
+<p>Redovisa genom att ladda upp programmets källkod på It’s Learning.</p>
+
+<p>Inlämningsuppgifter rättas varje vecka, med tisdag som rullande deadline. Det betyder: lämna in senast tisdag för rättning samma vecka. Försök att hålla kursens tempo på en modul per vecka. Lämplig inlämningstid för modul 6: senast <em>tisdag 2014-10-14</em>.</p>
+
+
+        
+
+        <footer class="contribute">
+    <p>Har du upptäckt ett fel eller vill bidra med förslag till ändringar? <a href="https://github.com/mah-dv/ia-python" target="_blank" title="Gå till GitHub">Bidra via GitHub</a>!</p>
+</footer>
+
+        </div>
+
+        <footer class="footer">
+<div class="footer-inner">
+    <p class="license">
+        Användning av allt material är fritt, om motsatsen inte anges. Formellt utrycks detta med licensen <a href="http://creativecommons.org/licenses/by/2.5/se/" title="Gå till Creative Commons licens sida">Creative Commons Erkännande 2.5 Sverige</a>.
+    </p>
+    <p class="fork">
+        Detta projekt är publicerat som <a href="https://github.com/mah-dv/ia-python" title="Gå till GitHub">öppen källkod på GitHub</a>. Föreslå gärna ändringar och bidra med förbättringar genom att göra en <a href="https://github.com/mah-dv/ia-python" title="Gå till GitHub">fork av detta projekt på GitHub</a>.
+    </p>
+    <ul class="footer-links">
+        <li>
+            <a href="/" title="Gå till startsidan">Hem</a>
+        </li>
+        <li>
+            <a href="/contact" title="Gå till kontaktsidan">Kontakt</a>
+        </li>
+    </ul>
+</div>
+</footer>
+<!--
+<script src="/assets/js/common.js"></script>
+-->
+<script src="/assets/js/common.js"></script>
+    </body>
+</html>

@@ -1,0 +1,199 @@
+<!doctype html>
+<html>
+    <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    
+        <title>Modul 2 - Funktioner | Introduktion till programmering</title>
+    
+
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600|Lato|Inconsolata" rel="stylesheet" type="text/css">
+
+    <link href="/assets/css/normalize.css" rel="stylesheet">
+	<!--
+    <link href="/assets/css/main.css" rel="stylesheet">
+	-->
+	<link href="http://mah-webb.github.io/assets/css/main.css" rel="stylesheet">
+</head>
+
+    <body class="instructions">
+        <header id="header" class="header">
+<div class="header-inner">
+    <a class="brand" href="/" title="Gå till startsidan">Introduktion till programmering</a>
+
+    <ul class="navigation">
+        <li>
+            <a href="/contact" title="Gå till kontaktsidan">Kontakt</a>
+        </li>
+    </ul>
+</div>
+</header>
+
+        <div id="sidebar" class="sidebar">
+    <div id="toggle-sidebar" class="toggle-sidebar">...</div>
+
+    <h3 class="course-name">
+        <a href="/modules/m2" title="Gå till kursöversikt över ">
+            Modul 2 - Funktioner
+        </a>
+    </h3>
+	
+    <ul class="course-overview">
+        
+        <li>
+            <span class="course-overview-element">
+                Övningar
+                <span class="expand">+</span>
+            </span>
+            <ul class="course-overview-submenu">
+                
+                <li>
+                    <a href="/modules/m2/exercises/L01.html" title="Gå till laborationen 1. Introduktion till funktioner">
+                        1. Introduktion till funktioner
+                    </a>
+                </li>
+                
+                <li>
+                    <a href="/modules/m2/exercises/L02.html" title="Gå till laborationen 2. Argument och parametrar">
+                        2. Argument och parametrar
+                    </a>
+                </li>
+                
+                <li>
+                    <a href="/modules/m2/exercises/L03.html" title="Gå till laborationen 3. Att returnera värden">
+                        3. Att returnera värden
+                    </a>
+                </li>
+                
+                <li>
+                    <a href="/modules/m2/exercises/L04.html" title="Gå till laborationen 4. Struktur av program">
+                        4. Struktur av program
+                    </a>
+                </li>
+                
+                <li>
+                    <a href="/modules/m2/exercises/L05.html" title="Gå till laborationen 5. Moduler i Python">
+                        5. Moduler i Python
+                    </a>
+                </li>
+                
+            </ul>
+        </li>
+        
+        
+        
+        <li>
+            <span class="course-overview-element">
+                Uppgifter
+                <span class="expand">+</span>
+            </span>
+            <ul class="course-overview-submenu">
+                
+                <li>
+                    <a href="/modules/m2/assignments/U1.html" title="Gå till uppgiften Inlämningsuppgift 1">
+                        Inlämningsuppgift 1 
+                    </a>
+                </li>
+                
+            </ul>
+        </li>
+        
+
+        
+
+        
+    </ul>
+</div>
+
+
+        <div class="content">
+        
+            <h1 id="argument-och-parametrar">2. Argument och parametrar</h1>
+
+<h2 id="introduktion">Introduktion</h2>
+
+<p>I den förra övningen så tittade vi på hur man skapar funktioner i Python och hur man på ett smidigt och effektivt sätt kan dokumentera funktionerna. De funktioner som vi byggde var dock statiska, i den mening att de gör exakt samma sak varje gång som de körs.</p>
+
+<p>Vi ska i denna övningen titta på hur vi kan göra de funktioner som vi bygger mer dynamiska. Detta genom att <em>skicka med</em> data till funktionerna som vi bygger. Den data som skickas från användaren när funktionen anropas kallas för <em>argument</em> medan den data som tas emot av funktionen kallas för <em>parameter</em>. Ett snabbt exempel:</p>
+
+<div class="highlight"><pre><code class="language-python" data-lang="python"><span class="lineno">1</span> <span class="k">def</span> <span class="nf">shout_out</span><span class="p">(</span><span class="n">text</span><span class="p">):</span>
+<span class="lineno">2</span> 	<span class="sd">&#39;&#39;&#39;</span>
+<span class="lineno">3</span> <span class="sd">		Tar en sträng som input och skriver ut den i versaler</span>
+<span class="lineno">4</span> <span class="sd">	&#39;&#39;&#39;</span>
+<span class="lineno">5</span> 	<span class="k">print</span> <span class="n">text</span><span class="o">.</span><span class="n">upper</span><span class="p">()</span>
+<span class="lineno">6</span> 	
+<span class="lineno">7</span> <span class="n">shout_out</span><span class="p">(</span><span class="s">&quot;Vi testar!&quot;</span><span class="p">)</span>
+<span class="lineno">8</span> <span class="n">shout_out</span><span class="p">(</span><span class="s">&quot;En gång till!&quot;</span><span class="p">)</span></code></pre></div>
+
+<p>I exemplet ovan så är <code>text</code> parametern till funktionen <code>shout_out</code> och <code>Vi testar</code> är argumentet när funktionen anropas. Variabeln/parametern <code>text</code>i funktionen representerar alltså det som skickas som argument till funktionen. Vi kör funktionen två gånger, första gången representerar <code>text</code> i funktionen strängen <code>"Vi testar!"</code> och andra gången strängen <code>"En gång till!"</code>. Kör vi koden ovan så ser det ut såhär:</p>
+
+<p><img src="images/idle4.png" alt="" /></p>
+
+<h2 id="vningar">Övningar</h2>
+
+<h3 id="vning-1---areafunktion">Övning 1 - Areafunktion</h3>
+
+<p>Vi ska nu bygga en funktion som räknar ut arean för en rektangel. Funktionen har två parametrar, <code>height</code> och <code>width</code> som multiplicerat med varandra resulterar i arean för rektangeln. Er uppgift är att skriva klart funktionen nedan så att den blir komplett.</p>
+
+<div class="highlight"><pre><code class="language-python" data-lang="python"><span class="lineno">1</span> <span class="k">def</span> <span class="nf">area</span><span class="p">(</span><span class="n">width</span><span class="p">,</span> <span class="n">height</span><span class="p">):</span>
+<span class="lineno">2</span> 	<span class="sd">&#39;&#39;&#39;</span>
+<span class="lineno">3</span> <span class="sd">		Funktionen beräknar och skriver ut arean för en rektangel</span>
+<span class="lineno">4</span> <span class="sd">	&#39;&#39;&#39;</span>
+<span class="lineno">5</span> 	<span class="c"># Er kod här</span>
+<span class="lineno">6</span> 	
+<span class="lineno">7</span> <span class="n">area</span><span class="p">(</span><span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">)</span>
+<span class="lineno">8</span> <span class="n">area</span><span class="p">(</span><span class="mi">7</span><span class="p">,</span> <span class="mi">12</span><span class="p">)</span>
+<span class="lineno">9</span> <span class="n">area</span><span class="p">(</span><span class="mi">32</span><span class="p">,</span> <span class="mi">23</span><span class="p">)</span></code></pre></div>
+
+<p>När ni skrivit klart funktionen ska resultatet vara:</p>
+
+<p><img src="images/idle5.png" alt="" /></p>
+
+<h3 id="vning-2---celcius-till-fahrenheit">Övning 2 - Celcius till Fahrenheit</h3>
+
+<p>Vi ska nu bygga en funktion som omvandlar temperatur i Celcius till Fahrenheit. Formeln för detta är: <code>fahrenheit = celcius  *  9/5 + 32</code>. Er uppgift är att skriva funktionen <code>celcius_to_fahrenheit</code> som ska ta antalet grader i Celcius som en parameter och ska fungera med följande anrop:</p>
+
+<div class="highlight"><pre><code class="language-python" data-lang="python"><span class="lineno">1</span> <span class="n">celcius_to_fahrenheit</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span>
+<span class="lineno">2</span> <span class="n">celcius_to_fahrenheit</span><span class="p">(</span><span class="mi">15</span><span class="p">)</span>
+<span class="lineno">3</span> <span class="n">celcius_to_fahrenheit</span><span class="p">(</span><span class="mi">30</span><span class="p">)</span></code></pre></div>
+
+<p>Och funktionens utskrifter ska se ut på följande sätt:</p>
+
+<p><img src="images/idle6.png" alt="" /></p>
+
+        
+
+        <footer class="contribute">
+    <p>Har du upptäckt ett fel eller vill bidra med förslag till ändringar? <a href="https://github.com/mah-dv/ia-python" target="_blank" title="Gå till GitHub">Bidra via GitHub</a>!</p>
+</footer>
+
+        </div>
+
+        <footer class="footer">
+<div class="footer-inner">
+    <p class="license">
+        Användning av allt material är fritt, om motsatsen inte anges. Formellt utrycks detta med licensen <a href="http://creativecommons.org/licenses/by/2.5/se/" title="Gå till Creative Commons licens sida">Creative Commons Erkännande 2.5 Sverige</a>.
+    </p>
+    <p class="fork">
+        Detta projekt är publicerat som <a href="https://github.com/mah-dv/ia-python" title="Gå till GitHub">öppen källkod på GitHub</a>. Föreslå gärna ändringar och bidra med förbättringar genom att göra en <a href="https://github.com/mah-dv/ia-python" title="Gå till GitHub">fork av detta projekt på GitHub</a>.
+    </p>
+    <ul class="footer-links">
+        <li>
+            <a href="/" title="Gå till startsidan">Hem</a>
+        </li>
+        <li>
+            <a href="/contact" title="Gå till kontaktsidan">Kontakt</a>
+        </li>
+    </ul>
+</div>
+</footer>
+<!--
+<script src="/assets/js/common.js"></script>
+-->
+<script src="/assets/js/common.js"></script>
+    </body>
+</html>

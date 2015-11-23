@@ -1,0 +1,248 @@
+<!doctype html>
+<html>
+    <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    
+        <title>Modul 3 - Iteration och selection | Introduktion till programmering</title>
+    
+
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600|Lato|Inconsolata" rel="stylesheet" type="text/css">
+
+    <link href="/assets/css/normalize.css" rel="stylesheet">
+	<!--
+    <link href="/assets/css/main.css" rel="stylesheet">
+	-->
+	<link href="http://mah-webb.github.io/assets/css/main.css" rel="stylesheet">
+</head>
+
+    <body class="instructions">
+        <header id="header" class="header">
+<div class="header-inner">
+    <a class="brand" href="/" title="Gå till startsidan">Introduktion till programmering</a>
+
+    <ul class="navigation">
+        <li>
+            <a href="/contact" title="Gå till kontaktsidan">Kontakt</a>
+        </li>
+    </ul>
+</div>
+</header>
+
+        <div id="sidebar" class="sidebar">
+    <div id="toggle-sidebar" class="toggle-sidebar">...</div>
+
+    <h3 class="course-name">
+        <a href="/modules/m3" title="Gå till kursöversikt över ">
+            Modul 3 - Iteration och selection
+        </a>
+    </h3>
+	
+    <ul class="course-overview">
+        
+        <li>
+            <span class="course-overview-element">
+                Övningar
+                <span class="expand">+</span>
+            </span>
+            <ul class="course-overview-submenu">
+                
+                <li>
+                    <a href="/modules/m3/exercises/L01.html" title="Gå till laborationen 1. Introduktion till selektion">
+                        1. Introduktion till selektion
+                    </a>
+                </li>
+                
+                <li>
+                    <a href="/modules/m3/exercises/L02.html" title="Gå till laborationen 2. Introduktion till iterationer">
+                        2. Introduktion till iterationer
+                    </a>
+                </li>
+                
+                <li>
+                    <a href="/modules/m3/exercises/L03.html" title="Gå till laborationen 3. Nästlade if-satser">
+                        3. Nästlade if-satser
+                    </a>
+                </li>
+                
+                <li>
+                    <a href="/modules/m3/exercises/L04.html" title="Gå till laborationen 4. Nästlade iterationer">
+                        4. Nästlade iterationer
+                    </a>
+                </li>
+                
+                <li>
+                    <a href="/modules/m3/exercises/L05.html" title="Gå till laborationen 5. Iteration och selektion">
+                        5. Iteration och selektion
+                    </a>
+                </li>
+                
+            </ul>
+        </li>
+        
+        
+        
+        <li>
+            <span class="course-overview-element">
+                Uppgifter
+                <span class="expand">+</span>
+            </span>
+            <ul class="course-overview-submenu">
+                
+                <li>
+                    <a href="/modules/m3/assignments/U1.html" title="Gå till uppgiften Inlämningsuppgift 2">
+                        Inlämningsuppgift 2 
+                    </a>
+                </li>
+                
+            </ul>
+        </li>
+        
+
+        
+
+        
+    </ul>
+</div>
+
+
+        <div class="content">
+        
+            <h1 id="inlmningsuppgift-2">Inlämningsuppgift 2</h1>
+
+<h2 id="introduktion">1. Introduktion</h2>
+
+<p>Denna inlämningsuppgift har som syfte att examinera modul 3 som har fokus på iteration och selektion.</p>
+
+<p>Inlämningsuppgiften är individuell. Det betyder att studenten enskilt ska utforma och skriva sin inlämning samt kunna redogöra för alla delar av den. Det är så klart inte förbjudet att diskutera uppgiften. Men viktigt är alltså att det man lämnar in representerar ens egna arbete.</p>
+
+<h2 id="uppgiftsbeskrivning">2. Uppgiftsbeskrivning</h2>
+
+<p>Uppgiften går ut på att ni ska bygga ett frågespel, där användaren får svara på frågor som ni (som programmerare av programmet) har skapat. Det ska även finnas en liten statistikdel där man man se hur många frågor man svarat på och hur många gånger man svarat fel.</p>
+
+<p>Programmet ska bestå utav följande komponenter</p>
+
+<ol>
+  <li>En meny där man:
+    <ul>
+      <li>Kan välja att spela vårt frågespel</li>
+      <li>Kan välja att se statistik om frågespelet</li>
+      <li>Kan avsluta programmet</li>
+    </ul>
+  </li>
+  <li>Ett frågespel där användaren får en fråga och ska svara rätt på denna</li>
+  <li>En statistikdel där användaren kan se antal besvarade frågor och antal felsvar</li>
+</ol>
+
+<h3 id="menyn">Menyn</h3>
+
+<p>Menyn ska ha tre alternativ:</p>
+
+<ol>
+  <li>Frågespel</li>
+  <li>Statistik</li>
+  <li>Avsluta</li>
+</ol>
+
+<p>Beroende på vilket val man väljer (1, 2 eller 3) ska korrekt funktion att köras. Skulle man skriva in något annat än 1, 2 eller 3 så ska programmet tala om att menyvalet var felaktigt och man får ett nytt försök att välja ett alternativ (programmet ska inte krascha). Programmet avslutas endast då användaren anger detta (alternativ 3) i menyn.</p>
+
+<h3 id="frgespel">Frågespel</h3>
+
+<p>Frågespelet består lämpligen av två funktioner, t.ex. <code>question_game</code> och <code>question</code>. <code>question_game</code> välkomnar användaren till spelet och ställer en fråga åt gången genom att anropa funktionen <code>question</code>. Funktionen <code>question</code> ska ta två parametrar 1) Frågan som ska ställas, 2) Det korrekta svaret. Så ett exempelanrop på funktionen <code>question</code> ska se ut såhär:</p>
+
+<p><code>python
+question("Vilken är Skånes största stad?", "Malmö")
+</code></p>
+
+<p>Funktionen ska då:</p>
+
+<ol>
+  <li>Ställa frågan till användaren</li>
+  <li>Ta emot användarens svar
+    <ul>
+      <li>Om svaret är korrekt så gratuleras användaren (och ni noterar att en fråga är besvarad)</li>
+      <li>Om svaret är felaktigt så berättas detta för användaren, och användaren får en ny möjlighet att svara på frågan (tills frågan är korrekt besvarad). Här noterar ni också varje gång användaren svarar fel på en fråga.</li>
+    </ul>
+  </li>
+  <li>När frågan är korrekt besvarad är funktionen <code>question</code> klar (för denna gång)</li>
+</ol>
+
+<h3 id="statistik">Statistik</h3>
+
+<p>Statistikdelen ska berätta för användaren hur många frågor man besvarat och hur många gånger man svarat fel (totalt). Denna information ska ni ha samlat in i funktionen <code>question</code>. Ett sätt att hålla koll på statistiken är genom <a href="http://stackoverflow.com/questions/423379/using-global-variables-in-a-function-other-than-the-one-that-created-them">globala variabler</a>.</p>
+
+<h3 id="exempelkrning">Exempelkörning</h3>
+
+<p><img src="images/idle15.png" alt="Idle" /></p>
+
+<h2 id="bedmning">Bedömning</h2>
+
+<p>Uppgiften kan ge betyget godkänt. För att nå detta betyg behöver programmet uppfylla uppgiftsbeskrivningen, vara välstrukturerat och väldokumenterat. Extra viktiga punkter är:</p>
+
+<ul>
+  <li>Koden ska vara strukturerad med ett antal funktioner, där varje funktion har begränsat syfte och omfattning</li>
+  <li>Koden ska vara tydlig och lättläst med avseende på namngivning, strukturering och kommentarer. Funktioner som inte är självförklarande ska ha en beskrivning i form av <em>docstrings</em> (<code>''' Kommentar för funktionen '''</code>-kommentarer).</li>
+</ul>
+
+<h3 id="specifika-krav-fr-uppgiften">Specifika krav för uppgiften</h3>
+
+<ul>
+  <li>All er kod (förutom globala variabler) ska finnas i funktioner.</li>
+  <li>Ni ska ha en funktion <code>question</code> som har två parametrar (fråga, svar) som hanterar frågeställningen till användaren.</li>
+  <li>Era funktioner ska använda sig utav parametrar där detta är lämpligt, och returnera värden där detta är lämpligt.</li>
+</ul>
+
+<h3 id="detta-testas-vid-rttning">Detta testas vid rättning</h3>
+
+<p>Det här är en kort lista över delar som kommer att testas under rättningen. Får ni rätt på det här brukar uppgiften kunna godkännas utan kompletteringar.</p>
+
+<ol>
+  <li>Körning av programmet</li>
+  <li>Val av samtliga menyalterntiv, samt några icke-existerande, inkluderat både större och mindre nummer</li>
+  <li>Val av menyalternativen flera gånger</li>
+  <li>Frågorna besvaras med både korrekta och felaktiga svar. Vid felaktiga svar förväntas en ny chans att besvara frågan att ges.</li>
+</ol>
+
+<h2 id="redovisning">Redovisning</h2>
+
+<p>Redovisa genom att ladda upp programmets källkod på It’s Learning.</p>
+
+<p>Inlämningsuppgifter rättas varje vecka, med tisdag som rullande deadline. Det betyder: lämna in senast tisdag för rättning samma vecka. Försök att hålla kursens tempo på en modul per vecka. Lämplig inlämningstid för modul 3: senast <em>torsdag 2014-12-04</em>.</p>
+
+
+        
+
+        <footer class="contribute">
+    <p>Har du upptäckt ett fel eller vill bidra med förslag till ändringar? <a href="https://github.com/mah-dv/ia-python" target="_blank" title="Gå till GitHub">Bidra via GitHub</a>!</p>
+</footer>
+
+        </div>
+
+        <footer class="footer">
+<div class="footer-inner">
+    <p class="license">
+        Användning av allt material är fritt, om motsatsen inte anges. Formellt utrycks detta med licensen <a href="http://creativecommons.org/licenses/by/2.5/se/" title="Gå till Creative Commons licens sida">Creative Commons Erkännande 2.5 Sverige</a>.
+    </p>
+    <p class="fork">
+        Detta projekt är publicerat som <a href="https://github.com/mah-dv/ia-python" title="Gå till GitHub">öppen källkod på GitHub</a>. Föreslå gärna ändringar och bidra med förbättringar genom att göra en <a href="https://github.com/mah-dv/ia-python" title="Gå till GitHub">fork av detta projekt på GitHub</a>.
+    </p>
+    <ul class="footer-links">
+        <li>
+            <a href="/" title="Gå till startsidan">Hem</a>
+        </li>
+        <li>
+            <a href="/contact" title="Gå till kontaktsidan">Kontakt</a>
+        </li>
+    </ul>
+</div>
+</footer>
+<!--
+<script src="/assets/js/common.js"></script>
+-->
+<script src="/assets/js/common.js"></script>
+    </body>
+</html>

@@ -1,0 +1,252 @@
+<!doctype html>
+<html>
+    <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    
+        <title>Modul 1 - Introduktion till Python | Introduktion till programmering</title>
+    
+
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600|Lato|Inconsolata" rel="stylesheet" type="text/css">
+
+    <link href="/assets/css/normalize.css" rel="stylesheet">
+	<!--
+    <link href="/assets/css/main.css" rel="stylesheet">
+	-->
+	<link href="http://mah-webb.github.io/assets/css/main.css" rel="stylesheet">
+</head>
+
+    <body class="instructions">
+        <header id="header" class="header">
+<div class="header-inner">
+    <a class="brand" href="/" title="Gå till startsidan">Introduktion till programmering</a>
+
+    <ul class="navigation">
+        <li>
+            <a href="/contact" title="Gå till kontaktsidan">Kontakt</a>
+        </li>
+    </ul>
+</div>
+</header>
+
+        <div id="sidebar" class="sidebar">
+    <div id="toggle-sidebar" class="toggle-sidebar">...</div>
+
+    <h3 class="course-name">
+        <a href="/modules/m1" title="Gå till kursöversikt över ">
+            Modul 1 - Introduktion till Python
+        </a>
+    </h3>
+	
+    <ul class="course-overview">
+        
+        <li>
+            <span class="course-overview-element">
+                Övningar
+                <span class="expand">+</span>
+            </span>
+            <ul class="course-overview-submenu">
+                
+                <li>
+                    <a href="/modules/m1/exercises/L01.html" title="Gå till laborationen 1. Bekanta dig med Python & IDLE">
+                        1. Bekanta dig med Python & IDLE
+                    </a>
+                </li>
+                
+                <li>
+                    <a href="/modules/m1/exercises/L02.html" title="Gå till laborationen 2. Skriva Python-kod i egna filer">
+                        2. Skriva Python-kod i egna filer
+                    </a>
+                </li>
+                
+                <li>
+                    <a href="/modules/m1/exercises/L03.html" title="Gå till laborationen 3. Variabler & datatyper">
+                        3. Variabler & datatyper
+                    </a>
+                </li>
+                
+                <li>
+                    <a href="/modules/m1/exercises/L04.html" title="Gå till laborationen 4. Användarinput i Python">
+                        4. Användarinput i Python
+                    </a>
+                </li>
+                
+                <li>
+                    <a href="/modules/m1/exercises/L05.html" title="Gå till laborationen 5. Ett valutakonverteringsprogram">
+                        5. Ett valutakonverteringsprogram
+                    </a>
+                </li>
+                
+                <li>
+                    <a href="/modules/m1/exercises/L06.html" title="Gå till laborationen 6. Identifiera felet i koden">
+                        6. Identifiera felet i koden
+                    </a>
+                </li>
+                
+                <li>
+                    <a href="/modules/m1/exercises/L07.html" title="Gå till laborationen 7. Extra, Slutövning">
+                        7. Extra, Slutövning
+                    </a>
+                </li>
+                
+            </ul>
+        </li>
+        
+        
+        
+
+        
+
+        
+        <li>
+            <span class="course-overview-element">
+                Föreläsningar
+                <span class="expand">+</span>
+            </span>
+            <ul class="course-overview-submenu">
+                
+                <li>
+                    <a href="/modules/m1/lectures/F01.html" title="Gå till föreläsningen Kursintroduktion">
+                        Kursintroduktion
+                    </a>
+                </li>
+                
+                <li>
+                    <a href="/modules/m1/lectures/F02.html" title="Gå till föreläsningen Intro till Python">
+                        Intro till Python
+                    </a>
+                </li>
+                
+            </ul>
+        </li>
+        
+    </ul>
+</div>
+
+
+        <div class="content">
+        
+            <h1 id="variabler--datatyper">3. Variabler &amp; datatyper</h1>
+
+<p>Precis som i andra programmeringsspråk så använder man i Python variabler för att spara olika värden, som kan vara bra att ha koll på. En variabel med värde skrivs såhär i Python:</p>
+
+<div class="highlight"><pre><code class="language-python" data-lang="python"><span class="lineno">1</span> <span class="n">variabelnamn</span> <span class="o">=</span> <span class="n">v</span><span class="err">ä</span><span class="n">rde</span></code></pre></div>
+
+<p>Exempel på olika variabler:</p>
+
+<div class="highlight"><pre><code class="language-python" data-lang="python"><span class="lineno">1</span> <span class="n">name</span> <span class="o">=</span> <span class="s">&quot;Anton&quot;</span>
+<span class="lineno">2</span> <span class="n">year</span> <span class="o">=</span> <span class="mi">2014</span>
+<span class="lineno">3</span> <span class="n">leap_year</span> <span class="o">=</span> <span class="bp">False</span></code></pre></div>
+
+<p>Som ni kanske noterat innehåller de tre olika variablerna ovan (name, year, leap_year) tre olika datatyper. De olika datatyperna finns till för att tydliggöra vilken typ av information som sparas i variabeln. Är det text, siffror eller sant/falskt värden som sparas i variabeln?</p>
+
+<ol>
+  <li><code>Anton</code> är av typen <em>sträng</em> (<code>str</code>)</li>
+  <li><code>2014</code> är av typen <em>heltal</em> (<code>int</code>)</li>
+  <li><code>leap_year</code> är av typen <em>boolean</em> (<code>bool</code>)</li>
+</ol>
+
+<p>Det finns fler datatyper i Python, men till en börjar så använder vi de tre i listan ovan.</p>
+
+<h2 id="vningar---variabler--datatyper">Övningar - Variabler &amp; datatyper</h2>
+
+<h3 id="en-frsta-vning-i-att-anvnda-variabler">En första övning i att använda variabler:</h3>
+
+<ol>
+  <li>Skapa en ny Python-fil och skriv in följande kod</li>
+</ol>
+
+<div class="highlight"><pre><code class="language-python" data-lang="python"><span class="lineno">1</span> <span class="n">name</span> <span class="o">=</span> <span class="s">&quot;Anton&quot;</span>
+<span class="lineno">2</span> <span class="k">print</span> <span class="s">&quot;Hej &quot;</span> <span class="o">+</span> <span class="n">name</span> <span class="o">+</span> <span class="s">&quot;!&quot;</span></code></pre></div>
+
+<ol>
+  <li>Kör koden i IDLE och se så att den fungerar</li>
+  <li>Ändra värdet för variabeln “name” till ditt eget namn</li>
+  <li>Kör koden i IDLE och kontrollera så att ditt namn nu skrivs ut</li>
+</ol>
+
+<h4 id="att-tnka-p-vid-utskrifter-med-textstrngar--tal">Att tänka på vid utskrifter med textsträngar &amp; tal</h4>
+
+<p>Till skillnad från JavaScript så kan man i Python inte konkatenera (lägga ihop) en textsträng och ett tal. Följande exempel fungerar alltså inte:</p>
+
+<div class="highlight"><pre><code class="language-python" data-lang="python"><span class="lineno">1</span> <span class="n">product</span> <span class="o">=</span> <span class="s">&quot;T-shirt&quot;</span>
+<span class="lineno">2</span> <span class="n">price</span> <span class="o">=</span> <span class="mi">100</span>
+<span class="lineno">3</span> <span class="k">print</span> <span class="s">&quot;Produkten: &quot;</span> <span class="o">+</span> <span class="n">product</span> <span class="o">+</span> <span class="s">&quot; kostar &quot;</span> <span class="o">+</span> <span class="n">price</span> <span class="o">+</span> <span class="s">&quot;SEK&quot;</span></code></pre></div>
+
+<p>Kör man koden ovan så kommer man att få följande fel:</p>
+
+<div class="highlight"><pre><code class="language-python" data-lang="python"><span class="lineno">1</span> <span class="n">Traceback</span> <span class="p">(</span><span class="n">most</span> <span class="n">recent</span> <span class="n">call</span> <span class="n">last</span><span class="p">):</span>
+<span class="lineno">2</span> <span class="n">File</span> <span class="s">&quot;C:/Users/tsanti/Desktop/program.py&quot;</span><span class="p">,</span> <span class="n">line</span> <span class="mi">3</span><span class="p">,</span> <span class="ow">in</span> <span class="o">&amp;</span><span class="n">lt</span><span class="p">;</span><span class="n">module</span><span class="o">&amp;</span><span class="n">gt</span><span class="p">;</span>
+<span class="lineno">3</span> <span class="k">print</span> <span class="s">&quot;Produkten: &quot;</span> <span class="o">+</span> <span class="n">product</span> <span class="o">+</span> <span class="s">&quot; kostar &quot;</span> <span class="o">+</span> <span class="n">price</span> <span class="o">+</span> <span class="s">&quot;SEK&quot;</span>
+<span class="lineno">4</span> <span class="ne">TypeError</span><span class="p">:</span> <span class="n">cannot</span> <span class="n">concatenate</span> <span class="s">&#39;str&#39;</span> <span class="ow">and</span> <span class="s">&#39;int&#39;</span> <span class="n">objects</span></code></pre></div>
+
+<p>Den sista raden i felmeddelande talar om att vi inte kan konkatenera en sträng (str) med ett tal (int). Detta kan man lösa genom att göra om talet till en sträng, genom funktionen <code>str()</code>, se fungerande kod:</p>
+
+<div class="highlight"><pre><code class="language-python" data-lang="python"><span class="lineno">1</span> <span class="n">product</span> <span class="o">=</span> <span class="s">&quot;T-shirt&quot;</span>
+<span class="lineno">2</span> <span class="n">price</span> <span class="o">=</span> <span class="mi">100</span>
+<span class="lineno">3</span> <span class="k">print</span> <span class="s">&quot;Produkten: &quot;</span> <span class="o">+</span> <span class="n">product</span> <span class="o">+</span> <span class="s">&quot; kostar &quot;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">price</span><span class="p">)</span> <span class="o">+</span> <span class="s">&quot;SEK&quot;</span></code></pre></div>
+
+<h3 id="en-andra-vnng-i-att-anvnda-variabler">En andra övnng i att använda variabler:</h3>
+
+<p>Vi ska nu göra ett enkelt program som beräknar summan av två tal. De två talen ska anges i vars en variabel och summan ska sedan skrivas ut genom att använda “print”-funktionen, resultatet ska se ut såhär (fast med valfria tal):</p>
+
+<p><img src="images/idle5.png" alt="Idle" /></p>
+
+<ol>
+  <li>Skapa en ny Python-fil som vi ska jobba i</li>
+  <li>Kopiera in koden nedan till er Python-fil (och spara filen på lämplig plats)</li>
+</ol>
+
+<div class="highlight"><pre><code class="language-python" data-lang="python"><span class="lineno">1</span> <span class="k">print</span> <span class="s">&quot;Summan av &quot;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">first_number</span><span class="p">)</span> <span class="o">+</span> <span class="s">&quot; och &quot;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">second_number</span><span class="p">)</span> <span class="o">+</span> <span class="s">&quot; är &quot;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">first_number</span> <span class="o">+</span> <span class="n">second_number</span><span class="p">)</span></code></pre></div>
+
+<p>Ni behöver nu skapa variablerna “firstNumber” och “secondNumber” för att ert program ska fungera.</p>
+
+<ul>
+  <li>Tänk på att variablerna “firstNumber” och “secondNumer” ska ligga ovanför “print”-funktionen då dokumentet läses uppifrån och ner.</li>
+</ul>
+
+<h2 id="tips">Tips</h2>
+
+<p>Man kan alltid fråga pythontolken om vilken datatyp ett värde har. Till exempel:</p>
+
+<div class="highlight"><pre><code class="language-python" data-lang="python"><span class="o">&gt;&gt;&gt;</span> <span class="n">x</span> <span class="o">=</span> <span class="mi">10</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="nb">type</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
+<span class="o">&lt;</span><span class="nb">type</span> <span class="s">&#39;int&#39;</span><span class="o">&gt;</span></code></pre></div>
+
+
+        
+
+        <footer class="contribute">
+    <p>Har du upptäckt ett fel eller vill bidra med förslag till ändringar? <a href="https://github.com/mah-dv/ia-python" target="_blank" title="Gå till GitHub">Bidra via GitHub</a>!</p>
+</footer>
+
+        </div>
+
+        <footer class="footer">
+<div class="footer-inner">
+    <p class="license">
+        Användning av allt material är fritt, om motsatsen inte anges. Formellt utrycks detta med licensen <a href="http://creativecommons.org/licenses/by/2.5/se/" title="Gå till Creative Commons licens sida">Creative Commons Erkännande 2.5 Sverige</a>.
+    </p>
+    <p class="fork">
+        Detta projekt är publicerat som <a href="https://github.com/mah-dv/ia-python" title="Gå till GitHub">öppen källkod på GitHub</a>. Föreslå gärna ändringar och bidra med förbättringar genom att göra en <a href="https://github.com/mah-dv/ia-python" title="Gå till GitHub">fork av detta projekt på GitHub</a>.
+    </p>
+    <ul class="footer-links">
+        <li>
+            <a href="/" title="Gå till startsidan">Hem</a>
+        </li>
+        <li>
+            <a href="/contact" title="Gå till kontaktsidan">Kontakt</a>
+        </li>
+    </ul>
+</div>
+</footer>
+<!--
+<script src="/assets/js/common.js"></script>
+-->
+<script src="/assets/js/common.js"></script>
+    </body>
+</html>

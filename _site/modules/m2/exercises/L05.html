@@ -1,0 +1,251 @@
+<!doctype html>
+<html>
+    <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    
+        <title>Modul 2 - Funktioner | Introduktion till programmering</title>
+    
+
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600|Lato|Inconsolata" rel="stylesheet" type="text/css">
+
+    <link href="/assets/css/normalize.css" rel="stylesheet">
+	<!--
+    <link href="/assets/css/main.css" rel="stylesheet">
+	-->
+	<link href="http://mah-webb.github.io/assets/css/main.css" rel="stylesheet">
+</head>
+
+    <body class="instructions">
+        <header id="header" class="header">
+<div class="header-inner">
+    <a class="brand" href="/" title="Gå till startsidan">Introduktion till programmering</a>
+
+    <ul class="navigation">
+        <li>
+            <a href="/contact" title="Gå till kontaktsidan">Kontakt</a>
+        </li>
+    </ul>
+</div>
+</header>
+
+        <div id="sidebar" class="sidebar">
+    <div id="toggle-sidebar" class="toggle-sidebar">...</div>
+
+    <h3 class="course-name">
+        <a href="/modules/m2" title="Gå till kursöversikt över ">
+            Modul 2 - Funktioner
+        </a>
+    </h3>
+	
+    <ul class="course-overview">
+        
+        <li>
+            <span class="course-overview-element">
+                Övningar
+                <span class="expand">+</span>
+            </span>
+            <ul class="course-overview-submenu">
+                
+                <li>
+                    <a href="/modules/m2/exercises/L01.html" title="Gå till laborationen 1. Introduktion till funktioner">
+                        1. Introduktion till funktioner
+                    </a>
+                </li>
+                
+                <li>
+                    <a href="/modules/m2/exercises/L02.html" title="Gå till laborationen 2. Argument och parametrar">
+                        2. Argument och parametrar
+                    </a>
+                </li>
+                
+                <li>
+                    <a href="/modules/m2/exercises/L03.html" title="Gå till laborationen 3. Att returnera värden">
+                        3. Att returnera värden
+                    </a>
+                </li>
+                
+                <li>
+                    <a href="/modules/m2/exercises/L04.html" title="Gå till laborationen 4. Struktur av program">
+                        4. Struktur av program
+                    </a>
+                </li>
+                
+                <li>
+                    <a href="/modules/m2/exercises/L05.html" title="Gå till laborationen 5. Moduler i Python">
+                        5. Moduler i Python
+                    </a>
+                </li>
+                
+            </ul>
+        </li>
+        
+        
+        
+        <li>
+            <span class="course-overview-element">
+                Uppgifter
+                <span class="expand">+</span>
+            </span>
+            <ul class="course-overview-submenu">
+                
+                <li>
+                    <a href="/modules/m2/assignments/U1.html" title="Gå till uppgiften Inlämningsuppgift 1">
+                        Inlämningsuppgift 1 
+                    </a>
+                </li>
+                
+            </ul>
+        </li>
+        
+
+        
+
+        
+    </ul>
+</div>
+
+
+        <div class="content">
+        
+            <h1 id="moduler-i-python">5. Moduler i Python</h1>
+
+<h2 id="introduktion">Introduktion</h2>
+
+<p>När man i Python börjar att skriva större program, med mycket kod, så är det inte så smidigt att spara all kod i ett och samma dokument. Det blir dels svårt att hitta saker i ett långt dokument och dels försvåras underhållet av koden. Det kan då istället vara bra att dela upp koden i mindre delar och att spara de mindre delarna i separata filer. Man skulle t.ex. kunna ha alla funktioner som gör en typ av beräkning i en separat fil (modul) och alla funktioner som sköter huvudprogrammet i en annan. På så sätt blir programmet uppdelat i <em>moduler</em> där varje fil representerar en modul.</p>
+
+<h3 id="standardmoduler-i-python">Standardmoduler i Python</h3>
+
+<p>Det finns en del standardfunktioner i Python som alltid finns tillgängliga (t.ex. funktionen <code>print</code>), sedan finns det andra standardfunktioner som blir tillgängliga genom att man importerar standardmoduler till sitt program. Genom att importera en standardmodul får man tillgång till fler inbyggda funktioner - och man importerar helt enkelt de moduler som behövs just till det program man bygger nu.</p>
+
+<p>Syntaxen för att importera en modul ser ut såhär:</p>
+
+<div class="highlight"><pre><code class="language-python" data-lang="python"><span class="lineno">1</span> <span class="kn">import</span> <span class="nn">modul_namn</span></code></pre></div>
+
+<p>Det finns en modul i Python som heter <em>math</em> som innehåller funktioner med matematiska beräkningar. Skulle vi vilja importera den modulen skriver vi i vårt dokument:</p>
+
+<div class="highlight"><pre><code class="language-python" data-lang="python"><span class="lineno">1</span> <span class="kn">import</span> <span class="nn">math</span></code></pre></div>
+
+<p>Math-modulen ger oss tillgång till många funktioner, t.ex. funktionen <code>ceil</code> som avrundar ett tal uppåt till närmsta heltal (fler funktioner i math-modulen kan ni hitta <a href="https://docs.python.org/2/library/math.html#module-math">här</a>). För att använda funktionen <code>ceil</code> måste vi först referera till modulen <code>math</code> och sedan genom en <code>.</code> ange vilken funktion i modulen vi vill använda. Exempel:</p>
+
+<div class="highlight"><pre><code class="language-python" data-lang="python"><span class="lineno">1</span> <span class="kn">import</span> <span class="nn">math</span>
+<span class="lineno">2</span> <span class="k">print</span> <span class="n">math</span><span class="o">.</span><span class="n">ceil</span><span class="p">(</span><span class="mf">2.2</span><span class="p">)</span>
+<span class="lineno">3</span> <span class="k">print</span> <span class="n">math</span><span class="o">.</span><span class="n">ceil</span><span class="p">(</span><span class="mf">5.9</span><span class="p">)</span>
+<span class="lineno">4</span> <span class="k">print</span> <span class="n">math</span><span class="o">.</span><span class="n">ceil</span><span class="p">(</span><span class="mf">3.5</span><span class="p">)</span></code></pre></div>
+
+<p>Ni kan se vilka standardmoduler man kan importera i Python <a href="https://docs.python.org/2/py-modindex.html">här</a>.</p>
+
+<p><strong>Övning:</strong> Testa att importera valfri <a href="https://docs.python.org/2/py-modindex.html">standardmodul</a> och testkör någon funktion från modulen.</p>
+
+<h4 id="andra-stt-att-importera-moduler">Andra sätt att importera moduler</h4>
+
+<p>Vi kan även importera en moduls funktioner så att vi inte behöver ange modulens namn när vi kallar på funktionerna i modulen. Det kan se ut på följande sätt man importerar alla funktioner från en modul:</p>
+
+<div class="highlight"><pre><code class="language-python" data-lang="python"><span class="lineno">1</span> <span class="kn">from</span> <span class="nn">math</span> <span class="kn">import</span> <span class="o">*</span>
+<span class="lineno">2</span> <span class="k">print</span> <span class="n">ceil</span><span class="p">(</span><span class="mf">2.2</span><span class="p">)</span>
+<span class="lineno">3</span> <span class="k">print</span> <span class="n">ceil</span><span class="p">(</span><span class="mf">5.9</span><span class="p">)</span>
+<span class="lineno">4</span> <span class="k">print</span> <span class="n">ceil</span><span class="p">(</span><span class="mf">3.5</span><span class="p">)</span></code></pre></div>
+
+<p><code>*</code> innebär att vi väljer alla funktioner för modulen. Vill vi kanske bara importera funktionen <code>ceil</code> kan vi istället skriva:</p>
+
+<div class="highlight"><pre><code class="language-python" data-lang="python"><span class="lineno">1</span> <span class="kn">from</span> <span class="nn">math</span> <span class="kn">import</span> <span class="n">ceil</span>
+<span class="lineno">2</span> <span class="k">print</span> <span class="n">ceil</span><span class="p">(</span><span class="mf">2.2</span><span class="p">)</span>
+<span class="lineno">3</span> <span class="k">print</span> <span class="n">ceil</span><span class="p">(</span><span class="mf">5.9</span><span class="p">)</span>
+<span class="lineno">4</span> <span class="k">print</span> <span class="n">ceil</span><span class="p">(</span><span class="mf">3.5</span><span class="p">)</span></code></pre></div>
+
+<h3 id="egna-moduler">Egna moduler</h3>
+
+<p>Vi kan i Python även bygga våra egna moduler, vilket underlättar stuktur och översikt av era kommande program. En egen modul är helt enkelt ett Python-dokument med funktioner. Vi skulle kunna skapa en modul som hanterar addition och subtraktion och kalla modulen för <code>calc_functions</code> och vi väljer då att döpa filen till <em>calc_functions.py</em>. I <em>calc_functions.py</em> lägger vi till funktionerna <code>add</code> och <code>subtract</code> enligt: </p>
+
+<div class="highlight"><pre><code class="language-python" data-lang="python"><span class="lineno">1</span> <span class="c">#  calc_functions.py</span>
+<span class="lineno">2</span> 
+<span class="lineno">3</span> <span class="k">def</span> <span class="nf">add</span><span class="p">(</span><span class="n">num_1</span><span class="p">,</span> <span class="n">num_2</span><span class="p">):</span>
+<span class="lineno">4</span> 	<span class="k">return</span> <span class="nb">int</span><span class="p">(</span><span class="n">num_1</span><span class="p">)</span> <span class="o">+</span> <span class="nb">int</span><span class="p">(</span><span class="n">num_2</span><span class="p">)</span>
+<span class="lineno">5</span> 	
+<span class="lineno">6</span> <span class="k">def</span> <span class="nf">subtract</span><span class="p">(</span><span class="n">num_1</span><span class="p">,</span> <span class="n">num_2</span><span class="p">):</span>
+<span class="lineno">7</span> 	<span class="k">return</span> <span class="nb">int</span><span class="p">(</span><span class="n">num_1</span><span class="p">)</span> <span class="o">-</span> <span class="nb">int</span><span class="p">(</span><span class="n">num_2</span><span class="p">)</span></code></pre></div>
+
+<p>Nu har vi skapat modulen <em>calc_functions</em>. Vi skapar nu en ny fil som innehåller vårt program och döper filen till <em>calculate.py</em> (som ligger i samma mapp som <em>calc_functions.py</em>). Nu vill vi importera den modul som vi skapat ovan, och sedan köra funktionerna <code>add</code> och <code>subtract</code>. Det kan vi göra enligt följande:</p>
+
+<div class="highlight"><pre><code class="language-python" data-lang="python"><span class="lineno">1</span> <span class="c"># calculate.py</span>
+<span class="lineno">2</span> <span class="kn">from</span> <span class="nn">calc_functions</span> <span class="kn">import</span> <span class="o">*</span>
+<span class="lineno">3</span> 
+<span class="lineno">4</span> <span class="k">print</span> <span class="n">add</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span><span class="mi">5</span><span class="p">)</span>
+<span class="lineno">5</span> <span class="k">print</span> <span class="n">subtract</span><span class="p">(</span><span class="mi">18</span><span class="p">,</span><span class="mi">3</span><span class="p">)</span></code></pre></div>
+
+<p>Nu har vi skapat en modul - och använt den i ett litet program. Nu är det er tur att jobba lite med moduler!</p>
+
+<h2 id="vning-1">Övning 1</h2>
+
+<p>I den första övningen ska vi titta närmre på standardmodulen <code>math</code> och funktionen <a href="https://docs.python.org/2/library/math.html#math.floor"><code>math.floor</code></a>. Vi ska skriva en funktion som avrundar ett decimaltal neråt, till närmsta heltal. Funktionen ska ta en parameter (det tal vi vill avrunda) och returnera det avrundade talet. Resultatet ska se ut följande:</p>
+
+<p><img src="images/idle13.png" alt="" /></p>
+
+<p><em>Obs.</em> Glöm inte att importera <code>math</code>-modulen.</p>
+
+<h2 id="vning-2">Övning 2</h2>
+
+<p>Ni ska nu skriva ut dagens datum genom att använda er utav Pythons standardmodul <a href="https://docs.python.org/2/library/time.html"><code>time</code></a> och funktionen <a href="https://docs.python.org/2/library/time.html#time.strftime"><code>strftime</code></a>. Det är er uppgift att i <a href="https://docs.python.org/2/library/time.html#time.strftime">dokumentationen</a> för funktionen lista ut hur man använder den. Resultatet ska se ut på detta vis (fast med dagens datum):</p>
+
+<p><img src="images/idle12.png" alt="" /></p>
+
+<h2 id="vning-3">Övning 3</h2>
+
+<p>I den sista övningen ska ni bygga en egen modul. Modulen ska innehålla tre funktioner:</p>
+
+<ul>
+  <li>kr_to_usd - Omvandlar svenska kronor till dollar</li>
+  <li>kr_to_eur - Omvandlar svenska kronor till euro</li>
+  <li>kr_to_dk - Omvandlar svenska kronor till danska kronor</li>
+</ul>
+
+<p>Funktionerna ska returnera antalet dollar/euro/danska kronor. Modulen ska heta <em>currencies</em> och ska sedan importeras till ert program. Ert program ska heta <em>currency_converter</em> och fungera på följande vis:</p>
+
+<ol>
+  <li>Programmet frågar efter hur många svenska kr man vill veta valutavärdet för</li>
+  <li>Visa hur mycket dollar/euro/danska kronor man får för de inmatade svenska kronorna</li>
+</ol>
+
+<p>Ni kommer då att ha två filer <em>currencies.py</em> och <em>currency_converter.py</em>. Resultatet ska se ut på detta sätt:</p>
+
+<p><img src="images/idle14.png" alt="" /></p>
+
+<p><strong>Bonus:</strong> Använd funktionen <a href="https://docs.python.org/2/library/functions.html#round">round</a> för att avrunda antal dollar/euro/danska kronor till två decimaler.</p>
+
+
+        
+
+        <footer class="contribute">
+    <p>Har du upptäckt ett fel eller vill bidra med förslag till ändringar? <a href="https://github.com/mah-dv/ia-python" target="_blank" title="Gå till GitHub">Bidra via GitHub</a>!</p>
+</footer>
+
+        </div>
+
+        <footer class="footer">
+<div class="footer-inner">
+    <p class="license">
+        Användning av allt material är fritt, om motsatsen inte anges. Formellt utrycks detta med licensen <a href="http://creativecommons.org/licenses/by/2.5/se/" title="Gå till Creative Commons licens sida">Creative Commons Erkännande 2.5 Sverige</a>.
+    </p>
+    <p class="fork">
+        Detta projekt är publicerat som <a href="https://github.com/mah-dv/ia-python" title="Gå till GitHub">öppen källkod på GitHub</a>. Föreslå gärna ändringar och bidra med förbättringar genom att göra en <a href="https://github.com/mah-dv/ia-python" title="Gå till GitHub">fork av detta projekt på GitHub</a>.
+    </p>
+    <ul class="footer-links">
+        <li>
+            <a href="/" title="Gå till startsidan">Hem</a>
+        </li>
+        <li>
+            <a href="/contact" title="Gå till kontaktsidan">Kontakt</a>
+        </li>
+    </ul>
+</div>
+</footer>
+<!--
+<script src="/assets/js/common.js"></script>
+-->
+<script src="/assets/js/common.js"></script>
+    </body>
+</html>

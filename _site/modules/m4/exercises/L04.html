@@ -1,0 +1,205 @@
+<!doctype html>
+<html>
+    <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    
+        <title>Modul 4 - Listor och lexikon | Introduktion till programmering</title>
+    
+
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600|Lato|Inconsolata" rel="stylesheet" type="text/css">
+
+    <link href="/assets/css/normalize.css" rel="stylesheet">
+	<!--
+    <link href="/assets/css/main.css" rel="stylesheet">
+	-->
+	<link href="http://mah-webb.github.io/assets/css/main.css" rel="stylesheet">
+</head>
+
+    <body class="instructions">
+        <header id="header" class="header">
+<div class="header-inner">
+    <a class="brand" href="/" title="Gå till startsidan">Introduktion till programmering</a>
+
+    <ul class="navigation">
+        <li>
+            <a href="/contact" title="Gå till kontaktsidan">Kontakt</a>
+        </li>
+    </ul>
+</div>
+</header>
+
+        <div id="sidebar" class="sidebar">
+    <div id="toggle-sidebar" class="toggle-sidebar">...</div>
+
+    <h3 class="course-name">
+        <a href="/modules/m4" title="Gå till kursöversikt över ">
+            Modul 4 - Listor och lexikon
+        </a>
+    </h3>
+	
+    <ul class="course-overview">
+        
+        <li>
+            <span class="course-overview-element">
+                Övningar
+                <span class="expand">+</span>
+            </span>
+            <ul class="course-overview-submenu">
+                
+                <li>
+                    <a href="/modules/m4/exercises/L01.html" title="Gå till laborationen 1. Introduktion till listor">
+                        1. Introduktion till listor
+                    </a>
+                </li>
+                
+                <li>
+                    <a href="/modules/m4/exercises/L02.html" title="Gå till laborationen 2. Introduktion till lexikon">
+                        2. Introduktion till lexikon
+                    </a>
+                </li>
+                
+                <li>
+                    <a href="/modules/m4/exercises/L03.html" title="Gå till laborationen 3. Listor och strängar">
+                        3. Listor och strängar
+                    </a>
+                </li>
+                
+                <li>
+                    <a href="/modules/m4/exercises/L04.html" title="Gå till laborationen 4. Nästlade listor">
+                        4. Nästlade listor
+                    </a>
+                </li>
+                
+            </ul>
+        </li>
+        
+        
+        
+        <li>
+            <span class="course-overview-element">
+                Uppgifter
+                <span class="expand">+</span>
+            </span>
+            <ul class="course-overview-submenu">
+                
+                <li>
+                    <a href="/modules/m4/assignments/U1.html" title="Gå till uppgiften Inlämningsuppgift 3">
+                        Inlämningsuppgift 3 
+                    </a>
+                </li>
+                
+            </ul>
+        </li>
+        
+
+        
+
+        
+    </ul>
+</div>
+
+
+        <div class="content">
+        
+            <h1 id="nstlade-listor">4. Nästlade listor</h1>
+
+<h2 id="inledning">Inledning</h2>
+
+<p>Listor har visat sig vara väldigt smidiga när vi vill hantera data. Men ibland kan det vara begränsade att bara använda sig utav <em>endimensionella</em> listor och det istället är bättre att använda sig utav <em>flerdimensionella</em> listor (nästlade listor). Detta framförallt om man vill ha datastruktur som liknar en tabellstruktur med rader och kolumner.</p>
+
+<p>Ett exempel på en nästlad skulle kunna se ut såhär:</p>
+
+<div class="highlight"><pre><code class="language-python" data-lang="python"><span class="lineno">1</span> <span class="n">nested_list</span> <span class="o">=</span> <span class="p">[</span>
+<span class="lineno">2</span>     <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">],</span>
+<span class="lineno">3</span>     <span class="p">[</span><span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">6</span><span class="p">],</span> 
+<span class="lineno">4</span>     <span class="p">[</span><span class="mi">7</span><span class="p">,</span> <span class="mi">8</span><span class="p">,</span> <span class="mi">9</span><span class="p">]</span>
+<span class="lineno">5</span> <span class="p">]</span></code></pre></div>
+
+<p>Den nästlade listan ovan skulle kunna, som tidigare nämnt, kunna liknas vid en tabell med tre rader med tre kolumner på varje rad. Hur skriver man då ut en nästlad lista? Det enklaste är nästlade for-iterationer, t.ex. såhär (för att skriva ut listan ovan):</p>
+
+<div class="highlight"><pre><code class="language-python" data-lang="python"><span class="lineno"> 1</span> <span class="c"># Skriv ut alla tal på en ny rad</span>
+<span class="lineno"> 2</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">nested_list</span><span class="p">:</span>
+<span class="lineno"> 3</span>     <span class="k">for</span> <span class="n">j</span> <span class="ow">in</span> <span class="n">i</span><span class="p">:</span>
+<span class="lineno"> 4</span>         <span class="k">print</span> <span class="n">j</span>
+<span class="lineno"> 5</span> 
+<span class="lineno"> 6</span> <span class="c"># Skriva ut i talen kolumner</span>
+<span class="lineno"> 7</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">nested_list</span><span class="p">:</span>
+<span class="lineno"> 8</span>     <span class="k">for</span> <span class="n">j</span> <span class="ow">in</span> <span class="n">i</span><span class="p">:</span>
+<span class="lineno"> 9</span>         <span class="k">print</span> <span class="n">j</span><span class="p">,</span>
+<span class="lineno">10</span>     <span class="k">print</span> <span class="s">&quot;&quot;</span></code></pre></div>
+
+<p>I exemplet ovan representerar <code>i</code> de inre listorna och <code>j</code> representerar själva siffrorna. Med andra ord kan man säga att <code>i</code> representerar raderna och <code>j</code> kolumnerna på varje rad.</p>
+
+<p>Testa gärna att kopiera koden, testkör den i IDLE och prova att ändra i koden för att förstå nästlade listor bättre!</p>
+
+<h2 id="vningar">Övningar</h2>
+
+<h3 id="vning-1---fotbollsspelare-i-listform">Övning 1 - Fotbollsspelare i listform</h3>
+
+<p>Vi ska nu skapa en nästlad lista där vi sparar information om olika fotbollsspelare. Den yttre listan ska innehålla x antal listor som i sig innehåller spelarens namn, ålder och klubb. Vi vill alltså skapa en struktur som ser ut något i stil med:</p>
+
+<table>
+	<tr>
+		<td>Anders Svensson</td>
+		<td>38</td>
+		<td>Elfsborg</td>
+	</tr>
+	<tr>
+		<td>Zlatan Ibrahimovic</td>
+		<td>32</td>
+		<td>PSG</td>
+	</tr>
+	<tr>
+		<td>John Guidetti</td>
+		<td>22</td>
+		<td>Celtic</td>
+	</tr>
+</table>
+
+<p>Som vi kan se så vill vi att varje rad ska innehålla en fotbollsspelare och kolumnerna ska innehålla namn/ålder/klubb. Er uppgift är nu att skapa denna struktur i en nästlad lista. Inspireras gärna av exemplen i introduktionen. När ni fått till de nästlade listorna så ska de också skriva ut och presentera spelarna på ett snyggt sätt. Ni ska minst ha <em>fem</em> spelare i er struktur.</p>
+
+<h3 id="vning-2---lgg-tillta-bort-spelare">Övning 2 - Lägg till/ta bort spelare</h3>
+
+<p>Utgå från den lista ni skapade i förra övningen och bygg ny funktionalitet till ert program som gör det möjligt för användaren att lägga till och ta bort en spelare (alltså lägga till eller ta bort en <em>rad</em> i er struktur). </p>
+
+<h3 id="exempelkrning-fr-vning-1-och-2">Exempelkörning för övning 1 och 2</h3>
+
+<p><img src="images/idle7.png" alt="Idle" /></p>
+
+        
+
+        <footer class="contribute">
+    <p>Har du upptäckt ett fel eller vill bidra med förslag till ändringar? <a href="https://github.com/mah-dv/ia-python" target="_blank" title="Gå till GitHub">Bidra via GitHub</a>!</p>
+</footer>
+
+        </div>
+
+        <footer class="footer">
+<div class="footer-inner">
+    <p class="license">
+        Användning av allt material är fritt, om motsatsen inte anges. Formellt utrycks detta med licensen <a href="http://creativecommons.org/licenses/by/2.5/se/" title="Gå till Creative Commons licens sida">Creative Commons Erkännande 2.5 Sverige</a>.
+    </p>
+    <p class="fork">
+        Detta projekt är publicerat som <a href="https://github.com/mah-dv/ia-python" title="Gå till GitHub">öppen källkod på GitHub</a>. Föreslå gärna ändringar och bidra med förbättringar genom att göra en <a href="https://github.com/mah-dv/ia-python" title="Gå till GitHub">fork av detta projekt på GitHub</a>.
+    </p>
+    <ul class="footer-links">
+        <li>
+            <a href="/" title="Gå till startsidan">Hem</a>
+        </li>
+        <li>
+            <a href="/contact" title="Gå till kontaktsidan">Kontakt</a>
+        </li>
+    </ul>
+</div>
+</footer>
+<!--
+<script src="/assets/js/common.js"></script>
+-->
+<script src="/assets/js/common.js"></script>
+    </body>
+</html>

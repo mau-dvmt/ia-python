@@ -1,0 +1,216 @@
+<!doctype html>
+<html>
+    <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    
+        <title>Modul 1 - Introduktion till Python | Introduktion till programmering</title>
+    
+
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600|Lato|Inconsolata" rel="stylesheet" type="text/css">
+
+    <link href="/assets/css/normalize.css" rel="stylesheet">
+	<!--
+    <link href="/assets/css/main.css" rel="stylesheet">
+	-->
+	<link href="http://mah-webb.github.io/assets/css/main.css" rel="stylesheet">
+</head>
+
+    <body class="instructions">
+        <header id="header" class="header">
+<div class="header-inner">
+    <a class="brand" href="/" title="Gå till startsidan">Introduktion till programmering</a>
+
+    <ul class="navigation">
+        <li>
+            <a href="/contact" title="Gå till kontaktsidan">Kontakt</a>
+        </li>
+    </ul>
+</div>
+</header>
+
+        <div id="sidebar" class="sidebar">
+    <div id="toggle-sidebar" class="toggle-sidebar">...</div>
+
+    <h3 class="course-name">
+        <a href="/modules/m1" title="Gå till kursöversikt över ">
+            Modul 1 - Introduktion till Python
+        </a>
+    </h3>
+	
+    <ul class="course-overview">
+        
+        <li>
+            <span class="course-overview-element">
+                Övningar
+                <span class="expand">+</span>
+            </span>
+            <ul class="course-overview-submenu">
+                
+                <li>
+                    <a href="/modules/m1/exercises/L01.html" title="Gå till laborationen 1. Bekanta dig med Python & IDLE">
+                        1. Bekanta dig med Python & IDLE
+                    </a>
+                </li>
+                
+                <li>
+                    <a href="/modules/m1/exercises/L02.html" title="Gå till laborationen 2. Skriva Python-kod i egna filer">
+                        2. Skriva Python-kod i egna filer
+                    </a>
+                </li>
+                
+                <li>
+                    <a href="/modules/m1/exercises/L03.html" title="Gå till laborationen 3. Variabler & datatyper">
+                        3. Variabler & datatyper
+                    </a>
+                </li>
+                
+                <li>
+                    <a href="/modules/m1/exercises/L04.html" title="Gå till laborationen 4. Användarinput i Python">
+                        4. Användarinput i Python
+                    </a>
+                </li>
+                
+                <li>
+                    <a href="/modules/m1/exercises/L05.html" title="Gå till laborationen 5. Ett valutakonverteringsprogram">
+                        5. Ett valutakonverteringsprogram
+                    </a>
+                </li>
+                
+                <li>
+                    <a href="/modules/m1/exercises/L06.html" title="Gå till laborationen 6. Identifiera felet i koden">
+                        6. Identifiera felet i koden
+                    </a>
+                </li>
+                
+                <li>
+                    <a href="/modules/m1/exercises/L07.html" title="Gå till laborationen 7. Extra, Slutövning">
+                        7. Extra, Slutövning
+                    </a>
+                </li>
+                
+            </ul>
+        </li>
+        
+        
+        
+
+        
+
+        
+        <li>
+            <span class="course-overview-element">
+                Föreläsningar
+                <span class="expand">+</span>
+            </span>
+            <ul class="course-overview-submenu">
+                
+                <li>
+                    <a href="/modules/m1/lectures/F01.html" title="Gå till föreläsningen Kursintroduktion">
+                        Kursintroduktion
+                    </a>
+                </li>
+                
+                <li>
+                    <a href="/modules/m1/lectures/F02.html" title="Gå till föreläsningen Intro till Python">
+                        Intro till Python
+                    </a>
+                </li>
+                
+            </ul>
+        </li>
+        
+    </ul>
+</div>
+
+
+        <div class="content">
+        
+            <h1 id="anvndarinput">4. Användarinput</h1>
+
+<p>Hittills har vi bestämt värdet på de variabler som vi skapat, t.ex. vad vi heter, vilka tal vi vill räkna med osv. Denna information skulle ju bli mer intressant om vi kan få den från personen som använder vårt program. Vi kan i Python fråga användaren efter input/indata till vårt program genom funktionen <code>raw_input()</code>.</p>
+
+<p>Vill vi fråga användaren efter dennes namn (och spara det som användaren skriver in i variabeln <code>name</code>) så kan vi skriva:</p>
+
+<div class="highlight"><pre><code class="language-python" data-lang="python"><span class="lineno">1</span> <span class="n">name</span> <span class="o">=</span> <span class="nb">raw_input</span><span class="p">(</span><span class="s">&quot;Vad heter du? &quot;</span><span class="p">)</span></code></pre></div>
+
+<p>Variabeln <code>name</code> kommer då att innehålla det namn som användaren angett i IDLE när programmet körs.</p>
+
+<p>Vill vi sedan välkomna användaren, så kan vi helt enkelt skriva ut det namn som användaren skrev in, genom att använda oss utav variabeln <code>namn</code>.</p>
+
+<div class="highlight"><pre><code class="language-python" data-lang="python"><span class="lineno">1</span> <span class="n">name</span> <span class="o">=</span> <span class="nb">raw_input</span><span class="p">(</span><span class="s">&quot;Vad heter du? &quot;</span><span class="p">)</span>
+<span class="lineno">2</span> <span class="k">print</span> <span class="s">&quot;Hej &quot;</span> <span class="o">+</span> <span class="n">name</span> <span class="o">+</span> <span class="s">&quot;!&quot;</span></code></pre></div>
+
+<p>Det bör se ut något i stil med:</p>
+
+<p><img src="images/idle8.png" alt="Idle" /></p>
+
+<h2 id="vningsuppgift-1">Övningsuppgift 1</h2>
+
+<p>Vi ska nu utöka programmet ovan som hälsar personen välkommen. Vi ska, förutom att fråga efter personens namn, även fråga var personen bor och personens ålder. När vi är klara så ska det se ut något i denna stilen: </p>
+
+<p><img src="images/idle9.png" alt="IDLE" /></p>
+
+<p>Tillvägagångssätt:</p>
+
+<ol>
+  <li>Förutom att hämta in namnet från besökaren till ert program, ska vi nu skapa två variabler till där vi ska spara besökarens hemstad och ålder</li>
+  <li>Utgå från koden ovan, men modifiera den enligt:
+    <ol>
+      <li>Skapa variabeln <code>location</code> och använd funktionen <code>raw_input</code> för att hämta in svaret från användaren</li>
+      <li>Skapa variabeln <code>age</code> och använd funktionen <code>raw_input</code> för att hämta in svaret från användaren</li>
+      <li>Uppdatera “print”-raden så att den även skriver ut besökarens hemstad och ålder (så att det ser ut som på bilden ovan)</li>
+    </ol>
+  </li>
+</ol>
+
+<h2 id="vningsuppgift-2">Övningsuppgift 2</h2>
+
+<p>Vi ska nu bygga ett enkelt multiplikationsprogram. Programmet ska fråga användaren efter två tal, sedan visa produkten av dessa talen (se resultatet på bilden nedan). Programmets kod bör följa en struktur som liknar den ni använde vid övningsuppgift 1.</p>
+
+<p><img src="images/idle10.png" alt="IDLE" /></p>
+
+<ul>
+  <li>Tänk på att den input som man får från användaren genom funktionen <code>raw_input</code> är av datatypen sträng. Alltså - för att räkna med de tal som användaren skriver in behöver vi göra om numret till ett tal (till exempel genom att använda <code>int()</code>), t.ex. såhär:</li>
+</ul>
+
+<div class="highlight"><pre><code class="language-python" data-lang="python"><span class="lineno">1</span> <span class="n">first_number</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">raw_input</span><span class="p">(</span><span class="s">&quot;Tal 1: &quot;</span><span class="p">))</span></code></pre></div>
+
+<p>I övrigt är det upp till er hur ni konstruerar programmet, så länge resultatet liknar utskriftsbilden ovan.</p>
+
+        
+
+        <footer class="contribute">
+    <p>Har du upptäckt ett fel eller vill bidra med förslag till ändringar? <a href="https://github.com/mah-dv/ia-python" target="_blank" title="Gå till GitHub">Bidra via GitHub</a>!</p>
+</footer>
+
+        </div>
+
+        <footer class="footer">
+<div class="footer-inner">
+    <p class="license">
+        Användning av allt material är fritt, om motsatsen inte anges. Formellt utrycks detta med licensen <a href="http://creativecommons.org/licenses/by/2.5/se/" title="Gå till Creative Commons licens sida">Creative Commons Erkännande 2.5 Sverige</a>.
+    </p>
+    <p class="fork">
+        Detta projekt är publicerat som <a href="https://github.com/mah-dv/ia-python" title="Gå till GitHub">öppen källkod på GitHub</a>. Föreslå gärna ändringar och bidra med förbättringar genom att göra en <a href="https://github.com/mah-dv/ia-python" title="Gå till GitHub">fork av detta projekt på GitHub</a>.
+    </p>
+    <ul class="footer-links">
+        <li>
+            <a href="/" title="Gå till startsidan">Hem</a>
+        </li>
+        <li>
+            <a href="/contact" title="Gå till kontaktsidan">Kontakt</a>
+        </li>
+    </ul>
+</div>
+</footer>
+<!--
+<script src="/assets/js/common.js"></script>
+-->
+<script src="/assets/js/common.js"></script>
+    </body>
+</html>

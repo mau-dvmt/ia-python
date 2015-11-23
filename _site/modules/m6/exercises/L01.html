@@ -1,0 +1,209 @@
+<!doctype html>
+<html>
+    <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    
+        <title>Modul 6 - Objektorientering | Introduktion till programmering</title>
+    
+
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600|Lato|Inconsolata" rel="stylesheet" type="text/css">
+
+    <link href="/assets/css/normalize.css" rel="stylesheet">
+	<!--
+    <link href="/assets/css/main.css" rel="stylesheet">
+	-->
+	<link href="http://mah-webb.github.io/assets/css/main.css" rel="stylesheet">
+</head>
+
+    <body class="instructions">
+        <header id="header" class="header">
+<div class="header-inner">
+    <a class="brand" href="/" title="Gå till startsidan">Introduktion till programmering</a>
+
+    <ul class="navigation">
+        <li>
+            <a href="/contact" title="Gå till kontaktsidan">Kontakt</a>
+        </li>
+    </ul>
+</div>
+</header>
+
+        <div id="sidebar" class="sidebar">
+    <div id="toggle-sidebar" class="toggle-sidebar">...</div>
+
+    <h3 class="course-name">
+        <a href="/modules/m6" title="Gå till kursöversikt över ">
+            Modul 6 - Objektorientering
+        </a>
+    </h3>
+	
+    <ul class="course-overview">
+        
+        <li>
+            <span class="course-overview-element">
+                Övningar
+                <span class="expand">+</span>
+            </span>
+            <ul class="course-overview-submenu">
+                
+                <li>
+                    <a href="/modules/m6/exercises/L01.html" title="Gå till laborationen 1. Introduktion till OOP">
+                        1. Introduktion till OOP
+                    </a>
+                </li>
+                
+            </ul>
+        </li>
+        
+        
+        
+        <li>
+            <span class="course-overview-element">
+                Uppgifter
+                <span class="expand">+</span>
+            </span>
+            <ul class="course-overview-submenu">
+                
+                <li>
+                    <a href="/modules/m6/assignments/U1.html" title="Gå till uppgiften Inlämningsuppgift 5">
+                        Inlämningsuppgift 5 
+                    </a>
+                </li>
+                
+            </ul>
+        </li>
+        
+
+        
+
+        
+    </ul>
+</div>
+
+
+        <div class="content">
+        
+            <h1 id="introduktion-till-objektorientering">1. Introduktion till objektorientering</h1>
+
+<h2 id="inledning">Inledning</h2>
+
+<p>Vi ska i denna övning introducera oss i objektorienterad programmering i Python.</p>
+
+<h3 id="att-skapa-en-klass">Att skapa en klass</h3>
+
+<p>En klass i Python skapar man genom <code>class</code> följt utav namnet man vill att klassen ska ha. Vi vill här skapa klassen <code>Cat</code> vilken ska representera en katt i vårt program. Funktionen <code>__init__</code> körs automatiskt när man skapar en instans (ett objekt) av klassen, och tilldelar i koden nedan katten ett namn.</p>
+
+<div class="highlight"><pre><code class="language-python" data-lang="python"><span class="lineno"> 1</span> <span class="c"># Skapar klassen Cat</span>
+<span class="lineno"> 2</span> <span class="k">class</span> <span class="nc">Cat</span><span class="p">:</span>
+<span class="lineno"> 3</span>     <span class="k">def</span> <span class="nf">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">name</span><span class="p">):</span>
+<span class="lineno"> 4</span>         <span class="bp">self</span><span class="o">.</span><span class="n">name</span> <span class="o">=</span> <span class="n">name</span>
+<span class="lineno"> 5</span> 	
+<span class="lineno"> 6</span> 	<span class="k">def</span> <span class="nf">__str__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+<span class="lineno"> 7</span> 		<span class="k">return</span> <span class="s">&quot;Katten heter &quot;</span> <span class="o">+</span> <span class="bp">self</span><span class="o">.</span><span class="n">name</span>
+<span class="lineno"> 8</span> 
+<span class="lineno"> 9</span> <span class="c"># Skapar en katt som heter &quot;Tusse&quot;</span>
+<span class="lineno">10</span> <span class="n">my_cat</span> <span class="o">=</span> <span class="n">Cat</span><span class="p">(</span><span class="s">&quot;Tusse&quot;</span><span class="p">)</span>
+<span class="lineno">11</span> <span class="c"># Skriver ut klassen</span>
+<span class="lineno">12</span> <span class="k">print</span> <span class="n">my_cat</span></code></pre></div>
+
+<p>När man skrivet ut en instans av ett objekt (som vi gör genom <code>print my_cat</code> ovan), så kallas funktionen <code>__str__</code> som bestämmer vad som ska skrivas ut.</p>
+
+<h2 id="vning-1---fler-attribut-till-klassen">Övning 1 - Fler attribut till klassen</h2>
+
+<p>Ni ska i första övningen ge klassen <code>Cat</code> (utöver attributet <code>name</code>), attributen <code>age</code> (int) och <code>asleep</code> (boolean). <code>age</code> ska innehålla kattens ålder i år, och <code>asleep</code> ska hålla reda på om katten är vaken eller sover (<code>True</code> så sover katten, <code>False</code> så är katten vaken). När vi skapar en instans av katten ska åldern bestämmas (skickas med som argument, precis som namnet), men katten ska alltid, när den skapas, vara vaken. Följande kod ska fungera för att skapa en katt:</p>
+
+<div class="highlight"><pre><code class="language-python" data-lang="python"><span class="lineno">1</span> <span class="n">my_cat</span> <span class="o">=</span> <span class="n">Cat</span><span class="p">(</span><span class="s">&quot;Tusse&quot;</span><span class="p">,</span> <span class="mi">2</span><span class="p">)</span></code></pre></div>
+
+<p>Uppdatera sedan <code>__str__</code>-funktionen så att den även skriver ut åldern på katten, och om katten är vaken eller sover. Det ska se ut såhär när ni är klara:</p>
+
+<div class="highlight"><pre><code class="language-python" data-lang="python"><span class="lineno">1</span> <span class="n">my_cat</span> <span class="o">=</span> <span class="n">Cat</span><span class="p">(</span><span class="s">&quot;Tusse&quot;</span><span class="p">,</span> <span class="mi">2</span><span class="p">)</span>
+<span class="lineno">2</span> <span class="k">print</span> <span class="n">my_cat</span></code></pre></div>
+
+<p><img src="images/idle.png" alt="Idle" /></p>
+
+<h2 id="vning-2---metoder-till-klassen">Övning 2 - Metoder till klassen</h2>
+
+<p>Vi ska nu skriva fyra metoder till katten:</p>
+
+<ul>
+  <li><code>get_name</code> (som returnerar kattens namn)</li>
+  <li><code>sleep</code> (som ändrar en katts attribut <code>asleep</code> till True)</li>
+  <li><code>wake_up</code> (som ändrar en katts attribut <code>asleep</code> till False)</li>
+  <li><code>is_asleep</code> (som returnerar om katten är sover)</li>
+</ul>
+
+<p>Genom funktionerna <code>sleep</code>, <code>wake_up</code> kan vi nu i vårt program söva och väcka de katter som vi har i vårt program. När ni skrivit funktionerna så testkör så att det fungerar som förväntat genom koden:</p>
+
+<div class="highlight"><pre><code class="language-python" data-lang="python"><span class="lineno"> 1</span> <span class="n">my_cat</span> <span class="o">=</span> <span class="n">Cat</span><span class="p">(</span><span class="s">&quot;Tusse&quot;</span><span class="p">,</span> <span class="mi">2</span><span class="p">)</span>
+<span class="lineno"> 2</span> <span class="k">if</span> <span class="n">my_cat</span><span class="o">.</span><span class="n">is_asleep</span><span class="p">():</span>
+<span class="lineno"> 3</span>     <span class="k">print</span> <span class="s">&quot;Katten &quot;</span> <span class="o">+</span> <span class="n">my_cat</span><span class="o">.</span><span class="n">get_name</span><span class="p">()</span> <span class="o">+</span> <span class="s">&quot; sover just nu&quot;</span>
+<span class="lineno"> 4</span> <span class="k">else</span><span class="p">:</span>
+<span class="lineno"> 5</span>     <span class="k">print</span> <span class="s">&quot;Katten &quot;</span> <span class="o">+</span> <span class="n">my_cat</span><span class="o">.</span><span class="n">get_name</span><span class="p">()</span> <span class="o">+</span> <span class="s">&quot; är vaken just nu&quot;</span>
+<span class="lineno"> 6</span> <span class="n">my_cat</span><span class="o">.</span><span class="n">sleep</span><span class="p">()</span>
+<span class="lineno"> 7</span> <span class="k">if</span> <span class="n">my_cat</span><span class="o">.</span><span class="n">is_asleep</span><span class="p">():</span>
+<span class="lineno"> 8</span>     <span class="k">print</span> <span class="s">&quot;Katten &quot;</span> <span class="o">+</span> <span class="n">my_cat</span><span class="o">.</span><span class="n">get_name</span><span class="p">()</span> <span class="o">+</span> <span class="s">&quot; sover just nu&quot;</span>
+<span class="lineno"> 9</span> <span class="k">else</span><span class="p">:</span>
+<span class="lineno">10</span>     <span class="k">print</span> <span class="s">&quot;Katten &quot;</span> <span class="o">+</span> <span class="n">my_cat</span><span class="o">.</span><span class="n">get_name</span><span class="p">()</span> <span class="o">+</span> <span class="s">&quot; är vaken just nu&quot;</span></code></pre></div>
+
+<p>Koden ovan skapar först en katt, tittar om katten är vaken/sovande (och skriver sedan ut detta). Funktionen <code>sleep</code> körs sedan för vår katt (söver katten) och sedan återigen, tittar om katten är vaken/sovande (och skriver sedan ut detta).</p>
+
+<p>Det ska bli följande resultat:</p>
+
+<p><img src="images/idle2.png" alt="Idle" /></p>
+
+<h2 id="vning-3---flera-katter-i-en-lista">Övning 3 - Flera katter i en lista</h2>
+
+<p>Ofta när man har klasser så vill man skapa många instanser av just den klassen. Vi ska nu:</p>
+
+<ol>
+  <li>Skapa fem katter</li>
+  <li>Skriva ut namnet på alla fem katterna</li>
+  <li>Söva alla katterna genom en <code>for</code>-loop</li>
+  <li>Skriva ut namn och status för katterna (vaken/sovandes)</li>
+  <li>Välj en katt som du väcker</li>
+  <li>Skriv ut alla katterna genom <code>__str__</code>-funktionen</li>
+</ol>
+
+<p>För att hålla reda på alla katterna så använd en lista. När vi vill göra något som involverar alla katterna (skriva ut namn/ändra status för vaken/sovande osv.) ska vi använda oss utav en <code>for</code>-loop för att gå igenom listan av katter.</p>
+
+<p>När ni är klara ska utskriften se ut något i stil med:</p>
+
+<p><img src="images/idle3.png" alt="Idle" /></p>
+
+        
+
+        <footer class="contribute">
+    <p>Har du upptäckt ett fel eller vill bidra med förslag till ändringar? <a href="https://github.com/mah-dv/ia-python" target="_blank" title="Gå till GitHub">Bidra via GitHub</a>!</p>
+</footer>
+
+        </div>
+
+        <footer class="footer">
+<div class="footer-inner">
+    <p class="license">
+        Användning av allt material är fritt, om motsatsen inte anges. Formellt utrycks detta med licensen <a href="http://creativecommons.org/licenses/by/2.5/se/" title="Gå till Creative Commons licens sida">Creative Commons Erkännande 2.5 Sverige</a>.
+    </p>
+    <p class="fork">
+        Detta projekt är publicerat som <a href="https://github.com/mah-dv/ia-python" title="Gå till GitHub">öppen källkod på GitHub</a>. Föreslå gärna ändringar och bidra med förbättringar genom att göra en <a href="https://github.com/mah-dv/ia-python" title="Gå till GitHub">fork av detta projekt på GitHub</a>.
+    </p>
+    <ul class="footer-links">
+        <li>
+            <a href="/" title="Gå till startsidan">Hem</a>
+        </li>
+        <li>
+            <a href="/contact" title="Gå till kontaktsidan">Kontakt</a>
+        </li>
+    </ul>
+</div>
+</footer>
+<!--
+<script src="/assets/js/common.js"></script>
+-->
+<script src="/assets/js/common.js"></script>
+    </body>
+</html>

@@ -1,0 +1,238 @@
+<!doctype html>
+<html>
+    <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    
+        <title>Modul 5 - Fil- och felhantering | Introduktion till programmering</title>
+    
+
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600|Lato|Inconsolata" rel="stylesheet" type="text/css">
+
+    <link href="/assets/css/normalize.css" rel="stylesheet">
+	<!--
+    <link href="/assets/css/main.css" rel="stylesheet">
+	-->
+	<link href="http://mah-webb.github.io/assets/css/main.css" rel="stylesheet">
+</head>
+
+    <body class="instructions">
+        <header id="header" class="header">
+<div class="header-inner">
+    <a class="brand" href="/" title="Gå till startsidan">Introduktion till programmering</a>
+
+    <ul class="navigation">
+        <li>
+            <a href="/contact" title="Gå till kontaktsidan">Kontakt</a>
+        </li>
+    </ul>
+</div>
+</header>
+
+        <div id="sidebar" class="sidebar">
+    <div id="toggle-sidebar" class="toggle-sidebar">...</div>
+
+    <h3 class="course-name">
+        <a href="/modules/m5" title="Gå till kursöversikt över ">
+            Modul 5 - Fil- och felhantering
+        </a>
+    </h3>
+	
+    <ul class="course-overview">
+        
+        <li>
+            <span class="course-overview-element">
+                Övningar
+                <span class="expand">+</span>
+            </span>
+            <ul class="course-overview-submenu">
+                
+                <li>
+                    <a href="/modules/m5/exercises/L01.html" title="Gå till laborationen 1. Introduktion till filhantering">
+                        1. Introduktion till filhantering
+                    </a>
+                </li>
+                
+                <li>
+                    <a href="/modules/m5/exercises/L02.html" title="Gå till laborationen 2. Introduktion till felhantering">
+                        2. Introduktion till felhantering
+                    </a>
+                </li>
+                
+            </ul>
+        </li>
+        
+        
+        
+        <li>
+            <span class="course-overview-element">
+                Uppgifter
+                <span class="expand">+</span>
+            </span>
+            <ul class="course-overview-submenu">
+                
+                <li>
+                    <a href="/modules/m5/assignments/U1.html" title="Gå till uppgiften Inlämningsuppgift 4">
+                        Inlämningsuppgift 4 
+                    </a>
+                </li>
+                
+            </ul>
+        </li>
+        
+
+        
+
+        
+    </ul>
+</div>
+
+
+        <div class="content">
+        
+            <h1 id="introduktion-till-filhantering">1. Introduktion till filhantering</h1>
+
+<h2 id="inledning">Inledning</h2>
+
+<p>Vi kommer i den första övningen titta på hur filhantering (läsa från och skriva till filer) fungerar i Python. Att spara undan information i filer är ett enkelt sätt att spara data mer än bara temporärt för en körning.</p>
+
+<h3 id="funktionen-open">Funktionen <code>open</code></h3>
+
+<p>För att öppna filer i Python använder man sig utav funktionen <code>open</code>. Funktionen tar två argument</p>
+
+<ol>
+  <li>Vilken fil som ska öppnas/skapas</li>
+  <li>Hur man vill hantera filen
+    <ul>
+      <li><code>r</code> (read) vi vill läsa från filen</li>
+      <li><code>w</code> (write) vi vill skriva till filen (tömmer filen först)</li>
+      <li><code>a</code> (append) vi vill lägga till data i filen</li>
+      <li><code>r+</code> (read+) vi vill både läsa och skriva till filen</li>
+    </ul>
+  </li>
+</ol>
+
+<h3 id="att-skriva-till-en-textfil">Att skriva till en textfil</h3>
+
+<p>Nedan skapar vi en fil <em>text.txt</em> genom funktionen <code>open</code>. Första parametern (<code>text.txt</code>) är namnet på filen, den andra parametern (<code>w</code>) säger att vi vill skriva till filen.</p>
+
+<div class="highlight"><pre><code class="language-python" data-lang="python"><span class="lineno">1</span> <span class="c"># Skapar/öppnar filen &quot;text.txt&quot; för att skriva till den</span>
+<span class="lineno">2</span> <span class="n">text_file</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="s">&#39;text.txt&#39;</span><span class="p">,</span> <span class="s">&#39;w&#39;</span><span class="p">)</span>
+<span class="lineno">3</span> <span class="c"># Skriver lite text till filen</span>
+<span class="lineno">4</span> <span class="n">text_file</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s">&quot;Tjoho!</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">)</span>
+<span class="lineno">5</span> <span class="c"># Skriver ytterliggare text till filen</span>
+<span class="lineno">6</span> <span class="n">text_file</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s">&quot;Att skriva till filer är roligt!</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">)</span>
+<span class="lineno">7</span> <span class="c"># Avslutar användandet av filen</span>
+<span class="lineno">8</span> <span class="n">text_file</span><span class="o">.</span><span class="n">close</span><span class="p">()</span></code></pre></div>
+
+<p><strong>OBS</strong>, om filen redan finns så skrivs tidigare innehåll över. I koden ovan skapar (eller öppnar) vi filen <code>text.txt</code> och skriver två rader text till filen. <code>\n</code> innebär en radbrytning i textfilen.</p>
+
+<h3 id="att-lsa-frn-en-textfil">Att läsa från en textfil</h3>
+
+<p>Nedan öppnar vi en befintlig text-fil och skriv ut dess innehåll. Första parametern (<code>text.txt</code>) är namnet på filen vi vill öppna, den andra parametern (<code>r</code>) säger att vi vill läsa från filen.</p>
+
+<div class="highlight"><pre><code class="language-python" data-lang="python"><span class="lineno">1</span> <span class="c"># Öppnar filen &quot;text.txt&quot;</span>
+<span class="lineno">2</span> <span class="n">text_file</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="s">&#39;text.txt&#39;</span><span class="p">,</span> <span class="s">&#39;r&#39;</span><span class="p">)</span>
+<span class="lineno">3</span> <span class="c"># Skriver ut innehållet från filen</span>
+<span class="lineno">4</span> <span class="k">print</span> <span class="n">text_file</span><span class="o">.</span><span class="n">read</span><span class="p">()</span>
+<span class="lineno">5</span> <span class="c"># Avslutar användandet av filen</span>
+<span class="lineno">6</span> <span class="n">text_file</span><span class="o">.</span><span class="n">close</span><span class="p">()</span></code></pre></div>
+
+<p>Vi öppnar alltså filen <code>text.txt</code> och skriver ut allt innehåll i filen genom funktionen <code>read()</code>.</p>
+
+<h3 id="att-lgga-till-data-i-en-fil">Att lägga till data i en fil</h3>
+
+<p>När man vill skriva till en fil så är det inte alltid som man vill skriva över tidigare innehåll i filen som man gör genom <code>open("file", "w")</code>, utan istället lägga till saker i slutet av filen (efter ursprunglig data). Detta göra man på följande sätt:</p>
+
+<div class="highlight"><pre><code class="language-python" data-lang="python"><span class="lineno">1</span> <span class="c"># Öppnar filen &quot;text.txt&quot; för att skriva till den</span>
+<span class="lineno">2</span> <span class="n">text_file</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="s">&#39;text.txt&#39;</span><span class="p">,</span> <span class="s">&#39;a&#39;</span><span class="p">)</span>
+<span class="lineno">3</span> <span class="c"># Skriver lite mer text</span>
+<span class="lineno">4</span> <span class="n">text_file</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s">&quot;Här kommer ännu mer text!</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">)</span>
+<span class="lineno">5</span> <span class="c"># Avslutar användandet av filen</span>
+<span class="lineno">6</span> <span class="n">text_file</span><span class="o">.</span><span class="n">close</span><span class="p">()</span></code></pre></div>
+
+<hr />
+
+<h4 id="testkr-kodexemplen-ovan---testa-att-ndra-lite-lgga-till-mer-text-i-filerna---hur-fungerar-det">Testkör kodexemplen ovan - testa att ändra lite, lägga till mer text i filerna - hur fungerar det?</h4>
+
+<hr />
+
+<h2 id="vningar">Övningar</h2>
+
+<h3 id="vning-1---att-skriva-till-en-fil">Övning 1 - Att skriva till en fil</h3>
+
+<p>Ni ska nu göra ett program som frågar användaren efter fem bra böcker. Ni ska spara titlarna för dessa fem böckerna i en fil där varje titel hamnar på en ny rad. Text-filen ska nollställas varje gång som programmet körs. Text-filen ska heta <code>books.txt</code>. Programmet ska fungera såhär:</p>
+
+<p><img src="images/idle.png" alt="Idle" /></p>
+
+<p>Och er textfil ska se ut så såhär (med era angivna böcker) efter att ni kört programmet:</p>
+
+<p><img src="images/notepad.png" alt="Notepad" /></p>
+
+<p>Kör sedan programmet några gånger och notera hur innehållet varje gång nollställs - innan ni skriver in era böcker.</p>
+
+<h3 id="vning-2---att-lsa-frn-fil">Övning 2 - Att läsa från fil</h3>
+
+<p>Vi ska nu bygga ett program som läser från filen som ni skapade ovan. Alltså ska ni skriva ett program som skriver ut innehållet från filen <code>books.txt</code>. Det ska se ut på följande sätt:</p>
+
+<p><img src="images/idle2.png" alt="Idle" /></p>
+
+<p>När ni lyckats med att skriva ut allt innehåll i filen så vill vi specificera utskriften till:</p>
+
+<p><img src="images/idle3.png" alt="Idle" /></p>
+
+<p>Vi vill alltså skriva ut nummer för varje bok (varje rad i filen) för att snygga till utskriften. Tänk på att det som läses ut från filen är en text-sträng, och vi kan använda funktionen <code>split</code> för att dela upp den vid varje radbrytning <code>\n</code> (vid varje bok). Något i stil med:</p>
+
+<div class="highlight"><pre><code class="language-python" data-lang="python"><span class="lineno">1</span> <span class="n">text_file</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="s">&#39;books.txt&#39;</span><span class="p">,</span> <span class="s">&#39;r&#39;</span><span class="p">)</span>
+<span class="lineno">2</span> <span class="n">books</span> <span class="o">=</span>  <span class="n">text_file</span><span class="o">.</span><span class="n">read</span><span class="p">()</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s">&quot;</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">)</span></code></pre></div>
+
+<h3 id="vning-3---att-skriva-ytterligare-information-till-en-fil">Övning 3 - Att skriva ytterligare information till en fil</h3>
+
+<p>Vi ska nu skriva ett program som användare sig utav samma textfil som tidigare (<code>books.txt</code>), men nu ger användaren att lägga till en film i taget. Programmet ska genom en <code>while</code>-iteration fråga användaren (när användaren lagt till en bok) om denna vill lägga till ytterligare en bok. Detta tills användaren svarar “nej”.</p>
+
+<p><img src="images/idle4.png" alt="Idle" /></p>
+
+<h3 id="vning-4---att-ta-radera-frn-en-fil">Övning 4 - Att ta radera från en fil</h3>
+
+<p>I sista övningen ska vi ge användaren möjlighet att ta bort en bok ur samlingen - alltså ta bort en rad från filen. Det ska fungera på följande sätt:</p>
+
+<p><img src="images/idle5.png" alt="Idle" /></p>
+
+<p><strong>Tips:</strong> En idé kan vara att läsa in alla böckerna från textfilen i en lista (m.h.a. funktionen <code>split()</code>), och sedan gå igenom listan och ta bort den titel som användaren angav. När det är klart skriver ni sedan kvarvarande böckerna i listan till filen igen.</p>
+
+        
+
+        <footer class="contribute">
+    <p>Har du upptäckt ett fel eller vill bidra med förslag till ändringar? <a href="https://github.com/mah-dv/ia-python" target="_blank" title="Gå till GitHub">Bidra via GitHub</a>!</p>
+</footer>
+
+        </div>
+
+        <footer class="footer">
+<div class="footer-inner">
+    <p class="license">
+        Användning av allt material är fritt, om motsatsen inte anges. Formellt utrycks detta med licensen <a href="http://creativecommons.org/licenses/by/2.5/se/" title="Gå till Creative Commons licens sida">Creative Commons Erkännande 2.5 Sverige</a>.
+    </p>
+    <p class="fork">
+        Detta projekt är publicerat som <a href="https://github.com/mah-dv/ia-python" title="Gå till GitHub">öppen källkod på GitHub</a>. Föreslå gärna ändringar och bidra med förbättringar genom att göra en <a href="https://github.com/mah-dv/ia-python" title="Gå till GitHub">fork av detta projekt på GitHub</a>.
+    </p>
+    <ul class="footer-links">
+        <li>
+            <a href="/" title="Gå till startsidan">Hem</a>
+        </li>
+        <li>
+            <a href="/contact" title="Gå till kontaktsidan">Kontakt</a>
+        </li>
+    </ul>
+</div>
+</footer>
+<!--
+<script src="/assets/js/common.js"></script>
+-->
+<script src="/assets/js/common.js"></script>
+    </body>
+</html>

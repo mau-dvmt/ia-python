@@ -1,0 +1,234 @@
+<!doctype html>
+<html>
+    <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    
+        <title>Modul 2 - Funktioner | Introduktion till programmering</title>
+    
+
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600|Lato|Inconsolata" rel="stylesheet" type="text/css">
+
+    <link href="/assets/css/normalize.css" rel="stylesheet">
+	<!--
+    <link href="/assets/css/main.css" rel="stylesheet">
+	-->
+	<link href="http://mah-webb.github.io/assets/css/main.css" rel="stylesheet">
+</head>
+
+    <body class="instructions">
+        <header id="header" class="header">
+<div class="header-inner">
+    <a class="brand" href="/" title="Gå till startsidan">Introduktion till programmering</a>
+
+    <ul class="navigation">
+        <li>
+            <a href="/contact" title="Gå till kontaktsidan">Kontakt</a>
+        </li>
+    </ul>
+</div>
+</header>
+
+        <div id="sidebar" class="sidebar">
+    <div id="toggle-sidebar" class="toggle-sidebar">...</div>
+
+    <h3 class="course-name">
+        <a href="/modules/m2" title="Gå till kursöversikt över ">
+            Modul 2 - Funktioner
+        </a>
+    </h3>
+	
+    <ul class="course-overview">
+        
+        <li>
+            <span class="course-overview-element">
+                Övningar
+                <span class="expand">+</span>
+            </span>
+            <ul class="course-overview-submenu">
+                
+                <li>
+                    <a href="/modules/m2/exercises/L01.html" title="Gå till laborationen 1. Introduktion till funktioner">
+                        1. Introduktion till funktioner
+                    </a>
+                </li>
+                
+                <li>
+                    <a href="/modules/m2/exercises/L02.html" title="Gå till laborationen 2. Argument och parametrar">
+                        2. Argument och parametrar
+                    </a>
+                </li>
+                
+                <li>
+                    <a href="/modules/m2/exercises/L03.html" title="Gå till laborationen 3. Att returnera värden">
+                        3. Att returnera värden
+                    </a>
+                </li>
+                
+                <li>
+                    <a href="/modules/m2/exercises/L04.html" title="Gå till laborationen 4. Struktur av program">
+                        4. Struktur av program
+                    </a>
+                </li>
+                
+                <li>
+                    <a href="/modules/m2/exercises/L05.html" title="Gå till laborationen 5. Moduler i Python">
+                        5. Moduler i Python
+                    </a>
+                </li>
+                
+            </ul>
+        </li>
+        
+        
+        
+        <li>
+            <span class="course-overview-element">
+                Uppgifter
+                <span class="expand">+</span>
+            </span>
+            <ul class="course-overview-submenu">
+                
+                <li>
+                    <a href="/modules/m2/assignments/U1.html" title="Gå till uppgiften Inlämningsuppgift 1">
+                        Inlämningsuppgift 1 
+                    </a>
+                </li>
+                
+            </ul>
+        </li>
+        
+
+        
+
+        
+    </ul>
+</div>
+
+
+        <div class="content">
+        
+            <h1 id="struktur-av-program">4. Struktur av program</h1>
+
+<h2 id="introduktion">Introduktion</h2>
+
+<p>När man programmerar är det viktigt att ha en bra och tydlig struktur på sitt program. Ett sätt att åstakomma detta är att noga dela upp sin kod i mindre funktioner, där <em>en funktion gör en sak</em>. På så sätt delar man upp sin kod i mindre bitar och koden blir mycket mer lättöverskådlig. I denna övning ska vi träna på att strukturera upp vår kod på ett bra sätt.</p>
+
+<p>Se följande exempel. Vi har ett program som låter användaren multiplicera tre tal med varandra och programmet skriver sedan produkten av talen:</p>
+
+<div class="highlight"><pre><code class="language-python" data-lang="python"><span class="lineno"> 1</span> <span class="n">name</span> <span class="o">=</span> <span class="nb">raw_input</span><span class="p">(</span><span class="s">&quot;Vad heter du? &quot;</span><span class="p">)</span>
+<span class="lineno"> 2</span> <span class="k">print</span> <span class="s">&quot;*&quot;</span><span class="o">*</span><span class="mi">30</span>
+<span class="lineno"> 3</span> <span class="k">print</span> <span class="s">&quot;Välkommen &quot;</span> <span class="o">+</span> <span class="n">name</span> <span class="o">+</span> <span class="s">&quot;!&quot;</span>
+<span class="lineno"> 4</span> <span class="k">print</span> <span class="s">&quot;I detta program kan du mulitplicera tre tal med varandra - så beräknar vi produkten åt dig.&quot;</span>
+<span class="lineno"> 5</span> <span class="k">print</span> <span class="s">&quot;Du kommer nu att får mata in de tre tal som du vill multiplicera med&quot;</span>
+<span class="lineno"> 6</span> <span class="n">num_1</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">raw_input</span><span class="p">(</span><span class="s">&quot;Vilket är tal nr.1: &quot;</span><span class="p">))</span>
+<span class="lineno"> 7</span> <span class="n">num_2</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">raw_input</span><span class="p">(</span><span class="s">&quot;Vilket är tal nr.2: &quot;</span><span class="p">))</span>
+<span class="lineno"> 8</span> <span class="n">num_3</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">raw_input</span><span class="p">(</span><span class="s">&quot;Vilket är tal nr.3: &quot;</span><span class="p">))</span>
+<span class="lineno"> 9</span> <span class="n">result</span> <span class="o">=</span> <span class="n">num_1</span> <span class="o">*</span> <span class="n">num_2</span> <span class="o">*</span> <span class="n">num_3</span>
+<span class="lineno">10</span> <span class="k">print</span> <span class="s">&quot;Produkten av dina valda tal är: &quot;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">result</span><span class="p">)</span>
+<span class="lineno">11</span> <span class="k">print</span> <span class="s">&quot;*&quot;</span><span class="o">*</span><span class="mi">30</span></code></pre></div>
+
+<p>Detta program skulle vi kunna dela upp i mindre bitar - för att få en bättre och tydligare struktur. T.ex. såhär:</p>
+
+<div class="highlight"><pre><code class="language-python" data-lang="python"><span class="lineno"> 1</span> <span class="k">def</span> <span class="nf">multiply_program</span><span class="p">():</span>
+<span class="lineno"> 2</span>     <span class="sd">&#39;&#39;&#39; Huvudfunktionen för multiplikationsprogrammet &#39;&#39;&#39;</span>
+<span class="lineno"> 3</span>     <span class="n">name</span> <span class="o">=</span> <span class="n">get_name</span><span class="p">()</span>
+<span class="lineno"> 4</span>     <span class="n">welcome</span><span class="p">(</span><span class="n">name</span><span class="p">)</span>
+<span class="lineno"> 5</span>     <span class="n">num_1</span> <span class="o">=</span> <span class="n">get_number</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>
+<span class="lineno"> 6</span>     <span class="n">num_2</span> <span class="o">=</span> <span class="n">get_number</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span>
+<span class="lineno"> 7</span>     <span class="n">num_3</span> <span class="o">=</span> <span class="n">get_number</span><span class="p">(</span><span class="mi">3</span><span class="p">)</span>
+<span class="lineno"> 8</span>     <span class="n">result</span> <span class="o">=</span> <span class="n">multiply_three_numbers</span><span class="p">(</span><span class="n">num_1</span><span class="p">,</span> <span class="n">num_2</span><span class="p">,</span> <span class="n">num_3</span><span class="p">)</span>
+<span class="lineno"> 9</span>     <span class="n">print_result</span><span class="p">(</span><span class="n">result</span><span class="p">)</span>
+<span class="lineno">10</span> 	
+<span class="lineno">11</span> <span class="k">def</span> <span class="nf">get_name</span><span class="p">():</span>
+<span class="lineno">12</span>     <span class="sd">&#39;&#39;&#39; Frågar besökaren efter namn &#39;&#39;&#39;</span>
+<span class="lineno">13</span>     <span class="k">return</span> <span class="nb">raw_input</span><span class="p">(</span><span class="s">&quot;Vad heter du? &quot;</span><span class="p">)</span>
+<span class="lineno">14</span> 
+<span class="lineno">15</span> <span class="k">def</span> <span class="nf">welcome</span><span class="p">(</span><span class="n">name</span><span class="p">):</span>
+<span class="lineno">16</span>     <span class="sd">&#39;&#39;&#39; Välkomnar besökaren och berättar programmets funktion &#39;&#39;&#39;</span>
+<span class="lineno">17</span>     <span class="k">print</span> <span class="s">&quot;Välkommen &quot;</span> <span class="o">+</span> <span class="n">name</span> <span class="o">+</span> <span class="s">&quot;!&quot;</span>
+<span class="lineno">18</span>     <span class="k">print</span> <span class="s">&quot;I detta program kan du mulitplicera tre tal med varandra - så beräknar vi produkten åt dig.&quot;</span>
+<span class="lineno">19</span>     <span class="k">print</span> <span class="s">&quot;Du kommer nu att får mata in de tre tal som du vill multiplicera med&quot;</span>
+<span class="lineno">20</span> 
+<span class="lineno">21</span> <span class="k">def</span> <span class="nf">get_number</span><span class="p">(</span><span class="n">number</span><span class="p">):</span>
+<span class="lineno">22</span>     <span class="sd">&#39;&#39;&#39; Frågar användaren efter ett tal &#39;&#39;&#39;</span>
+<span class="lineno">23</span>     <span class="k">return</span> <span class="nb">raw_input</span><span class="p">(</span><span class="s">&quot;Vilket är tal nr.&quot;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">number</span><span class="p">)</span> <span class="o">+</span> <span class="s">&quot;: &quot;</span><span class="p">)</span>
+<span class="lineno">24</span> 
+<span class="lineno">25</span> <span class="k">def</span> <span class="nf">multiply_three_numbers</span><span class="p">(</span><span class="n">number_1</span><span class="p">,</span> <span class="n">number_2</span><span class="p">,</span> <span class="n">number_3</span><span class="p">):</span>
+<span class="lineno">26</span>     <span class="sd">&#39;&#39;&#39; Beräknar produkten av tre tal &#39;&#39;&#39;</span>
+<span class="lineno">27</span>     <span class="k">return</span> <span class="nb">int</span><span class="p">(</span><span class="n">number_1</span><span class="p">)</span> <span class="o">*</span> <span class="nb">int</span><span class="p">(</span><span class="n">number_2</span><span class="p">)</span> <span class="o">*</span> <span class="nb">int</span><span class="p">(</span><span class="n">number_3</span><span class="p">)</span>
+<span class="lineno">28</span> 
+<span class="lineno">29</span> <span class="k">def</span> <span class="nf">print_result</span><span class="p">(</span><span class="n">result</span><span class="p">):</span>
+<span class="lineno">30</span>     <span class="sd">&#39;&#39;&#39; Skriver ut resultatet och tackar användaren &#39;&#39;&#39;</span>
+<span class="lineno">31</span>     <span class="k">print</span> <span class="s">&quot;Produkten av dina valda tal är: &quot;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">result</span><span class="p">)</span>
+<span class="lineno">32</span>     <span class="k">print</span> <span class="s">&quot;*&quot;</span><span class="o">*</span><span class="mi">30</span>
+<span class="lineno">33</span> 
+<span class="lineno">34</span> <span class="n">multiply_program</span><span class="p">()</span></code></pre></div>
+
+<p>Själva programmet ovan styrs av funktionen <code>multiply_program</code> (som sedan använder sig utav de övriga funktionerna) som vi kör längst ner i vårt kodexempel ovan. Skulle man vilka “optimera” funktionen <code>multiply_program</code> så skulle man kunna skriva funktionen på detta sätt:</p>
+
+<div class="highlight"><pre><code class="language-python" data-lang="python"><span class="lineno">1</span> <span class="k">def</span> <span class="nf">multiply_program</span><span class="p">():</span>
+<span class="lineno">2</span>     <span class="sd">&#39;&#39;&#39; Huvudfunktionen för multiplikationsprogrammet &#39;&#39;&#39;</span>
+<span class="lineno">3</span>     <span class="n">welcome</span><span class="p">(</span><span class="n">get_name</span><span class="p">())</span>
+<span class="lineno">4</span>     <span class="n">print_result</span><span class="p">(</span><span class="n">multiply_three_numbers</span><span class="p">(</span><span class="n">get_number</span><span class="p">(</span><span class="mi">1</span><span class="p">),</span> <span class="n">get_number</span><span class="p">(</span><span class="mi">2</span><span class="p">),</span> <span class="n">get_number</span><span class="p">(</span><span class="mi">3</span><span class="p">)))</span></code></pre></div>
+
+<p>Till en början kan det tyckas att man skriver “mycket” kod när man delar upp sitt program i funktioner. Men ju mer kod man skriver ju nödvändligare blir det. Detta inte bara för att få en bättre översikt över sitt program, utan också för att saker som felsökning blir mycket enklare om man delat upp sitt program i funktioner. Dessutom händer det ofta att man återanvänder funktioner, som t.ex. funktionen <code>get_number</code> ovan - och man vill ju inte skriva samma kod mer än en gång!</p>
+
+<h3 id="vning-1">Övning 1</h3>
+
+<p>I denna del ska vi återanvända funktionen <code>yards_to_meters</code> som ni skrev i den förra övningen. Ni ska uppdatera ert program så att de olika delarna nu hamnar i en egen funktion (en funktion gör en sak), och ni ska ha följande funktioner:</p>
+
+<ul>
+  <li>En huvudfunktion som styr hela programmet (likt <code>multiply_program</code> ovan)</li>
+  <li>En funktion som välkomnar användaren</li>
+  <li>En funktion som frågar efter antalet meter</li>
+  <li>En funktion som beräknar resultatet</li>
+  <li>En funktion som presenterar resultatet</li>
+</ul>
+
+<p>Inspireras gärna av exemplet i introduktionen till denna övningsdel</p>
+
+<h2 id="vning-2">Övning 2</h2>
+
+<p>I denna övningen ska vi göra strukturera upp ett valutakonverteringsprogram, en förbättrad variant från det som ni byggde i modul 1. Programmet ska vara uppdelat i lämpliga funktioner, med en huvudfunktion som styr programmet. Det är upp till er hur ni väljer att dela upp de olika funktionerna. Diskutera sedan gärna med labbhandledaren kring er lösning - varför har ni strukturerat upp programmet som ni gjort? Vad hade ni kunnat göra annorlunda?</p>
+
+<p>Resultatet av ert program ska vara följande:</p>
+
+<p><img src="images/idle11.png" alt="" /></p>
+
+        
+
+        <footer class="contribute">
+    <p>Har du upptäckt ett fel eller vill bidra med förslag till ändringar? <a href="https://github.com/mah-dv/ia-python" target="_blank" title="Gå till GitHub">Bidra via GitHub</a>!</p>
+</footer>
+
+        </div>
+
+        <footer class="footer">
+<div class="footer-inner">
+    <p class="license">
+        Användning av allt material är fritt, om motsatsen inte anges. Formellt utrycks detta med licensen <a href="http://creativecommons.org/licenses/by/2.5/se/" title="Gå till Creative Commons licens sida">Creative Commons Erkännande 2.5 Sverige</a>.
+    </p>
+    <p class="fork">
+        Detta projekt är publicerat som <a href="https://github.com/mah-dv/ia-python" title="Gå till GitHub">öppen källkod på GitHub</a>. Föreslå gärna ändringar och bidra med förbättringar genom att göra en <a href="https://github.com/mah-dv/ia-python" title="Gå till GitHub">fork av detta projekt på GitHub</a>.
+    </p>
+    <ul class="footer-links">
+        <li>
+            <a href="/" title="Gå till startsidan">Hem</a>
+        </li>
+        <li>
+            <a href="/contact" title="Gå till kontaktsidan">Kontakt</a>
+        </li>
+    </ul>
+</div>
+</footer>
+<!--
+<script src="/assets/js/common.js"></script>
+-->
+<script src="/assets/js/common.js"></script>
+    </body>
+</html>

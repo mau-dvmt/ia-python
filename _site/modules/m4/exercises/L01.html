@@ -1,0 +1,350 @@
+<!doctype html>
+<html>
+    <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    
+        <title>Modul 4 - Listor och lexikon | Introduktion till programmering</title>
+    
+
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600|Lato|Inconsolata" rel="stylesheet" type="text/css">
+
+    <link href="/assets/css/normalize.css" rel="stylesheet">
+	<!--
+    <link href="/assets/css/main.css" rel="stylesheet">
+	-->
+	<link href="http://mah-webb.github.io/assets/css/main.css" rel="stylesheet">
+</head>
+
+    <body class="instructions">
+        <header id="header" class="header">
+<div class="header-inner">
+    <a class="brand" href="/" title="Gå till startsidan">Introduktion till programmering</a>
+
+    <ul class="navigation">
+        <li>
+            <a href="/contact" title="Gå till kontaktsidan">Kontakt</a>
+        </li>
+    </ul>
+</div>
+</header>
+
+        <div id="sidebar" class="sidebar">
+    <div id="toggle-sidebar" class="toggle-sidebar">...</div>
+
+    <h3 class="course-name">
+        <a href="/modules/m4" title="Gå till kursöversikt över ">
+            Modul 4 - Listor och lexikon
+        </a>
+    </h3>
+	
+    <ul class="course-overview">
+        
+        <li>
+            <span class="course-overview-element">
+                Övningar
+                <span class="expand">+</span>
+            </span>
+            <ul class="course-overview-submenu">
+                
+                <li>
+                    <a href="/modules/m4/exercises/L01.html" title="Gå till laborationen 1. Introduktion till listor">
+                        1. Introduktion till listor
+                    </a>
+                </li>
+                
+                <li>
+                    <a href="/modules/m4/exercises/L02.html" title="Gå till laborationen 2. Introduktion till lexikon">
+                        2. Introduktion till lexikon
+                    </a>
+                </li>
+                
+                <li>
+                    <a href="/modules/m4/exercises/L03.html" title="Gå till laborationen 3. Listor och strängar">
+                        3. Listor och strängar
+                    </a>
+                </li>
+                
+                <li>
+                    <a href="/modules/m4/exercises/L04.html" title="Gå till laborationen 4. Nästlade listor">
+                        4. Nästlade listor
+                    </a>
+                </li>
+                
+            </ul>
+        </li>
+        
+        
+        
+        <li>
+            <span class="course-overview-element">
+                Uppgifter
+                <span class="expand">+</span>
+            </span>
+            <ul class="course-overview-submenu">
+                
+                <li>
+                    <a href="/modules/m4/assignments/U1.html" title="Gå till uppgiften Inlämningsuppgift 3">
+                        Inlämningsuppgift 3 
+                    </a>
+                </li>
+                
+            </ul>
+        </li>
+        
+
+        
+
+        
+    </ul>
+</div>
+
+
+        <div class="content">
+        
+            <h1 id="introduktion-till-listor">1. Introduktion till listor</h1>
+
+<h2 id="inledning">Inledning</h2>
+
+<p>När man bygger lite större program än vad vi hittills gjort behövs smidiga sätt att spara all data som används i programmet. Ett bra alternativ är att göra detta är listor i Python. För att snabbt se värdet av listor inom programmering kan vi titta på ett snabbt exempel. Låt säga att vi vill spara fem (5) tal i vårt program. Det skulle kunna se ut så här:</p>
+
+<div class="highlight"><pre><code class="language-python" data-lang="python"><span class="lineno">1</span> <span class="c"># Spara varje tal i en variabel</span>
+<span class="lineno">2</span> <span class="n">number1</span> <span class="o">=</span> <span class="mi">5</span>
+<span class="lineno">3</span> <span class="n">number2</span> <span class="o">=</span> <span class="mi">7</span>
+<span class="lineno">4</span> <span class="n">number3</span> <span class="o">=</span> <span class="mi">2</span>
+<span class="lineno">5</span> <span class="n">number4</span> <span class="o">=</span> <span class="mi">12</span>
+<span class="lineno">6</span> <span class="n">number5</span> <span class="o">=</span> <span class="mi">4</span>
+<span class="lineno">7</span> 
+<span class="lineno">8</span> <span class="c"># Spara alla tal i en lista</span>
+<span class="lineno">9</span> <span class="n">numbers</span> <span class="o">=</span> <span class="p">[</span><span class="mi">5</span><span class="p">,</span> <span class="mi">7</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">12</span><span class="p">,</span> <span class="mi">4</span><span class="p">]</span></code></pre></div>
+
+<p>Som ni kan se så krävs det många fler rader kod om man ska spara varje tal individuellt i en variabel, jämfört med om vi sparar alla tal i en lista. Men den kanske största vinsten med listor är när vi vill skriva ut våra tal ovan:</p>
+
+<div class="highlight"><pre><code class="language-python" data-lang="python"><span class="lineno"> 1</span> <span class="c"># Skriver ut varje tal</span>
+<span class="lineno"> 2</span> <span class="k">print</span> <span class="n">number1</span>
+<span class="lineno"> 3</span> <span class="k">print</span> <span class="n">number2</span>
+<span class="lineno"> 4</span> <span class="k">print</span> <span class="n">number3</span>
+<span class="lineno"> 5</span> <span class="k">print</span> <span class="n">number4</span>
+<span class="lineno"> 6</span> <span class="k">print</span> <span class="n">number5</span>
+<span class="lineno"> 7</span> 
+<span class="lineno"> 8</span> <span class="c"># Skriver ut alla tal i listan</span>
+<span class="lineno"> 9</span> <span class="k">for</span> <span class="n">number</span> <span class="ow">in</span> <span class="n">numbers</span><span class="p">:</span>
+<span class="lineno">10</span>     <span class="k">print</span> <span class="n">number</span></code></pre></div>
+
+<p>Som ni kan se ovan behövde vi fem rader kod för att skriva ut talen när de ligger i separata variabler, men bara två rader när de låg i en lista. Tänk på att ju fler nummer vi vill spara - ju mer effektiv blir listan! Med andra ord - tänk om vi vill skriva ut alla studenter i denna kurs. Är de sparade i en lista kan vi med två rader kod skriva ut alla namn, det är smidigt!</p>
+
+<p>Man kan naturligtvis också hämta bara ett värde från vår lista med nummer. Då måste vi dock veta på vilken plats i listan som värdet vi vill skriva ut på finns:</p>
+
+<div class="highlight"><pre><code class="language-python" data-lang="python"><span class="lineno">1</span> <span class="c"># Spara alla tal i en lista</span>
+<span class="lineno">2</span> <span class="n">numbers</span> <span class="o">=</span> <span class="p">[</span><span class="mi">5</span><span class="p">,</span> <span class="mi">7</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">12</span><span class="p">,</span> <span class="mi">4</span><span class="p">]</span>
+<span class="lineno">3</span> 
+<span class="lineno">4</span> <span class="k">print</span> <span class="n">numbers</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="c"># Skriver ut, 5</span>
+<span class="lineno">5</span> <span class="k">print</span> <span class="n">numbers</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="c"># Skriver ut, 7</span>
+<span class="lineno">6</span> <span class="k">print</span> <span class="n">numbers</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span> <span class="c"># Skriver ut, 2</span>
+<span class="lineno">7</span> <span class="k">print</span> <span class="n">numbers</span><span class="p">[</span><span class="mi">3</span><span class="p">]</span> <span class="c"># Skriver ut, 12</span>
+<span class="lineno">8</span> <span class="k">print</span> <span class="n">numbers</span><span class="p">[</span><span class="mi">4</span><span class="p">]</span> <span class="c"># Skriver ut, 4</span></code></pre></div>
+
+<h2 id="listor-och-for-iteration">Listor och for-iteration</h2>
+
+<p>Något som går hand i hand i programmering är listor och for-iterationer. Som ni kan se ovan så använder vi oss utav en for-iteration när vi <em>gå igenom hela listan</em>, alltså varje sak som finns i listan. Hur fungerar då detta? Titta på följande exempel igen:</p>
+
+<div class="highlight"><pre><code class="language-python" data-lang="python"><span class="lineno">1</span> <span class="c"># Spara alla tal i en lista</span>
+<span class="lineno">2</span> <span class="n">numbers</span> <span class="o">=</span> <span class="p">[</span><span class="mi">5</span><span class="p">,</span> <span class="mi">7</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">12</span><span class="p">,</span> <span class="mi">4</span><span class="p">]</span>
+<span class="lineno">3</span> 
+<span class="lineno">4</span> <span class="c"># Skriver ut alla tal i listan</span>
+<span class="lineno">5</span> <span class="k">for</span> <span class="n">number</span> <span class="ow">in</span> <span class="n">numbers</span><span class="p">:</span>
+<span class="lineno">6</span>     <span class="k">print</span> <span class="n">number</span></code></pre></div>
+
+<ul>
+  <li>Varje gång for-iterationen går ett varv representerar variabeln <strong>number</strong> det värde som finns på nuvarande plats i listan (<em>numbers</em>), alltså:
+    <ul>
+      <li>Första varvet: number är <em>5</em></li>
+      <li>Andra varvet: number är <em>7</em></li>
+      <li>Tredje varvet: number är <em>2</em></li>
+      <li>Fjärde varvet: number är <em>12</em></li>
+      <li>Femte varvet: number är <em>4</em></li>
+    </ul>
+  </li>
+  <li>Vi kan sedan för varje nummer som finns i listan göra vad vi vill i for-iterationen, t.ex. skriva ut numret, beräkna totalsumma, hitta högsta/lägsta värde osv.</li>
+</ul>
+
+<h2 id="bra-funktioner-vid-listor">Bra funktioner vid listor</h2>
+
+<p>Det finns en del funktioner som är bra att känna till när man arbetar med listor i Pyhton, här presenteras några. <em>list</em> i rubrikerna nedan representerar en lista med saker, <em>x</em>, <em>i</em> representerar ett argument..</p>
+
+<h3 id="listappendx">list.append(x)</h3>
+
+<p>Att lägga till saker sist i en lista. Det är inte alltid vi vet hur många saker vår lista ska innehålla, därför är det bra att kunna lägga till saker i efterhand, exempel:</p>
+
+<div class="highlight"><pre><code class="language-python" data-lang="python"><span class="lineno"> 1</span> <span class="c"># Skapar en lista</span>
+<span class="lineno"> 2</span> <span class="n">students</span> <span class="o">=</span> <span class="p">[]</span>
+<span class="lineno"> 3</span> 
+<span class="lineno"> 4</span> <span class="c"># Lägger till tre studenter</span>
+<span class="lineno"> 5</span> <span class="n">students</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="s">&quot;Anton&quot;</span><span class="p">)</span>
+<span class="lineno"> 6</span> <span class="n">students</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="s">&quot;Fredrik&quot;</span><span class="p">)</span>
+<span class="lineno"> 7</span> <span class="n">students</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="s">&quot;Johanna&quot;</span><span class="p">)</span>
+<span class="lineno"> 8</span> 
+<span class="lineno"> 9</span> <span class="c"># Skriver ut alla studenter i listan students</span>
+<span class="lineno">10</span> <span class="k">for</span> <span class="n">student</span> <span class="ow">in</span> <span class="n">students</span><span class="p">:</span>
+<span class="lineno">11</span>     <span class="k">print</span> <span class="n">student</span></code></pre></div>
+
+<h3 id="listinserti-x">list.insert(i, x)</h3>
+
+<p>Ibland vill vi inte lägga till vår sak sist i listan, utan på en specifik plats som vi anger. Det gör vi genom funktionen <em>insert</em>. <em>i</em> avser platsen i listan där vi vill lägga till något och <em>x</em> avser det vi vill lägga till, exempel:</p>
+
+<div class="highlight"><pre><code class="language-python" data-lang="python"><span class="lineno">1</span> <span class="c"># Skapar en lista med två studenter</span>
+<span class="lineno">2</span> <span class="n">students</span> <span class="o">=</span> <span class="p">[</span><span class="s">&quot;Anton&quot;</span><span class="p">,</span> <span class="s">&quot;Johanna&quot;</span><span class="p">]</span>
+<span class="lineno">3</span> 
+<span class="lineno">4</span> <span class="c"># Lägger till &quot;Fredrik&quot; på plats [1] i listan (mellan &quot;Anton&quot; och &quot;Johanna&quot;)</span>
+<span class="lineno">5</span> <span class="n">students</span><span class="o">.</span><span class="n">insert</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="s">&quot;Fredrik&quot;</span><span class="p">)</span>
+<span class="lineno">6</span> 
+<span class="lineno">7</span> <span class="c"># Skriver ut alla studenter i listan students</span>
+<span class="lineno">8</span> <span class="k">for</span> <span class="n">student</span> <span class="ow">in</span> <span class="n">students</span><span class="p">:</span>
+<span class="lineno">9</span>     <span class="k">print</span> <span class="n">student</span></code></pre></div>
+
+<h3 id="listremovex">list.remove(x)</h3>
+
+<p>Vi vill ju naturligtvis också kunna ta bort saker från vår lista. Genom funktionen <em>remove</em> så anger vi värdet i listan som vi vill ta bort (t.ex. “Fredrik”). Skulle värdet man anger finnas fler än en gång i listan så tas endast det första värdet.</p>
+
+<div class="highlight"><pre><code class="language-python" data-lang="python"><span class="lineno">1</span> <span class="c"># Skapar en lista med tre studenter</span>
+<span class="lineno">2</span> <span class="n">students</span> <span class="o">=</span> <span class="p">[</span><span class="s">&quot;Anton&quot;</span><span class="p">,</span> <span class="s">&quot;Fredrik&quot;</span><span class="p">,</span> <span class="s">&quot;Johanna&quot;</span><span class="p">]</span>
+<span class="lineno">3</span> 
+<span class="lineno">4</span> <span class="c"># Tar bort &quot;Fredrik&quot; från vår lista</span>
+<span class="lineno">5</span> <span class="n">students</span><span class="o">.</span><span class="n">remove</span><span class="p">(</span><span class="s">&quot;Fredrik&quot;</span><span class="p">)</span>
+<span class="lineno">6</span> 
+<span class="lineno">7</span> <span class="c"># Skriver ut alla studenter i listan students</span>
+<span class="lineno">8</span> <span class="k">for</span> <span class="n">student</span> <span class="ow">in</span> <span class="n">students</span><span class="p">:</span>
+<span class="lineno">9</span>     <span class="k">print</span> <span class="n">student</span></code></pre></div>
+
+<h3 id="listpop">list.pop()</h3>
+
+<p>Funktionen <em>pop</em> tar bort (och returnerar) det sista värdet i  vår lista.</p>
+
+<div class="highlight"><pre><code class="language-python" data-lang="python"><span class="lineno"> 1</span> <span class="c"># Skapar en lista med tre studenter</span>
+<span class="lineno"> 2</span> <span class="n">students</span> <span class="o">=</span> <span class="p">[</span><span class="s">&quot;Anton&quot;</span><span class="p">,</span> <span class="s">&quot;Fredrik&quot;</span><span class="p">,</span> <span class="s">&quot;Johanna&quot;</span><span class="p">]</span>
+<span class="lineno"> 3</span> 
+<span class="lineno"> 4</span> <span class="c"># Tar bort sista saken i vår lista (&quot;Johanna&quot;) och berättar detta</span>
+<span class="lineno"> 5</span> <span class="n">removed_student</span> <span class="o">=</span> <span class="n">students</span><span class="o">.</span><span class="n">pop</span><span class="p">()</span>
+<span class="lineno"> 6</span> <span class="k">print</span> <span class="s">&quot;Raderat &quot;</span> <span class="o">+</span> <span class="n">removed_student</span> <span class="o">+</span> <span class="s">&quot; från listan&quot;</span>
+<span class="lineno"> 7</span> 
+<span class="lineno"> 8</span> <span class="c"># Skriver ut alla studenter i listan students</span>
+<span class="lineno"> 9</span> <span class="k">for</span> <span class="n">student</span> <span class="ow">in</span> <span class="n">students</span><span class="p">:</span>
+<span class="lineno">10</span>     <span class="k">print</span> <span class="n">student</span></code></pre></div>
+
+<h3 id="fler-funktioner">Fler funktioner</h3>
+
+<p>Det finns många fler bra funktioner att läsa på om kring listor. En bra start är att läsa <a href="https://docs.python.org/2/tutorial/datastructures.html">Pythons dokumentation</a> kring listor.</p>
+
+<p>Modulen <code>random</code> innehåller även flera hjälpsamma funktioner för just listor, till exempel:</p>
+
+<div class="highlight"><pre><code class="language-python" data-lang="python"><span class="lineno"> 1</span> <span class="kn">import</span> <span class="nn">random</span>
+<span class="lineno"> 2</span> 
+<span class="lineno"> 3</span> <span class="c"># En exempellista att jobba med</span>
+<span class="lineno"> 4</span> <span class="n">data</span> <span class="o">=</span> <span class="nb">range</span><span class="p">(</span><span class="mi">10</span><span class="p">)</span>
+<span class="lineno"> 5</span> 
+<span class="lineno"> 6</span> <span class="c"># Väljer ut ett slumpmässigt valt element från listan</span>
+<span class="lineno"> 7</span> <span class="k">print</span> <span class="n">random</span><span class="o">.</span><span class="n">choice</span><span class="p">(</span><span class="n">data</span><span class="p">)</span>
+<span class="lineno"> 8</span> 
+<span class="lineno"> 9</span> <span class="c"># Väljer ut tre slumpmässigt valda element från listan</span>
+<span class="lineno">10</span> <span class="k">print</span> <span class="n">random</span><span class="o">.</span><span class="n">sample</span><span class="p">(</span><span class="n">data</span><span class="p">,</span> <span class="mi">3</span><span class="p">)</span>
+<span class="lineno">11</span> 
+<span class="lineno">12</span> <span class="c"># Slumpar fram en ny ordning för elementen i listan</span>
+<span class="lineno">13</span> <span class="n">random</span><span class="o">.</span><span class="n">shuffle</span><span class="p">(</span><span class="n">data</span><span class="p">)</span>
+<span class="lineno">14</span> <span class="k">print</span> <span class="n">data</span></code></pre></div>
+
+<h2 id="vningar">Övningar</h2>
+
+<p>Det kommer här att finnas fyra övningar som bygger på varandra, som till slut kommer att resultera i ett litet program som håller koll på vår filmsamling (med hjälp av en lista) - så gör övningarna i ordning för bästa resultat.</p>
+
+<h3 id="del-1---en-filmsamling">Del 1 - En filmsamling</h3>
+
+<p>Den första övningen går ut på att ni ska skapa en lista med filmer. Börja med att skapa en lista där ni lägger in fem filmtitlar. Ni ska sedan göra en funktion, <code>print_movies</code>, som som skriver ut alla filmer som ni har i er filmsamling. Utskriften ska se ut på följande sätt:</p>
+
+<p><img src="images/idle1.png" alt="Idle" /></p>
+
+<h3 id="del-2---lggata-bort-till-filmer">Del 2 - Lägga/Ta bort till filmer</h3>
+
+<p>Börja med att skapa en meny med fyra alternativ:</p>
+
+<ol>
+  <li>Visa filmerna</li>
+  <li>Lägg till en film</li>
+  <li>Ta bort en film</li>
+  <li>Avsluta</li>
+</ol>
+
+<p>Nu ska vi ge användaren möjlighet att lägga till/ta bort filmer i listan. Detta ska ske genom att ni skapar funktionerna <code>add_movie(title)</code> och <code>remove_movie(title)</code>vars syfte är att lägga till/ta bort en i listan.</p>
+
+<ul>
+  <li><code>add_movie(title)</code> ska lägga till filmen sist i listan</li>
+  <li><code>remove_movie(title)</code> ska ta bort angiven film från er lista</li>
+</ul>
+
+<p>Exempelkörning:</p>
+
+<p><img src="images/idle2.png" alt="Idle" /></p>
+
+<h3 id="del-3---sortera-utskrifen-av-filmerna-alfabetiskt">Del 3 - Sortera utskrifen av filmerna alfabetiskt</h3>
+
+<p>Vi ska nu förbättra funktionen <code>print_movies</code> så att man kan välja i vilken ordning som filmerna ska skrivas ut i, användaren ska få tre val:</p>
+
+<ol>
+  <li>Kronologisk (i den ordning de blivit tillagda i listan)</li>
+  <li>Alfabetist - stigande</li>
+  <li>Alfabetist - fallande</li>
+</ol>
+
+<p>Det kan vara bra att läsa på om Pythons funktion <a href="https://wiki.python.org/moin/HowTo/Sorting">sort()</a> till denna delen.</p>
+
+<p>Exempelkörning:</p>
+
+<p><img src="images/idle3.png" alt="Idle" /></p>
+
+<h3 id="del-4---frbttrad-lgga-till-film-funktion">Del 4 - Förbättrad “Lägga till film”-funktion</h3>
+
+<p>Ni ska nu förbättra er funktion <code>add_movie</code> så att denna funktion frågar användaren om man vill:</p>
+
+<ol>
+  <li>Lägga till filmen sist i listan</li>
+  <li>Lägga in filmen på en specifik plats i listan</li>
+</ol>
+
+<p>När ni gjort detta har vi byggt en egen filmhanterare - och dessutom lärt oss grunderna kring listor!</p>
+
+
+        
+
+        <footer class="contribute">
+    <p>Har du upptäckt ett fel eller vill bidra med förslag till ändringar? <a href="https://github.com/mah-dv/ia-python" target="_blank" title="Gå till GitHub">Bidra via GitHub</a>!</p>
+</footer>
+
+        </div>
+
+        <footer class="footer">
+<div class="footer-inner">
+    <p class="license">
+        Användning av allt material är fritt, om motsatsen inte anges. Formellt utrycks detta med licensen <a href="http://creativecommons.org/licenses/by/2.5/se/" title="Gå till Creative Commons licens sida">Creative Commons Erkännande 2.5 Sverige</a>.
+    </p>
+    <p class="fork">
+        Detta projekt är publicerat som <a href="https://github.com/mah-dv/ia-python" title="Gå till GitHub">öppen källkod på GitHub</a>. Föreslå gärna ändringar och bidra med förbättringar genom att göra en <a href="https://github.com/mah-dv/ia-python" title="Gå till GitHub">fork av detta projekt på GitHub</a>.
+    </p>
+    <ul class="footer-links">
+        <li>
+            <a href="/" title="Gå till startsidan">Hem</a>
+        </li>
+        <li>
+            <a href="/contact" title="Gå till kontaktsidan">Kontakt</a>
+        </li>
+    </ul>
+</div>
+</footer>
+<!--
+<script src="/assets/js/common.js"></script>
+-->
+<script src="/assets/js/common.js"></script>
+    </body>
+</html>
