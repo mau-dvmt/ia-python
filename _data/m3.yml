@@ -17,3 +17,7 @@ exercises:
 assignments:
     - name: Inlämningsuppgift 2
       file: U1
+
+lectures:
+    - name: 1. Iteration och selektion
+      file: F01
