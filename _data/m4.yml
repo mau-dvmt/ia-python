@@ -15,3 +15,6 @@ exercises:
 assignments:
     - name: Inlämningsuppgift 3
       file: U1
+lectures:
+    - name: 1. Listor och lexikon
+      file: F01
