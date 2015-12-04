@@ -19,6 +19,6 @@ lectures:
     - name: 1. Listor och lexikon
       file: F01
     - name: 2. Extra - Funktioner & loopar
-      file: F02
-    - name: 3. Nästalade listor
       file: F03
+    - name: 3. Nästalade listor
+      file: F02
