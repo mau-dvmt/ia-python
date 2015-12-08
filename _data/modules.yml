@@ -16,9 +16,9 @@
   number: m4
   description: En introduktion datahantering i Python
 
-#- name: Modul 5 - Fil- och felhantering
-#  number: m5
-#  description: Spara data i filer och hantera fel i Python
+- name: Modul 5 - Fil- och felhantering
+  number: m5
+  description: Spara data i filer och hantera fel i Python
 
 #- name: Modul 6 - Objektorientering (IA 2)
 #  number: m6
