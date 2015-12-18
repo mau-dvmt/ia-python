@@ -28,6 +28,6 @@
 #  number: m7
 #  description: Introduktion arv i Python
 
-#- name: Webbapplikationer
-#  number: web
-#  description: Introduktion till webbprogrammering
+- name: Webbapplikationer
+  number: web
+  description: Introduktion till webbprogrammering
