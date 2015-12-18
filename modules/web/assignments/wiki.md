@@ -52,7 +52,7 @@ Till denna instruktion finns [en kort video](https://www.youtube.com/watch?v=Pfv
 
 För att komma igång kan du använda nedanståden [startkod](https://gist.github.com/fohlin/12085142c756e611c57c). Den utgår ifrån att Bottle används, och baserar sig på rekommenderade adresserna ovan. För att använda koden är det viktigt att gå igenom den och sätta sig in hur den är uppbyggd.
 
-<script src="https://gist.github.com/fohlin/12085142c756e611c57c.js"></script> 
+<script src="https://gist.github.com/fohlin/12085142c756e611c57c.js"></script>
 
 
 ## Bedömning
@@ -74,7 +74,7 @@ Uppgiften kan ge VG - men det finns många olika förbättringar som alla kan g�
 ## Tips
 
 *   I ett template skriver man normalt ut en variabel såhär: <code>&#123;&#123; name &#125;&#125;</code>. För att skriva ut en variabel som innehåller HTML-kod, gör istället: <code>&#123;&#123;!name&#125;&#125;</code>.
-    
+
 *   Det är enkelt att utgå ifrån en mapp och få en lista med alla filnamn däri:
     <pre>
     from os import listdir
@@ -83,3 +83,7 @@ Uppgiften kan ge VG - men det finns många olika förbättringar som alla kan g�
     print files # a list of all filenames in directory wiki
     </pre>
 
+## Redovisning
+Redovisa genom att ladda upp programmets källkod på It’s Learning.
+
+Inlämningsuppgifter rättas varje vecka, med fredag som rullande deadline. Det betyder: lämna in senast fredag för rättning kommande vecka. Försök att hålla kursens tempo på en modul per vecka. Lämplig inlämningstid för modul 5: senast fredag 2016-01-15.
