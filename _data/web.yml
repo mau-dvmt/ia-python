@@ -11,3 +11,9 @@ code: web
 assignments:
     - name: Inlämningsuppgift - Wiki
       file: wiki
+
+lectures:
+    - name: 1. Intro till Bottle (Star Wars-tema)
+      file: F01
+    - name: 2. Bottle - repetition från grunden
+      file: F02
