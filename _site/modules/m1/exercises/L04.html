@@ -110,17 +110,17 @@
         
             <h1 id="anvndarinput">4. Användarinput</h1>
 
-<p>Hittills har vi bestämt värdet på de variabler som vi skapat, t.ex. vad vi heter, vilka tal vi vill räkna med osv. Denna information skulle ju bli mer intressant om vi kan få den från personen som använder vårt program. Vi kan i Python fråga användaren efter input/indata till vårt program genom funktionen <code>raw_input()</code>.</p>
+<p>Hittills har vi bestämt värdet på de variabler som vi skapat, t.ex. vad vi heter, vilka tal vi vill räkna med osv. Denna information skulle ju bli mer intressant om vi kan få den från personen som använder vårt program. Vi kan i Python fråga användaren efter input/indata till vårt program genom funktionen <code>input()</code>.</p>
 
 <p>Vill vi fråga användaren efter dennes namn (och spara det som användaren skriver in i variabeln <code>name</code>) så kan vi skriva:</p>
 
-<div class="highlight"><pre><code class="language-python" data-lang="python"><span class="lineno">1</span> <span class="n">name</span> <span class="o">=</span> <span class="nb">raw_input</span><span class="p">(</span><span class="s">&quot;Vad heter du? &quot;</span><span class="p">)</span></code></pre></div>
+<div class="highlight"><pre><code class="language-python" data-lang="python"><span class="lineno">1</span> <span class="n">name</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s">&quot;Vad heter du? &quot;</span><span class="p">)</span></code></pre></div>
 
 <p>Variabeln <code>name</code> kommer då att innehålla det namn som användaren angett i IDLE när programmet körs.</p>
 
 <p>Vill vi sedan välkomna användaren, så kan vi helt enkelt skriva ut det namn som användaren skrev in, genom att använda oss utav variabeln <code>namn</code>.</p>
 
-<div class="highlight"><pre><code class="language-python" data-lang="python"><span class="lineno">1</span> <span class="n">name</span> <span class="o">=</span> <span class="nb">raw_input</span><span class="p">(</span><span class="s">&quot;Vad heter du? &quot;</span><span class="p">)</span>
+<div class="highlight"><pre><code class="language-python" data-lang="python"><span class="lineno">1</span> <span class="n">name</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s">&quot;Vad heter du? &quot;</span><span class="p">)</span>
 <span class="lineno">2</span> <span class="k">print</span><span class="p">(</span><span class="s">&quot;Hej &quot;</span> <span class="o">+</span> <span class="n">name</span> <span class="o">+</span> <span class="s">&quot;!&quot;</span><span class="p">)</span></code></pre></div>
 
 <p>Det bör se ut något i stil med:</p>
@@ -139,8 +139,8 @@
   <li>Förutom att hämta in namnet från besökaren till ert program, ska vi nu skapa två variabler till där vi ska spara besökarens hemstad och ålder</li>
   <li>Utgå från koden ovan, men modifiera den enligt:
     <ol>
-      <li>Skapa variabeln <code>location</code> och använd funktionen <code>raw_input</code> för att hämta in svaret från användaren</li>
-      <li>Skapa variabeln <code>age</code> och använd funktionen <code>raw_input</code> för att hämta in svaret från användaren</li>
+      <li>Skapa variabeln <code>location</code> och använd funktionen <code>input</code> för att hämta in svaret från användaren</li>
+      <li>Skapa variabeln <code>age</code> och använd funktionen <code>input</code> för att hämta in svaret från användaren</li>
       <li>Uppdatera “print”-raden så att den även skriver ut besökarens hemstad och ålder (så att det ser ut som på bilden ovan)</li>
     </ol>
   </li>
@@ -153,10 +153,10 @@
 <p><img src="images/idle10.png" alt="IDLE" /></p>
 
 <ul>
-  <li>Tänk på att den input som man får från användaren genom funktionen <code>raw_input</code> är av datatypen sträng. Alltså - för att räkna med de tal som användaren skriver in behöver vi göra om numret till ett tal (till exempel genom att använda <code>int()</code>), t.ex. såhär:</li>
+  <li>Tänk på att den input som man får från användaren genom funktionen <code>input</code> är av datatypen sträng. Alltså - för att räkna med de tal som användaren skriver in behöver vi göra om numret till ett tal (till exempel genom att använda <code>int()</code>), t.ex. såhär:</li>
 </ul>
 
-<div class="highlight"><pre><code class="language-python" data-lang="python"><span class="lineno">1</span> <span class="n">first_number</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">raw_input</span><span class="p">(</span><span class="s">&quot;Tal 1: &quot;</span><span class="p">))</span></code></pre></div>
+<div class="highlight"><pre><code class="language-python" data-lang="python"><span class="lineno">1</span> <span class="n">first_number</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s">&quot;Tal 1: &quot;</span><span class="p">))</span></code></pre></div>
 
 <p>I övrigt är det upp till er hur ni konstruerar programmet, så länge resultatet liknar utskriftsbilden ovan.</p>
 
