@@ -102,28 +102,6 @@
         
 
         
-        <li>
-            <span class="course-overview-element">
-                Föreläsningar
-                <span class="expand">+</span>
-            </span>
-            <ul class="course-overview-submenu">
-                
-                <li>
-                    <a href="/modules/m1/lectures/F01.html" title="Gå till föreläsningen Kursintroduktion">
-                        Kursintroduktion
-                    </a>
-                </li>
-                
-                <li>
-                    <a href="/modules/m1/lectures/F02.html" title="Gå till föreläsningen Intro till Python">
-                        Intro till Python
-                    </a>
-                </li>
-                
-            </ul>
-        </li>
-        
     </ul>
 </div>
 
@@ -136,7 +114,7 @@
 
 <p>Python är ett plattformsoberoende, dynamiskt, objektorienterat skriptspråk — lämpligt för såväl prototyputveckling som “tyngre” applikationer (Google, Sun Microsystems och Spotify är några av användarna). Det finns tillgängligt för fri nedladdning på <a href="http://python.org/">http://python.org/</a> och är förinstallerat på Mac OS X, liksom de flesta distributioner av Linux.</p>
 
-<p>Vid nedladdning bör du i dagsläget välja Python 2.7.X framför Python 3.X, då version 3 introducerat en mängd bakåtinkompatibla ändringar. Pythonvärlden rör sig långsamt mot version 3, men det är fortfarande enklast att använda version 2.</p>
+<p>Vi kommer i denna kurs att använda oss utav Python 3.x, istället för Python 2.x. Python 2.x används fortfarande utbrett, men eftersom utvecklingen går framåt rör sig allt fler utvecklare mot Python 3.x, varav vi kommer att använda det i denna kurs. Python 2 &amp; 3 liknar varandra väldigt mycket i många aspekter, men Python 3 bröt bakåtkompabilitet vilket gör att en “spricka” har bildats mellan Python 2 &amp; 3.</p>
 
 <p>Den officiella utvecklingsmiljön för Python heter IDLE och följer med installationspaketet. IDLE är också installerat på datorerna vid TS. Öppna IDLE nu. Du bör mötas av ett exekveringsfönster likt:</p>
 
@@ -144,7 +122,7 @@
 
 <h2 id="installera-python-egen-dator">Installera Python (egen dator)</h2>
 
-<p>Om du sitter vid en egen dator så behöver du installera Python och IDLE. Ni laddar ner Python <a href="https://www.python.org">här</a>, notera att det är <b>versionen 2.7.10</b> som ni ska ladda ner och installera.</p>
+<p>Om du sitter vid en egen dator så behöver du installera Python och IDLE. Ni laddar ner Python <a href="https://www.python.org">här</a>, notera att det är <b>versionen 3.5.2</b> som ni ska ladda ner och installera.</p>
 
 <h1 id="idle---utvecklingsmiljn">IDLE - utvecklingsmiljön</h1>
 
@@ -153,10 +131,10 @@
 <p><img src="images/idle.png" alt="Idle" />
 I IDLE kan man antingen direkt skriva in Python-kod, eller köra Python-kod (eller program) som man sparat i separata filer. För att se så att IDLE fungerar som det ska kan ni börja med att skriva in följande python-kod (föjt av ett enterslag efter varje rad):</p>
 
-<div class="highlight"><pre><code class="language-python" data-lang="python"><span class="lineno">1</span> <span class="k">print</span> <span class="s">&quot;My first line of Python code!&quot;</span>
-<span class="lineno">2</span> <span class="k">print</span> <span class="mi">7</span><span class="o">+</span><span class="mi">12</span>
-<span class="lineno">3</span> <span class="k">print</span> <span class="mi">5</span> <span class="o">&gt;</span> <span class="mi">4</span>
-<span class="lineno">4</span> <span class="k">print</span> <span class="s">&quot;The sum of 5 &amp; 2 is: &quot;</span><span class="p">,</span> <span class="mi">5</span> <span class="o">+</span> <span class="mi">2</span></code></pre></div>
+<div class="highlight"><pre><code class="language-python" data-lang="python"><span class="lineno">1</span> <span class="k">print</span><span class="p">(</span><span class="s">&quot;My first line of Python code!&quot;</span><span class="p">)</span>
+<span class="lineno">2</span> <span class="k">print</span><span class="p">(</span><span class="mi">7</span><span class="o">+</span><span class="mi">12</span><span class="p">)</span>
+<span class="lineno">3</span> <span class="k">print</span><span class="p">(</span><span class="mi">5</span> <span class="o">&gt;</span> <span class="mi">4</span><span class="p">)</span>
+<span class="lineno">4</span> <span class="k">print</span><span class="p">(</span><span class="s">&quot;The sum of 5 &amp; 2 is: &quot;</span><span class="p">,</span> <span class="mi">5</span> <span class="o">+</span> <span class="mi">2</span><span class="p">)</span></code></pre></div>
 
 <p>Har ni skrivit av koden <i>exakt</i> som det står ovan, så borde det se ut på följande sätt:</p>
 

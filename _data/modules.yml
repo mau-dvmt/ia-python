@@ -4,25 +4,25 @@
   number: m1
   description: En introduktion till Python och dess utvecklingsmiljö
 
-- name: Modul 2 - Funktioner
-  number: m2
-  description: En introduktion till funktioner i Python
+#- name: Modul 2 - Funktioner
+#  number: m2
+#  description: En introduktion till funktioner i Python
 
-- name: Modul 3 - Iteration och selektion
-  number: m3
-  description: En introduktion till for- och while-loopar samt if-satser i Python
+#- name: Modul 3 - Iteration och selektion
+#  number: m3
+#  description: En introduktion till for- och while-loopar samt if-satser i Python
 
-- name: Modul 4 - Listor och lexikon
-  number: m4
-  description: En introduktion datahantering i Python
+#- name: Modul 4 - Listor och lexikon
+#  number: m4
+#  description: En introduktion datahantering i Python
 
-- name: Modul 5 - Fil- och felhantering
-  number: m5
-  description: Spara data i filer och hantera fel i Python
+#- name: Modul 5 - Fil- och felhantering
+#  number: m5
+#  description: Spara data i filer och hantera fel i Python
 
-- name: Webbapplikationer
-  number: web
-  description: Introduktion till webbprogrammering
+#- name: Webbapplikationer
+#  number: web
+#  description: Introduktion till webbprogrammering
 
 #- name: Modul 6 - Objektorientering (IA 2)
 #  number: m6

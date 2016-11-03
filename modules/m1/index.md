@@ -28,7 +28,7 @@ En inledning där du får bekanta dig Pythons interaktiva exekveringsfönster, s
 
 ##### Bra att läsa
 
-[Think Python - Chapter 1 The way of the program:](http://www.greenteapress.com/thinkpython/html/thinkpython002.html)
+[Think Python - Chapter 1 The way of the program:](http://greenteapress.com/thinkpython2/html/thinkpython2002.html)
 
 ##### Övningar
 
@@ -37,9 +37,8 @@ En inledning där du får bekanta dig Pythons interaktiva exekveringsfönster, s
 
 ##### Extra läsning
 
-- [Codecademy - Python Syntax](http://www.codecademy.com/en/tracks/python)
-- [Interactive Python - The Way of the Program](http://interactivepython.org/runestone/static/thinkcspy/GeneralIntro/introduction.html#the-way-of-the-program)
-- [Learn Python the hard way - A Good First Program](http://learnpythonthehardway.org/book/ex1.html)
+- [Codecademy - Python Syntax](http://www.codecademy.com/en/tracks/python) (*Obs.* Python 2)
+- [Learn Python the hard way - A Good First Program](http://learnpythonthehardway.org/book/ex1.html) (*Obs.* Python 2)
 
 ---
 
@@ -49,7 +48,7 @@ En introduktion till variabler, användarinput och datatyper i Python. Avsnittet
 
 ##### Bra att läsa
 
-- [Think Python - Chapter 2 Variables, expressions and statements](http://www.greenteapress.com/thinkpython/html/thinkpython003.html) 
+- [Think Python - Chapter 2 Variables, expressions and statements](http://greenteapress.com/thinkpython2/html/thinkpython2003.html)
 
 ##### Övningar
 
@@ -59,12 +58,11 @@ En introduktion till variabler, användarinput och datatyper i Python. Avsnittet
 
 ##### Extra läsning
 
-- [Codecademy - Strings & Console Output](http://www.codecademy.com/en/tracks/python)
-- [Interactive Python - Variables, Expressions and Statements](http://interactivepython.org/runestone/static/thinkcspy/SimplePythonData/simpledata.html)
-- [Learn Python the hard way - Numbers and Math](http://learnpythonthehardway.org/book/ex3.html)
-- [Learn Python the hard way - Variables And Names](http://learnpythonthehardway.org/book/ex4.html)
-- [Learn Python the hard way - More Variables and Printing](http://learnpythonthehardway.org/book/ex5.html)
-- [Learn Python the hard way - Strings and Text](http://learnpythonthehardway.org/book/ex6.html)
+- [Codecademy - Strings & Console Output](http://www.codecademy.com/en/tracks/python) (*Obs.* Python 2)
+- [Learn Python the hard way - Numbers and Math](http://learnpythonthehardway.org/book/ex3.html) (*Obs.* Python 2)
+- [Learn Python the hard way - Variables And Names](http://learnpythonthehardway.org/book/ex4.html) (*Obs.* Python 2)
+- [Learn Python the hard way - More Variables and Printing](http://learnpythonthehardway.org/book/ex5.html) (*Obs.* Python 2)
+- [Learn Python the hard way - Strings and Text](http://learnpythonthehardway.org/book/ex6.html) (*Obs.* Python 2)
 
 ---
 
@@ -74,14 +72,10 @@ En snabb introduktion till hur man kan tolka Pythons felmeddelande, vid syntax-f
 
 ##### Bra att läsa
 
-- [Think Python - Chapter 2 Debugging](http://www.greenteapress.com/thinkpython/html/thinkpython003.html#toc21)
+- [Think Python - Chapter 2 Debugging](http://greenteapress.com/thinkpython2/html/thinkpython2003.html#sec23)
 
 ##### Övningar
 
 1. [Identifiera felet i koden (1, 2, 3)](exercises/L06.html)
-
-##### Extra läsning
-
-- [Interactive Python - How to be a Successful Programmer](http://interactivepython.org/runestone/static/thinkcspy/Debugging/intro-HowtobeaSuccessfulProgrammer.html)
 
 Du uppmanas att aktivt gå igenom dessa delar, reflektera över vad du gör och diskutera eventuella frågor med kurskamrater och laborationshandlerade.
