@@ -37,7 +37,7 @@
         }
 
         var toggleSidebar = document.getElementById( 'toggle-sidebar' );
-        
+
         toggleSidebar.addEventListener( 'click', function( e ) {
             sidebar.classList.toggle( 'toggle' );
         });
@@ -183,12 +183,13 @@
     // Make external links open in a new tab
     function setTargetForLinks() {
         var anchors = document.getElementsByTagName( 'a' ),
-            re = new RegExp( '^http://programmering.iakurs.se' );
+            re = new RegExp( '^http://da.354a.ia-mah.se' ),
+            re2 = new RegExp( '^http://localhost:4000' );
 
         for ( var i = 0, len = anchors.length; i < len; i++ ) {
             var anchor = anchors[i];
 
-            if ( ! re.test( anchor.href ) ) {
+            if ( ! re.test( anchor.href ) && ! re2.test(anchor.href) ) {
                 anchor.target = '_blank';
             }
         }
@@ -306,7 +307,7 @@
 
         for ( var i = 0, len = codeExamples.length; i < len; i++ ) {
             var codeExample = codeExamples[i];
-            
+
             // Append button for hiding line numbers
             appendLineNumberButton( codeExample );
 
@@ -320,7 +321,7 @@
         highlightSidebar();
         setTargetForLinks();
         extendCodeExamples();
-        
+
         // iOS web app navigation
         (function( document, navigator, standalone ) {
             if ( ( standalone in navigator ) && navigator[standalone] ) {
@@ -329,10 +330,10 @@
                     stop = /^(a|html)$/i;
 
                 body.classList.add( 'standalone' );
-                
+
                 if ( sidebar ) {
                     var toggleSidebar = document.getElementById( 'web-app-sidebar' );
-                    
+
                     toggleSidebar.addEventListener( 'click', function( e ) {
                         sidebar.classList.toggle( 'toggle' );
                     });
