@@ -189,8 +189,6 @@
         for ( var i = 0, len = anchors.length; i < len; i++ ) {
             var anchor = anchors[i];
 
-            console.log(anchor.href);
-
             if ( ! re.test( anchor.href ) && ! re2.test(anchor.href) ) {
                 anchor.target = '_blank';
             }
