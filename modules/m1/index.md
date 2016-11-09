@@ -78,4 +78,14 @@ En snabb introduktion till hur man kan tolka Pythons felmeddelande, vid syntax-f
 
 1. [Identifiera felet i koden (1, 2, 3)](exercises/L06.html)
 
+#### Del 4 - Extra övning
+
+En extra övning, som bygger vidare på koncepten på i de ovanstående delarna.
+
+##### Övningar
+
+1. [Identifiera felet i koden (1, 2, 3)](exercises/L06.html)
+
+---
+
 Du uppmanas att aktivt gå igenom dessa delar, reflektera över vad du gör och diskutera eventuella frågor med kurskamrater och laborationshandlerade.
