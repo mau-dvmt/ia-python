@@ -84,7 +84,7 @@ En extra övning, som bygger vidare på koncepten på i de ovanstående delarna.
 
 ##### Övningar
 
-1. [Extara övning](exercises/L07.html)
+1. [Extra, slutövning](exercises/L07.html)
 
 ---
 
