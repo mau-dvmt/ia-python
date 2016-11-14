@@ -115,6 +115,12 @@
                     </a>
                 </li>
                 
+                <li>
+                    <a href="/modules/m1/lectures/F02.html" title="Gå till föreläsningen Intro till Python">
+                        Intro till Python
+                    </a>
+                </li>
+                
             </ul>
         </li>
         
@@ -174,9 +180,9 @@
 <p>Kör man koden ovan så kommer man att få följande fel:</p>
 
 <div class="highlight"><pre><code class="language-python" data-lang="python"><span class="lineno">1</span> <span class="n">Traceback</span> <span class="p">(</span><span class="n">most</span> <span class="n">recent</span> <span class="n">call</span> <span class="n">last</span><span class="p">):</span>
-<span class="lineno">2</span> <span class="n">File</span> <span class="s">&quot;C:/Users/tsanti/Desktop/program.py&quot;</span><span class="p">,</span> <span class="n">line</span> <span class="mi">3</span><span class="p">,</span> <span class="ow">in</span> <span class="o">&amp;</span><span class="n">lt</span><span class="p">;</span><span class="n">module</span><span class="o">&amp;</span><span class="n">gt</span><span class="p">;</span>
-<span class="lineno">3</span> <span class="k">print</span><span class="p">(</span><span class="s">&quot;Produkten: &quot;</span> <span class="o">+</span> <span class="n">product</span> <span class="o">+</span> <span class="s">&quot; kostar &quot;</span> <span class="o">+</span> <span class="n">price</span> <span class="o">+</span> <span class="s">&quot;SEK&quot;</span><span class="p">)</span>
-<span class="lineno">4</span> <span class="ne">TypeError</span><span class="p">:</span> <span class="n">cannot</span> <span class="n">concatenate</span> <span class="s">&#39;str&#39;</span> <span class="ow">and</span> <span class="s">&#39;int&#39;</span> <span class="n">objects</span></code></pre></div>
+<span class="lineno">2</span>   <span class="n">File</span> <span class="s">&quot;C:/Users/TSANTI/Desktop/temp.py&quot;</span><span class="p">,</span> <span class="n">line</span> <span class="mi">3</span><span class="p">,</span> <span class="ow">in</span> <span class="o">&lt;</span><span class="n">module</span><span class="o">&gt;</span>
+<span class="lineno">3</span>     <span class="k">print</span><span class="p">(</span><span class="s">&quot;Produkten: &quot;</span> <span class="o">+</span> <span class="n">product</span> <span class="o">+</span> <span class="s">&quot; kostar &quot;</span> <span class="o">+</span> <span class="n">price</span> <span class="o">+</span> <span class="s">&quot;SEK&quot;</span><span class="p">)</span>
+<span class="lineno">4</span> <span class="ne">TypeError</span><span class="p">:</span> <span class="n">Can</span><span class="s">&#39;t convert &#39;</span><span class="nb">int</span><span class="s">&#39; object to str implicitly</span></code></pre></div>
 
 <p>Den sista raden i felmeddelande talar om att vi inte kan konkatenera en sträng (str) med ett tal (int). Detta kan man lösa genom att göra om talet till en sträng, genom funktionen <code>str()</code>, se fungerande kod:</p>
 

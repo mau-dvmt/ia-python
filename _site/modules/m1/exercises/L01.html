@@ -115,6 +115,12 @@
                     </a>
                 </li>
                 
+                <li>
+                    <a href="/modules/m1/lectures/F02.html" title="Gå till föreläsningen Intro till Python">
+                        Intro till Python
+                    </a>
+                </li>
+                
             </ul>
         </li>
         
@@ -132,13 +138,21 @@
 
 <p>Vi kommer i denna kurs att använda oss utav Python 3.x, istället för Python 2.x. Python 2.x används fortfarande utbrett, men eftersom utvecklingen går framåt rör sig allt fler utvecklare mot Python 3.x, varav vi kommer att använda det i denna kurs. Python 2 &amp; 3 liknar varandra väldigt mycket i många aspekter, men Python 3 bröt bakåtkompabilitet vilket gör att en “spricka” har bildats mellan Python 2 &amp; 3.</p>
 
-<p>Den officiella utvecklingsmiljön för Python heter IDLE och följer med installationspaketet. IDLE är också installerat på datorerna vid TS. Öppna IDLE nu. Du bör mötas av ett exekveringsfönster likt:</p>
-
-<p><img src="images/idle.png" alt="Idle" /></p>
+<p>Den officiella utvecklingsmiljön för Python heter IDLE och följer med installationspaketet. För att köra Python och IDLE behöver vi först installera det.</p>
 
 <h2 id="installera-python-egen-dator">Installera Python (egen dator)</h2>
 
 <p>Om du sitter vid en egen dator så behöver du installera Python och IDLE. Ni laddar ner Python <a href="https://www.python.org">här</a>, notera att det är <b>versionen 3.5.2</b> som ni ska ladda ner och installera.</p>
+
+<h2 id="installera-python-datorsal">Installera Python (datorsal)</h2>
+
+<p>Vi behöver installera Python genom en portabel version (då datorsalarna just nu behöver stödja både version 2 &amp; 3). Ni hittar instruktioner för att installera Python <a href="http://www.mah.se/Ar-student/itservice/Vara-tjanster/Studentdatorer/Programvara-i-datorsalar/Portabla-applikationer/">här</a>. Följ dessa steg för att installera Python på er användare på skolan datorer:</p>
+
+<ol>
+  <li><a href="https://sourceforge.net/projects/winpython/files/WinPython_3.5/3.5.2.2/WinPython-64bit-3.5.2.2Zero.exe/download">Ladda ner den portabla versionen av Python här</a></li>
+  <li>Installera Python (kör filen du precis laddade ner) på din <code>M:</code>-disk (lämpligen skapar du en mapp, t.ex. <code>Program</code>, där du installerar det)</li>
+  <li>Starta IDLE</li>
+</ol>
 
 <h1 id="idle---utvecklingsmiljn">IDLE - utvecklingsmiljön</h1>
 
@@ -159,14 +173,6 @@ I IDLE kan man antingen direkt skriva in Python-kod, eller köra Python-kod (ell
 <p>Skulle ni få upp ett felmeddelande (en röd text, se bild nedan) så har ni antagligen missat en bokstav/tecken någonstans (t.ex. ett citat-tecken). Dubbelkolla då vad ni skrivit in och försök igen (vi kommera att titta mer på felmeddelanden senare).</p>
 
 <p><img src="images/idle3.png" alt="Idle" /></p>
-
-<h2 id="teckenkodning-utf-8">Teckenkodning UTF-8</h2>
-
-<p>Som teckenkodning i denna kurs kommer vi att använda <code>UTF-8</code>. Detta innebär att era filer ska vara sparade i UTF-8 och det ställer ni in i IDLE under (i menyn för fönstret):</p>
-
-<p><code>Options &gt; Configure IDLE...</code></p>
-
-<p>Där går ni sedan till fliken <code>General</code> och under alternativet <code>Default Source Encoding</code> så väljer ni <code>UTF-8</code> (obs, ni kan behöva starta om IDLE innan allt fungerar som det ska…)</p>
 
         
 
