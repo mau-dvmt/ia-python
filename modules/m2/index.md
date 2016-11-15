@@ -26,7 +26,7 @@ Vidare tittar vi på hur man kan har paramtrar till sina funktioner och hur man 
 
 ##### Bra att läsa
 
-- [Think Python - Chapter 3  Functions](http://www.greenteapress.com/thinkpython/html/thinkpython004.html)
+- [Think Python - Chapter 3  Functions](http://greenteapress.com/thinkpython2/html/thinkpython2004.html)
 
 ##### Övningar
 
@@ -37,9 +37,9 @@ Vidare tittar vi på hur man kan har paramtrar till sina funktioner och hur man 
 
 ##### Extra läsning
 
-- [Codecademy - Python Functions](http://www.codecademy.com/en/tracks/python)
-- [Interactive Python - Functions](http://interactivepython.org/runestone/static/thinkcspy/Functions/functions.html)
-- [Learn Python the hard way - Names, Variables, Code, Functions](http://learnpythonthehardway.org/book/ex18.html)
+- [Codecademy - Python Functions](http://www.codecademy.com/en/tracks/python) (obs. Python 2)
+- [Interactive Python - Functions](http://interactivepython.org/runestone/static/thinkcspy/Functions/functions.html) (obs. Python 2)
+- [Learn Python the hard way - Names, Variables, Code, Functions](http://learnpythonthehardway.org/book/ex18.html) (obs. Python 2)
 
 ---
 
@@ -49,7 +49,7 @@ Vi kommer här att gå igenom moduler i Python. Till en början tittar vi på de
 
 ##### Bra att läsa
 
-- [Think Python - Chapter 3  Functions](http://www.greenteapress.com/thinkpython/html/thinkpython004.html)
+- [Think Python - Chapter 3  Functions](http://greenteapress.com/thinkpython2/html/thinkpython2004.html)
 
 ##### Övningar
 
@@ -57,7 +57,7 @@ Vi kommer här att gå igenom moduler i Python. Till en början tittar vi på de
 
 ##### Extra läsning
 
-- [Interactive Python - Python modules](http://interactivepython.org/runestone/static/thinkcspy/toc.html#python-modules)
+- [Interactive Python - Python modules](http://interactivepython.org/runestone/static/thinkcspy/toc.html#python-modules) (obs. Python 2)
 
 ---
 
