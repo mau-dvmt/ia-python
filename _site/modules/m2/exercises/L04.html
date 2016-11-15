@@ -106,22 +106,6 @@
         
 
         
-        <li>
-            <span class="course-overview-element">
-                Föreläsningar
-                <span class="expand">+</span>
-            </span>
-            <ul class="course-overview-submenu">
-                
-                <li>
-                    <a href="/modules/m2/lectures/F01.html" title="Gå till föreläsningen 1. Funktioner">
-                        1. Funktioner
-                    </a>
-                </li>
-                
-            </ul>
-        </li>
-        
     </ul>
 </div>
 
@@ -136,17 +120,17 @@
 
 <p>Se följande exempel. Vi har ett program som låter användaren multiplicera tre tal med varandra och programmet skriver sedan produkten av talen:</p>
 
-<div class="highlight"><pre><code class="language-python" data-lang="python"><span class="lineno"> 1</span> <span class="n">name</span> <span class="o">=</span> <span class="nb">raw_input</span><span class="p">(</span><span class="s">&quot;Vad heter du? &quot;</span><span class="p">)</span>
-<span class="lineno"> 2</span> <span class="k">print</span> <span class="s">&quot;*&quot;</span><span class="o">*</span><span class="mi">30</span>
-<span class="lineno"> 3</span> <span class="k">print</span> <span class="s">&quot;Välkommen &quot;</span> <span class="o">+</span> <span class="n">name</span> <span class="o">+</span> <span class="s">&quot;!&quot;</span>
-<span class="lineno"> 4</span> <span class="k">print</span> <span class="s">&quot;I detta program kan du mulitplicera tre tal med varandra - så beräknar vi produkten åt dig.&quot;</span>
-<span class="lineno"> 5</span> <span class="k">print</span> <span class="s">&quot;Du kommer nu att får mata in de tre tal som du vill multiplicera med&quot;</span>
-<span class="lineno"> 6</span> <span class="n">num_1</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">raw_input</span><span class="p">(</span><span class="s">&quot;Vilket är tal nr.1: &quot;</span><span class="p">))</span>
-<span class="lineno"> 7</span> <span class="n">num_2</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">raw_input</span><span class="p">(</span><span class="s">&quot;Vilket är tal nr.2: &quot;</span><span class="p">))</span>
-<span class="lineno"> 8</span> <span class="n">num_3</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">raw_input</span><span class="p">(</span><span class="s">&quot;Vilket är tal nr.3: &quot;</span><span class="p">))</span>
+<div class="highlight"><pre><code class="language-python" data-lang="python"><span class="lineno"> 1</span> <span class="n">name</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s">&quot;Vad heter du? &quot;</span><span class="p">)</span>
+<span class="lineno"> 2</span> <span class="k">print</span><span class="p">(</span><span class="s">&quot;*&quot;</span><span class="o">*</span><span class="mi">30</span><span class="p">)</span>
+<span class="lineno"> 3</span> <span class="k">print</span><span class="p">(</span><span class="s">&quot;Välkommen &quot;</span> <span class="o">+</span> <span class="n">name</span> <span class="o">+</span> <span class="s">&quot;!&quot;</span><span class="p">)</span>
+<span class="lineno"> 4</span> <span class="k">print</span><span class="p">(</span><span class="s">&quot;I detta program kan du mulitplicera tre tal med varandra - så beräknar vi produkten åt dig.&quot;</span><span class="p">)</span>
+<span class="lineno"> 5</span> <span class="k">print</span><span class="p">(</span><span class="s">&quot;Du kommer nu att får mata in de tre tal som du vill multiplicera med&quot;</span><span class="p">)</span>
+<span class="lineno"> 6</span> <span class="n">num_1</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s">&quot;Vilket är tal nr.1: &quot;</span><span class="p">))</span>
+<span class="lineno"> 7</span> <span class="n">num_2</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s">&quot;Vilket är tal nr.2: &quot;</span><span class="p">))</span>
+<span class="lineno"> 8</span> <span class="n">num_3</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s">&quot;Vilket är tal nr.3: &quot;</span><span class="p">))</span>
 <span class="lineno"> 9</span> <span class="n">result</span> <span class="o">=</span> <span class="n">num_1</span> <span class="o">*</span> <span class="n">num_2</span> <span class="o">*</span> <span class="n">num_3</span>
-<span class="lineno">10</span> <span class="k">print</span> <span class="s">&quot;Produkten av dina valda tal är: &quot;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">result</span><span class="p">)</span>
-<span class="lineno">11</span> <span class="k">print</span> <span class="s">&quot;*&quot;</span><span class="o">*</span><span class="mi">30</span></code></pre></div>
+<span class="lineno">10</span> <span class="k">print</span><span class="p">(</span><span class="s">&quot;Produkten av dina valda tal är: &quot;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">result</span><span class="p">))</span>
+<span class="lineno">11</span> <span class="k">print</span><span class="p">(</span><span class="s">&quot;*&quot;</span><span class="o">*</span><span class="mi">30</span><span class="p">)</span></code></pre></div>
 
 <p>Detta program skulle vi kunna dela upp i mindre bitar - för att få en bättre och tydligare struktur. T.ex. såhär:</p>
 
@@ -159,20 +143,20 @@
 <span class="lineno"> 7</span>     <span class="n">num_3</span> <span class="o">=</span> <span class="n">get_number</span><span class="p">(</span><span class="mi">3</span><span class="p">)</span>
 <span class="lineno"> 8</span>     <span class="n">result</span> <span class="o">=</span> <span class="n">multiply_three_numbers</span><span class="p">(</span><span class="n">num_1</span><span class="p">,</span> <span class="n">num_2</span><span class="p">,</span> <span class="n">num_3</span><span class="p">)</span>
 <span class="lineno"> 9</span>     <span class="n">print_result</span><span class="p">(</span><span class="n">result</span><span class="p">)</span>
-<span class="lineno">10</span> 	
+<span class="lineno">10</span> 
 <span class="lineno">11</span> <span class="k">def</span> <span class="nf">get_name</span><span class="p">():</span>
 <span class="lineno">12</span>     <span class="sd">&#39;&#39;&#39; Frågar besökaren efter namn &#39;&#39;&#39;</span>
-<span class="lineno">13</span>     <span class="k">return</span> <span class="nb">raw_input</span><span class="p">(</span><span class="s">&quot;Vad heter du? &quot;</span><span class="p">)</span>
+<span class="lineno">13</span>     <span class="k">return</span> <span class="nb">input</span><span class="p">(</span><span class="s">&quot;Vad heter du? &quot;</span><span class="p">)</span>
 <span class="lineno">14</span> 
 <span class="lineno">15</span> <span class="k">def</span> <span class="nf">welcome</span><span class="p">(</span><span class="n">name</span><span class="p">):</span>
 <span class="lineno">16</span>     <span class="sd">&#39;&#39;&#39; Välkomnar besökaren och berättar programmets funktion &#39;&#39;&#39;</span>
-<span class="lineno">17</span>     <span class="k">print</span> <span class="s">&quot;Välkommen &quot;</span> <span class="o">+</span> <span class="n">name</span> <span class="o">+</span> <span class="s">&quot;!&quot;</span>
-<span class="lineno">18</span>     <span class="k">print</span> <span class="s">&quot;I detta program kan du mulitplicera tre tal med varandra - så beräknar vi produkten åt dig.&quot;</span>
-<span class="lineno">19</span>     <span class="k">print</span> <span class="s">&quot;Du kommer nu att får mata in de tre tal som du vill multiplicera med&quot;</span>
+<span class="lineno">17</span>     <span class="k">print</span><span class="p">(</span><span class="s">&quot;Välkommen &quot;</span> <span class="o">+</span> <span class="n">name</span> <span class="o">+</span> <span class="s">&quot;!&quot;</span><span class="p">)</span>
+<span class="lineno">18</span>     <span class="k">print</span><span class="p">(</span><span class="s">&quot;I detta program kan du mulitplicera tre tal med varandra - så beräknar vi produkten åt dig.&quot;</span><span class="p">)</span>
+<span class="lineno">19</span>     <span class="k">print</span><span class="p">(</span><span class="s">&quot;Du kommer nu att får mata in de tre tal som du vill multiplicera med&quot;</span><span class="p">)</span>
 <span class="lineno">20</span> 
 <span class="lineno">21</span> <span class="k">def</span> <span class="nf">get_number</span><span class="p">(</span><span class="n">number</span><span class="p">):</span>
 <span class="lineno">22</span>     <span class="sd">&#39;&#39;&#39; Frågar användaren efter ett tal &#39;&#39;&#39;</span>
-<span class="lineno">23</span>     <span class="k">return</span> <span class="nb">raw_input</span><span class="p">(</span><span class="s">&quot;Vilket är tal nr.&quot;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">number</span><span class="p">)</span> <span class="o">+</span> <span class="s">&quot;: &quot;</span><span class="p">)</span>
+<span class="lineno">23</span>     <span class="k">return</span> <span class="nb">input</span><span class="p">(</span><span class="s">&quot;Vilket är tal nr.&quot;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">number</span><span class="p">)</span> <span class="o">+</span> <span class="s">&quot;: &quot;</span><span class="p">)</span>
 <span class="lineno">24</span> 
 <span class="lineno">25</span> <span class="k">def</span> <span class="nf">multiply_three_numbers</span><span class="p">(</span><span class="n">number_1</span><span class="p">,</span> <span class="n">number_2</span><span class="p">,</span> <span class="n">number_3</span><span class="p">):</span>
 <span class="lineno">26</span>     <span class="sd">&#39;&#39;&#39; Beräknar produkten av tre tal &#39;&#39;&#39;</span>
@@ -180,8 +164,8 @@
 <span class="lineno">28</span> 
 <span class="lineno">29</span> <span class="k">def</span> <span class="nf">print_result</span><span class="p">(</span><span class="n">result</span><span class="p">):</span>
 <span class="lineno">30</span>     <span class="sd">&#39;&#39;&#39; Skriver ut resultatet och tackar användaren &#39;&#39;&#39;</span>
-<span class="lineno">31</span>     <span class="k">print</span> <span class="s">&quot;Produkten av dina valda tal är: &quot;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">result</span><span class="p">)</span>
-<span class="lineno">32</span>     <span class="k">print</span> <span class="s">&quot;*&quot;</span><span class="o">*</span><span class="mi">30</span>
+<span class="lineno">31</span>     <span class="k">print</span><span class="p">(</span><span class="s">&quot;Produkten av dina valda tal är: &quot;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">result</span><span class="p">))</span>
+<span class="lineno">32</span>     <span class="k">print</span><span class="p">(</span><span class="s">&quot;*&quot;</span><span class="o">*</span><span class="mi">30</span><span class="p">)</span>
 <span class="lineno">33</span> 
 <span class="lineno">34</span> <span class="n">multiply_program</span><span class="p">()</span></code></pre></div>
 

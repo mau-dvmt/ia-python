@@ -106,22 +106,6 @@
         
 
         
-        <li>
-            <span class="course-overview-element">
-                Föreläsningar
-                <span class="expand">+</span>
-            </span>
-            <ul class="course-overview-submenu">
-                
-                <li>
-                    <a href="/modules/m2/lectures/F01.html" title="Gå till föreläsningen 1. Funktioner">
-                        1. Funktioner
-                    </a>
-                </li>
-                
-            </ul>
-        </li>
-        
     </ul>
 </div>
 
@@ -149,9 +133,9 @@
 <p>Math-modulen ger oss tillgång till många funktioner, t.ex. funktionen <code>ceil</code> som avrundar ett tal uppåt till närmsta heltal (fler funktioner i math-modulen kan ni hitta <a href="https://docs.python.org/2/library/math.html#module-math">här</a>). För att använda funktionen <code>ceil</code> måste vi först referera till modulen <code>math</code> och sedan genom en <code>.</code> ange vilken funktion i modulen vi vill använda. Exempel:</p>
 
 <div class="highlight"><pre><code class="language-python" data-lang="python"><span class="lineno">1</span> <span class="kn">import</span> <span class="nn">math</span>
-<span class="lineno">2</span> <span class="k">print</span> <span class="n">math</span><span class="o">.</span><span class="n">ceil</span><span class="p">(</span><span class="mf">2.2</span><span class="p">)</span>
-<span class="lineno">3</span> <span class="k">print</span> <span class="n">math</span><span class="o">.</span><span class="n">ceil</span><span class="p">(</span><span class="mf">5.9</span><span class="p">)</span>
-<span class="lineno">4</span> <span class="k">print</span> <span class="n">math</span><span class="o">.</span><span class="n">ceil</span><span class="p">(</span><span class="mf">3.5</span><span class="p">)</span></code></pre></div>
+<span class="lineno">2</span> <span class="k">print</span><span class="p">(</span><span class="n">math</span><span class="o">.</span><span class="n">ceil</span><span class="p">(</span><span class="mf">2.2</span><span class="p">))</span>
+<span class="lineno">3</span> <span class="k">print</span><span class="p">(</span><span class="n">math</span><span class="o">.</span><span class="n">ceil</span><span class="p">(</span><span class="mf">5.9</span><span class="p">))</span>
+<span class="lineno">4</span> <span class="k">print</span><span class="p">(</span><span class="n">math</span><span class="o">.</span><span class="n">ceil</span><span class="p">(</span><span class="mf">3.5</span><span class="p">))</span></code></pre></div>
 
 <p>Ni kan se vilka standardmoduler man kan importera i Python <a href="https://docs.python.org/2/py-modindex.html">här</a>.</p>
 
@@ -162,26 +146,26 @@
 <p>Vi kan även importera en moduls funktioner så att vi inte behöver ange modulens namn när vi kallar på funktionerna i modulen. Det kan se ut på följande sätt man importerar alla funktioner från en modul:</p>
 
 <div class="highlight"><pre><code class="language-python" data-lang="python"><span class="lineno">1</span> <span class="kn">from</span> <span class="nn">math</span> <span class="kn">import</span> <span class="o">*</span>
-<span class="lineno">2</span> <span class="k">print</span> <span class="n">ceil</span><span class="p">(</span><span class="mf">2.2</span><span class="p">)</span>
-<span class="lineno">3</span> <span class="k">print</span> <span class="n">ceil</span><span class="p">(</span><span class="mf">5.9</span><span class="p">)</span>
-<span class="lineno">4</span> <span class="k">print</span> <span class="n">ceil</span><span class="p">(</span><span class="mf">3.5</span><span class="p">)</span></code></pre></div>
+<span class="lineno">2</span> <span class="k">print</span><span class="p">(</span><span class="n">ceil</span><span class="p">(</span><span class="mf">2.2</span><span class="p">))</span>
+<span class="lineno">3</span> <span class="k">print</span><span class="p">(</span><span class="n">ceil</span><span class="p">(</span><span class="mf">5.9</span><span class="p">))</span>
+<span class="lineno">4</span> <span class="k">print</span><span class="p">(</span><span class="n">ceil</span><span class="p">(</span><span class="mf">3.5</span><span class="p">))</span></code></pre></div>
 
 <p><code>*</code> innebär att vi väljer alla funktioner för modulen. Vill vi kanske bara importera funktionen <code>ceil</code> kan vi istället skriva:</p>
 
 <div class="highlight"><pre><code class="language-python" data-lang="python"><span class="lineno">1</span> <span class="kn">from</span> <span class="nn">math</span> <span class="kn">import</span> <span class="n">ceil</span>
-<span class="lineno">2</span> <span class="k">print</span> <span class="n">ceil</span><span class="p">(</span><span class="mf">2.2</span><span class="p">)</span>
-<span class="lineno">3</span> <span class="k">print</span> <span class="n">ceil</span><span class="p">(</span><span class="mf">5.9</span><span class="p">)</span>
-<span class="lineno">4</span> <span class="k">print</span> <span class="n">ceil</span><span class="p">(</span><span class="mf">3.5</span><span class="p">)</span></code></pre></div>
+<span class="lineno">2</span> <span class="k">print</span><span class="p">(</span><span class="n">ceil</span><span class="p">(</span><span class="mf">2.2</span><span class="p">))</span>
+<span class="lineno">3</span> <span class="k">print</span><span class="p">(</span><span class="n">ceil</span><span class="p">(</span><span class="mf">5.9</span><span class="p">))</span>
+<span class="lineno">4</span> <span class="k">print</span><span class="p">(</span><span class="n">ceil</span><span class="p">(</span><span class="mf">3.5</span><span class="p">))</span></code></pre></div>
 
 <h3 id="egna-moduler">Egna moduler</h3>
 
-<p>Vi kan i Python även bygga våra egna moduler, vilket underlättar stuktur och översikt av era kommande program. En egen modul är helt enkelt ett Python-dokument med funktioner. Vi skulle kunna skapa en modul som hanterar addition och subtraktion och kalla modulen för <code>calc_functions</code> och vi väljer då att döpa filen till <em>calc_functions.py</em>. I <em>calc_functions.py</em> lägger vi till funktionerna <code>add</code> och <code>subtract</code> enligt: </p>
+<p>Vi kan i Python även bygga våra egna moduler, vilket underlättar stuktur och översikt av era kommande program. En egen modul är helt enkelt ett Python-dokument med funktioner. Vi skulle kunna skapa en modul som hanterar addition och subtraktion och kalla modulen för <code>calc_functions</code> och vi väljer då att döpa filen till <em>calc_functions.py</em>. I <em>calc_functions.py</em> lägger vi till funktionerna <code>add</code> och <code>subtract</code> enligt:</p>
 
 <div class="highlight"><pre><code class="language-python" data-lang="python"><span class="lineno">1</span> <span class="c">#  calc_functions.py</span>
 <span class="lineno">2</span> 
 <span class="lineno">3</span> <span class="k">def</span> <span class="nf">add</span><span class="p">(</span><span class="n">num_1</span><span class="p">,</span> <span class="n">num_2</span><span class="p">):</span>
 <span class="lineno">4</span> 	<span class="k">return</span> <span class="nb">int</span><span class="p">(</span><span class="n">num_1</span><span class="p">)</span> <span class="o">+</span> <span class="nb">int</span><span class="p">(</span><span class="n">num_2</span><span class="p">)</span>
-<span class="lineno">5</span> 	
+<span class="lineno">5</span> 
 <span class="lineno">6</span> <span class="k">def</span> <span class="nf">subtract</span><span class="p">(</span><span class="n">num_1</span><span class="p">,</span> <span class="n">num_2</span><span class="p">):</span>
 <span class="lineno">7</span> 	<span class="k">return</span> <span class="nb">int</span><span class="p">(</span><span class="n">num_1</span><span class="p">)</span> <span class="o">-</span> <span class="nb">int</span><span class="p">(</span><span class="n">num_2</span><span class="p">)</span></code></pre></div>
 
@@ -190,8 +174,8 @@
 <div class="highlight"><pre><code class="language-python" data-lang="python"><span class="lineno">1</span> <span class="c"># calculate.py</span>
 <span class="lineno">2</span> <span class="kn">from</span> <span class="nn">calc_functions</span> <span class="kn">import</span> <span class="o">*</span>
 <span class="lineno">3</span> 
-<span class="lineno">4</span> <span class="k">print</span> <span class="n">add</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span><span class="mi">5</span><span class="p">)</span>
-<span class="lineno">5</span> <span class="k">print</span> <span class="n">subtract</span><span class="p">(</span><span class="mi">18</span><span class="p">,</span><span class="mi">3</span><span class="p">)</span></code></pre></div>
+<span class="lineno">4</span> <span class="k">print</span><span class="p">(</span><span class="n">add</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span><span class="mi">5</span><span class="p">))</span>
+<span class="lineno">5</span> <span class="k">print</span><span class="p">(</span><span class="n">subtract</span><span class="p">(</span><span class="mi">18</span><span class="p">,</span><span class="mi">3</span><span class="p">))</span></code></pre></div>
 
 <p>Nu har vi skapat en modul - och använt den i ett litet program. Nu är det er tur att jobba lite med moduler!</p>
 
@@ -230,8 +214,7 @@
 
 <p><img src="images/idle14.png" alt="" /></p>
 
-<p><strong>Bonus:</strong> Använd funktionen <a href="https://docs.python.org/2/library/functions.html#round">round</a> för att avrunda antal dollar/euro/danska kronor till två decimaler.</p>
-
+<p><strong>Bonus:</strong> Använd funktionen <a href="https://docs.python.org/3/library/functions.html#round">round</a> för att avrunda antal dollar/euro/danska kronor till två decimaler.</p>
 
         
 
