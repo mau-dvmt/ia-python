@@ -56,7 +56,7 @@ code {
 }
 
 .highlight pre code {
-    display: block; 
+    display: block;
     position: relative;
     padding: 1.7em 1em;
     margin: 0;
@@ -191,7 +191,7 @@ code {
  * Footer
  **/
 .footer {
-    background: #f9f9f9; 
+    background: #f9f9f9;
     padding: 2em 0;
     margin-top: 4em;
 }
@@ -241,7 +241,7 @@ code {
     padding: 0;
 }
 .course-list li {
-    margin-bottom: 1em; 
+    margin-bottom: 1em;
 }
 .content .course-list a:hover {
     text-decoration: none;
@@ -310,8 +310,8 @@ code {
 
 .course-name small {
     font-size: 0.8em;
-    margin-left: 0.8em; 
-    color: #99A5A6; 
+    margin-left: 0.8em;
+    color: #99A5A6;
 }
 
 .course-overview,
@@ -322,7 +322,7 @@ code {
 
 .course-overview-element,
 .blog-overview-element {
-    color: #99A5A6; 
+    color: #99A5A6;
     font-size: 0.95em;
     line-height: 1.8em;
     cursor: pointer;
@@ -568,7 +568,7 @@ code {
     .course-overview-element .expand {
         display: none;
     }
-    
+
     .course-overview-submenu,
     .blog-overview-submenu {
         display: block;
@@ -661,3 +661,45 @@ code {
 .highlight .vg { color: #008080; } /* Name.Variable.Global */
 .highlight .vi { color: #008080; } /* Name.Variable.Instance */
 .highlight .il { color: #009999; } /* Literal.Number.Integer.Long */
+
+/*
+    Table for course plan
+*/
+#plan th{
+    padding: 15px;
+    background-color: #ddd;
+}
+
+#plan td[rowspan] {
+    text-align: center;
+    font-weight: bold;
+    font-size: 1em;
+    vertical-align: middle;
+}
+
+#plan .odd{
+    background-color: #eee;
+}
+#plan .even{
+    background-color: #fff;
+}
+
+#plan .lecture{
+    border-right: 5px solid #c1f0b7;
+}
+
+#plan .header{
+    border-right: 5px solid #eee;
+}
+
+#plan .tenta{
+    border-right: 5px solid #f04945;
+}
+
+#plan .laboration{
+    border-right: 5px solid #bfcef0;
+}
+
+#plan .assignment td:nth-child(4), #plan .assignment td:nth-child(3){
+    font-style: italic;
+}

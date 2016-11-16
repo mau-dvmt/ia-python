@@ -1,5 +1,9 @@
 # Lista över moduler i kursen
 
+- name: Kursens planering
+  number: m0
+  description: En översikt av kursens moment
+
 - name: Modul 1 - Introduktion till Python
   number: m1
   description: En introduktion till Python och dess utvecklingsmiljö
