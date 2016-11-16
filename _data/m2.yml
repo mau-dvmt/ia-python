@@ -22,6 +22,6 @@ assignments:
     - name: Inlämningsuppgift 1
       file: U1
 
-#lectures:
-#    - name: 1. Funktioner
-#      file: F01
+lectures:
+    - name: 1. Funktioner
+      file: F01
