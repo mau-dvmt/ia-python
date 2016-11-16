@@ -167,12 +167,12 @@
 <div class="highlight"><pre><code class="language-python" data-lang="python"><span class="lineno">1</span> <span class="c"># Iteration som körs 10 gånger</span>
 <span class="lineno">2</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">10</span><span class="p">):</span>
 <span class="lineno">3</span>     <span class="c"># Skriver ut &quot;Kod i for-iterationen!&quot; varje gång iterationen körs (totalt 10 gånger)</span>
-<span class="lineno">4</span>     <span class="k">print</span> <span class="s">&quot;Kod i for-iterationen!&quot;</span>
-<span class="lineno">5</span> 	
+<span class="lineno">4</span>     <span class="k">print</span><span class="p">(</span><span class="s">&quot;Kod i for-iterationen!&quot;</span><span class="p">)</span>
+<span class="lineno">5</span> 
 <span class="lineno">6</span> <span class="c"># Iteration som körs 5 gånger</span>
 <span class="lineno">7</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">5</span><span class="p">):</span>
 <span class="lineno">8</span>     <span class="c"># Skriver ut aktuellt nummer från listan som genereras av funktionen &quot;range&quot;</span>
-<span class="lineno">9</span>     <span class="k">print</span> <span class="nb">str</span><span class="p">(</span><span class="n">i</span><span class="p">)</span> <span class="o">+</span> <span class="s">&quot; rundan som iterationen går!&quot;</span></code></pre></div>
+<span class="lineno">9</span>     <span class="k">print</span><span class="p">(</span><span class="nb">str</span><span class="p">(</span><span class="n">i</span><span class="p">)</span> <span class="o">+</span> <span class="s">&quot; rundan som iterationen går!&quot;</span><span class="p">)</span></code></pre></div>
 
 <p><em>Tänk på att</em> functionen <code>range</code> börjar räkna från 0, om inget annat anges.</p>
 
@@ -189,17 +189,17 @@
 
 <div class="highlight"><pre><code class="language-python" data-lang="python"><span class="lineno">1</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">0</span>
 <span class="lineno">2</span> <span class="k">while</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="mi">10</span><span class="p">:</span>
-<span class="lineno">3</span>     <span class="k">print</span> <span class="s">&quot;Kod i while-iterationen! &#39;i&#39; är: &quot;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">i</span><span class="p">)</span>
+<span class="lineno">3</span>     <span class="k">print</span><span class="p">(</span><span class="s">&quot;Kod i while-iterationen! &#39;i&#39; är: &quot;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">i</span><span class="p">))</span>
 <span class="lineno">4</span>     <span class="n">i</span> <span class="o">=</span> <span class="n">i</span> <span class="o">+</span> <span class="mi">1</span></code></pre></div>
 
 <p>Iterationen ovan har vilkoret <code>i &lt; 10</code>, alltså om variabeln <code>i</code> är mindre än 10 så repeteras koden i iterationen en gång till (och testar sedan vilkoret igen), om <code>i</code> är 10 eller större så kommer iterationen av avbrytas. Vi säger innan iterationen att <code>i = 0</code> och varje gång som iterationen repeteras blir <code>i</code> ett större. Detta ända till <code>i</code> får värdet <code>10</code> och vilkoret <code>i &lt; 10</code> inte längre är sant - och iterationen avslutas.</p>
 
 <p>Vi nämnde innan att man ofta använder while-iterationer när man inte vet hur många gånger en iteration ska repeteras (till skillnad från exemplet ovan). Ett exempel på det kan vara att man t.ex. frågar användaren om iterationen ska repeteras en gång till. Se exempel:</p>
 
-<div class="highlight"><pre><code class="language-python" data-lang="python"><span class="lineno">1</span> <span class="k">print</span> <span class="s">&quot;Test av while-iteration&quot;</span>
-<span class="lineno">2</span> <span class="k">while</span> <span class="nb">raw_input</span><span class="p">(</span><span class="s">&quot;Vill du köra en gång till? &quot;</span><span class="p">)</span> <span class="o">==</span> <span class="s">&quot;Ja&quot;</span><span class="p">:</span>
-<span class="lineno">3</span>     <span class="k">print</span> <span class="s">&quot;Ett varv i while-iterationen!&quot;</span>
-<span class="lineno">4</span> <span class="k">print</span> <span class="s">&quot;Slut på det roliga&quot;</span></code></pre></div>
+<div class="highlight"><pre><code class="language-python" data-lang="python"><span class="lineno">1</span> <span class="k">print</span><span class="p">(</span><span class="s">&quot;Test av while-iteration&quot;</span><span class="p">)</span>
+<span class="lineno">2</span> <span class="k">while</span> <span class="nb">input</span><span class="p">(</span><span class="s">&quot;Vill du köra en gång till? &quot;</span><span class="p">)</span> <span class="o">==</span> <span class="s">&quot;Ja&quot;</span><span class="p">:</span>
+<span class="lineno">3</span>     <span class="k">print</span><span class="p">(</span><span class="s">&quot;Ett varv i while-iterationen!&quot;</span><span class="p">)</span>
+<span class="lineno">4</span> <span class="k">print</span><span class="p">(</span><span class="s">&quot;Slut på det roliga&quot;</span><span class="p">)</span></code></pre></div>
 
 <p>I exemplet ovan kommer vi att skriva ut <code>Ett varv i while-iterationen!</code> så länge användaren svara <code>Ja</code> på frågan “Vill du köra en gång till?” (då vårt vilkor blir sant). När vi inte svarar <code>Ja</code> blir vilkoret falskt och iterationen avslutas. Se exempelkörning av koden ovan:</p>
 

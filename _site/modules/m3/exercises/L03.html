@@ -146,9 +146,9 @@
 
 <div class="highlight"><pre><code class="language-python" data-lang="python"><span class="lineno">1</span> <span class="n">x</span> <span class="o">=</span> <span class="mi">5</span>
 <span class="lineno">2</span> <span class="k">if</span> <span class="n">x</span> <span class="o">&gt;</span> <span class="mi">0</span> <span class="ow">and</span> <span class="n">x</span> <span class="o">&lt;</span> <span class="mi">10</span><span class="p">:</span>
-<span class="lineno">3</span> 	<span class="k">print</span> <span class="nb">str</span><span class="p">(</span><span class="n">x</span><span class="p">)</span> <span class="o">+</span> <span class="s">&quot; är mellan 0 och 10&quot;</span>
+<span class="lineno">3</span> 	<span class="k">print</span><span class="p">(</span><span class="nb">str</span><span class="p">(</span><span class="n">x</span><span class="p">)</span> <span class="o">+</span> <span class="s">&quot; är mellan 0 och 10&quot;</span><span class="p">)</span>
 <span class="lineno">4</span> <span class="k">else</span><span class="p">:</span>
-<span class="lineno">5</span> 	<span class="k">print</span> <span class="nb">str</span><span class="p">(</span><span class="n">x</span><span class="p">)</span> <span class="o">+</span> <span class="s">&quot; är inte mellan 0 och 10&quot;</span></code></pre></div>
+<span class="lineno">5</span> 	<span class="k">print</span><span class="p">(</span><span class="nb">str</span><span class="p">(</span><span class="n">x</span><span class="p">)</span> <span class="o">+</span> <span class="s">&quot; är inte mellan 0 och 10&quot;</span><span class="p">)</span></code></pre></div>
 
 <p>För att vilkoret <code>x &gt; 0 and x &lt; 10</code> ska bli sant så behöver <em>både</em> <code>x &gt; 0</code> och <code>x &lt; 10</code> vara sant. Man använder nyckelorder <code>and</code> för att kombinera fler olika test.</p>
 
@@ -156,9 +156,9 @@
 
 <div class="highlight"><pre><code class="language-python" data-lang="python"><span class="lineno">1</span> <span class="n">x</span> <span class="o">=</span> <span class="mi">5</span>
 <span class="lineno">2</span> <span class="k">if</span> <span class="n">x</span> <span class="o">&gt;</span> <span class="mi">0</span> <span class="ow">or</span> <span class="n">x</span> <span class="o">&lt;</span> <span class="mi">0</span><span class="p">:</span>
-<span class="lineno">3</span> 	<span class="k">print</span> <span class="nb">str</span><span class="p">(</span><span class="n">x</span><span class="p">)</span> <span class="o">+</span> <span class="s">&quot; är större eller mindre än 0&quot;</span>
+<span class="lineno">3</span> 	<span class="k">print</span><span class="p">(</span><span class="nb">str</span><span class="p">(</span><span class="n">x</span><span class="p">)</span> <span class="o">+</span> <span class="s">&quot; är större eller mindre än 0&quot;</span><span class="p">)</span>
 <span class="lineno">4</span> <span class="k">else</span><span class="p">:</span>
-<span class="lineno">5</span> 	<span class="k">print</span> <span class="nb">str</span><span class="p">(</span><span class="n">x</span><span class="p">)</span> <span class="o">+</span> <span class="s">&quot; är 0&quot;</span></code></pre></div>
+<span class="lineno">5</span> 	<span class="k">print</span><span class="p">(</span><span class="nb">str</span><span class="p">(</span><span class="n">x</span><span class="p">)</span> <span class="o">+</span> <span class="s">&quot; är 0&quot;</span><span class="p">)</span></code></pre></div>
 
 <p>I exmeplet ovan blir vilkoret sant om antingen <code>x &gt; 0</code> eller  <code>x &lt; 0</code> är sant. Beroende på vad man vill testa i en if-sats kan nyckelorden <code>and</code> och <code>or</code> vara till stor hjälp.</p>
 
@@ -166,18 +166,18 @@
 
 <p>När man skriver program i Python kommer man förr eller senare till en situation där man har många if-satser, och där man har <em>if-satser i if-satser</em>, detta kallas för nästlade if-satser. Det skulle kunna se ut såhär:</p>
 
-<div class="highlight"><pre><code class="language-python" data-lang="python"><span class="lineno"> 1</span> <span class="n">number</span> <span class="o">=</span> <span class="nb">raw_input</span><span class="p">(</span><span class="s">&quot;Vilket tal vill du testa? &quot;</span><span class="p">)</span>
+<div class="highlight"><pre><code class="language-python" data-lang="python"><span class="lineno"> 1</span> <span class="n">number</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s">&quot;Vilket tal vill du testa? &quot;</span><span class="p">)</span>
 <span class="lineno"> 2</span> <span class="c"># Kontrollerar så att användaren har anget enbart siffror</span>
 <span class="lineno"> 3</span> <span class="k">if</span> <span class="n">number</span><span class="o">.</span><span class="n">isdigit</span><span class="p">():</span>
-<span class="lineno"> 4</span>     <span class="c"># Kontrollerar om talet är positivt, negativt eller 0	</span>
+<span class="lineno"> 4</span>     <span class="c"># Kontrollerar om talet är positivt, negativt eller 0</span>
 <span class="lineno"> 5</span>     <span class="k">if</span> <span class="nb">int</span><span class="p">(</span><span class="n">number</span><span class="p">)</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">:</span>
-<span class="lineno"> 6</span>         <span class="k">print</span> <span class="n">number</span> <span class="o">+</span> <span class="s">&quot; är större än 0&quot;</span>
+<span class="lineno"> 6</span>         <span class="k">print</span><span class="p">(</span><span class="n">number</span> <span class="o">+</span> <span class="s">&quot; är större än 0&quot;</span><span class="p">)</span>
 <span class="lineno"> 7</span>     <span class="k">elif</span> <span class="nb">int</span><span class="p">(</span><span class="n">number</span><span class="p">)</span> <span class="o">&lt;</span> <span class="mi">0</span><span class="p">:</span>
-<span class="lineno"> 8</span>         <span class="k">print</span> <span class="n">number</span> <span class="o">+</span> <span class="s">&quot; är mindre än 0&quot;</span>
+<span class="lineno"> 8</span>         <span class="k">print</span><span class="p">(</span><span class="n">number</span> <span class="o">+</span> <span class="s">&quot; är mindre än 0&quot;</span><span class="p">)</span>
 <span class="lineno"> 9</span>     <span class="k">else</span><span class="p">:</span>
-<span class="lineno">10</span>         <span class="k">print</span> <span class="n">number</span> <span class="o">+</span> <span class="s">&quot; är 0&quot;</span>
+<span class="lineno">10</span>         <span class="k">print</span><span class="p">(</span><span class="n">number</span> <span class="o">+</span> <span class="s">&quot; är 0&quot;</span><span class="p">)</span>
 <span class="lineno">11</span> <span class="k">else</span><span class="p">:</span>
-<span class="lineno">12</span>     <span class="k">print</span> <span class="s">&quot;Du får endast skriva in siffror&quot;</span></code></pre></div>
+<span class="lineno">12</span>     <span class="k">print</span><span class="p">(</span><span class="s">&quot;Du får endast skriva in siffror&quot;</span><span class="p">)</span></code></pre></div>
 
 <p>I exemplet ovan ser vi ett exempel nästlade if-satser. Kör man koden så hände följande steg:</p>
 

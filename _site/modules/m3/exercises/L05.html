@@ -138,7 +138,7 @@
 
 <h2 id="inledning">Inledning</h2>
 
-<p>I denna del finns det bra övningar som täcker in både funktioner, iterationer, seletioner. </p>
+<p>I denna del finns det bra övningar som täcker in både funktioner, iterationer, seletioner.</p>
 
 <h2 id="vningar">Övningar</h2>
 
@@ -156,7 +156,7 @@
 <p>Du kan behöva en for-iteration. En funktion <code>range</code> kan användas för att generera heltal. <code>range(start, stopp, steg)</code> de två sista parametrarna kan uteslutas. Funktionen kan användas i en for-iteration på följande vis:</p>
 
 <div class="highlight"><pre><code class="language-python" data-lang="python"><span class="lineno">1</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">4</span><span class="p">,</span><span class="mi">7</span><span class="p">,</span><span class="mi">2</span><span class="p">):</span>
-<span class="lineno">2</span>     <span class="k">print</span> <span class="n">i</span></code></pre></div>
+<span class="lineno">2</span>     <span class="k">print</span><span class="p">(</span><span class="n">i</span><span class="p">)</span></code></pre></div>
 
 <p>Och det ger utskriften:</p>
 
@@ -188,14 +188,14 @@ Detta görs ett valfritt antal gånger. Användaren får själv avgöra om han/h
 
 <p>Till exempel skall följande körningar ge resultatet:</p>
 
-<div class="highlight"><pre><code class="language-python" data-lang="python"><span class="lineno">1</span> <span class="o">&gt;&gt;&gt;</span> <span class="k">print</span> <span class="s">&#39;Summan av heltalen mellan 4 och 7: &#39;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">interval_sum</span><span class="p">(</span><span class="mi">4</span><span class="p">,</span> <span class="mi">7</span><span class="p">))</span>
+<div class="highlight"><pre><code class="language-python" data-lang="python"><span class="lineno">1</span> <span class="o">&gt;&gt;&gt;</span> <span class="k">print</span><span class="p">(</span><span class="s">&#39;Summan av heltalen mellan 4 och 7: &#39;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">interval_sum</span><span class="p">(</span><span class="mi">4</span><span class="p">,</span> <span class="mi">7</span><span class="p">)))</span>
 <span class="lineno">2</span> <span class="n">Intervallet</span><span class="p">:</span> <span class="mi">4</span><span class="o">-</span><span class="mi">7</span>
 <span class="lineno">3</span> <span class="p">[</span><span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">6</span><span class="p">,</span> <span class="mi">7</span><span class="p">]</span>
 <span class="lineno">4</span> <span class="n">Summan</span> <span class="n">av</span> <span class="n">heltalen</span> <span class="n">mellan</span> <span class="mi">4</span> <span class="n">och</span> <span class="mi">7</span> <span class="err">ä</span><span class="n">r</span> <span class="mi">22</span></code></pre></div>
 
 <p>Kontrollera vad som händer då du kör följande anrop istället.</p>
 
-<div class="highlight"><pre><code class="language-python" data-lang="python"><span class="lineno">1</span> <span class="o">&gt;&gt;&gt;</span> <span class="k">print</span> <span class="s">&#39;Summan av heltalen mellan 4 och 7 är&#39;</span><span class="p">,</span> <span class="n">interval_sum</span><span class="p">(</span><span class="mi">4</span><span class="p">,</span> <span class="mi">7</span><span class="p">)</span></code></pre></div>
+<div class="highlight"><pre><code class="language-python" data-lang="python"><span class="lineno">1</span> <span class="o">&gt;&gt;&gt;</span> <span class="k">print</span><span class="p">(</span><span class="s">&#39;Summan av heltalen mellan 4 och 7 är&#39;</span><span class="p">,</span> <span class="n">interval_sum</span><span class="p">(</span><span class="mi">4</span><span class="p">,</span> <span class="mi">7</span><span class="p">))</span></code></pre></div>
 
 <p>Kan du förklara beteendet?</p>
 

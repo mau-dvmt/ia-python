@@ -150,9 +150,9 @@
 <div class="highlight"><pre><code class="language-python" data-lang="python"><span class="lineno">1</span> <span class="n">weeks</span> <span class="o">=</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">53</span><span class="p">)</span>
 <span class="lineno">2</span> <span class="n">days</span> <span class="o">=</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="mi">8</span><span class="p">)</span>
 <span class="lineno">3</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">weeks</span><span class="p">:</span>
-<span class="lineno">4</span>     <span class="k">print</span> <span class="s">&quot;Vecka: &quot;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">i</span><span class="p">)</span>
+<span class="lineno">4</span>     <span class="k">print</span><span class="p">(</span><span class="s">&quot;Vecka: &quot;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">i</span><span class="p">))</span>
 <span class="lineno">5</span>     <span class="k">for</span> <span class="n">j</span> <span class="ow">in</span> <span class="n">days</span><span class="p">:</span>
-<span class="lineno">6</span>         <span class="k">print</span> <span class="s">&quot;Dag nr: &quot;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">j</span><span class="p">)</span></code></pre></div>
+<span class="lineno">6</span>         <span class="k">print</span><span class="p">(</span><span class="s">&quot;Dag nr: &quot;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">j</span><span class="p">))</span></code></pre></div>
 
 <p>Och när man kör koden börjar de såhär (och kör alla 52 veckorna):</p>
 
@@ -169,9 +169,9 @@
 <div class="highlight"><pre><code class="language-python" data-lang="python"><span class="lineno">1</span> <span class="n">weeks</span> <span class="o">=</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">53</span><span class="p">)</span>
 <span class="lineno">2</span> <span class="n">days</span> <span class="o">=</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="mi">8</span><span class="p">)</span>
 <span class="lineno">3</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">weeks</span><span class="p">:</span>
-<span class="lineno">4</span>     <span class="k">print</span> <span class="s">&quot;Vecka: &quot;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">i</span><span class="p">)</span>
+<span class="lineno">4</span>     <span class="k">print</span><span class="p">(</span><span class="s">&quot;Vecka: &quot;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">i</span><span class="p">))</span>
 <span class="lineno">5</span>     <span class="k">for</span> <span class="n">j</span> <span class="ow">in</span> <span class="n">days</span><span class="p">:</span>
-<span class="lineno">6</span>         <span class="k">print</span> <span class="s">&quot;Dag: &quot;</span> <span class="o">+</span> <span class="n">day_name</span><span class="p">(</span><span class="n">j</span><span class="p">)</span></code></pre></div>
+<span class="lineno">6</span>         <span class="k">print</span><span class="p">(</span><span class="s">&quot;Dag: &quot;</span> <span class="o">+</span> <span class="n">day_name</span><span class="p">(</span><span class="n">j</span><span class="p">))</span></code></pre></div>
 
 <p><code>j</code> är alltså i exemplet ovan ett tal mellan 1 och 7 som representerar en veckodag (1 = Måndag, 2 = Tisdag osv.). Använd er av if-satser i funktionen <code>day_name</code> för att returnera korrekt namn på dagen. När funktionen är klar ska utskriften se ut såhär:</p>
 

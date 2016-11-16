@@ -151,17 +151,17 @@
 
 <div class="highlight"><pre><code class="language-python" data-lang="python"><span class="lineno"> 1</span> <span class="n">number</span> <span class="o">=</span> <span class="mi">7</span>
 <span class="lineno"> 2</span> <span class="k">if</span> <span class="n">number</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">:</span>
-<span class="lineno"> 3</span>     <span class="k">print</span> <span class="s">&quot;Talet: &quot;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">number</span><span class="p">)</span> <span class="o">+</span> <span class="s">&quot; är positivt!&quot;</span>
+<span class="lineno"> 3</span>     <span class="k">print</span><span class="p">(</span><span class="s">&quot;Talet: &quot;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">number</span><span class="p">)</span> <span class="o">+</span> <span class="s">&quot; är positivt!&quot;</span><span class="p">)</span>
 <span class="lineno"> 4</span> <span class="k">else</span><span class="p">:</span>
-<span class="lineno"> 5</span>     <span class="k">print</span> <span class="s">&quot;Talet: &quot;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">number</span><span class="p">)</span> <span class="o">+</span> <span class="s">&quot; är negativt!&quot;</span>
-<span class="lineno"> 6</span> 	
+<span class="lineno"> 5</span>     <span class="k">print</span><span class="p">(</span><span class="s">&quot;Talet: &quot;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">number</span><span class="p">)</span> <span class="o">+</span> <span class="s">&quot; är negativt!&quot;</span><span class="p">)</span>
+<span class="lineno"> 6</span> 
 <span class="lineno"> 7</span> <span class="n">number</span> <span class="o">=</span> <span class="o">-</span><span class="mi">2</span>
 <span class="lineno"> 8</span> <span class="k">if</span> <span class="n">number</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">:</span>
-<span class="lineno"> 9</span>     <span class="k">print</span> <span class="s">&quot;Talet: &quot;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">number</span><span class="p">)</span> <span class="o">+</span> <span class="s">&quot; är positivt!&quot;</span>
+<span class="lineno"> 9</span>     <span class="k">print</span><span class="p">(</span><span class="s">&quot;Talet: &quot;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">number</span><span class="p">)</span> <span class="o">+</span> <span class="s">&quot; är positivt!&quot;</span><span class="p">)</span>
 <span class="lineno">10</span> <span class="k">else</span><span class="p">:</span>
-<span class="lineno">11</span>     <span class="k">print</span> <span class="s">&quot;Talet: &quot;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">number</span><span class="p">)</span> <span class="o">+</span> <span class="s">&quot; är negativt!&quot;</span></code></pre></div>
+<span class="lineno">11</span>     <span class="k">print</span><span class="p">(</span><span class="s">&quot;Talet: &quot;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">number</span><span class="p">)</span> <span class="o">+</span> <span class="s">&quot; är negativt!&quot;</span><span class="p">)</span></code></pre></div>
 
-<p>Vårt vilkor i if-satserna ovan är <code>number &gt; 0</code>, där vi kontrollerar om talet <code>number</code> är större än 0. Om talet är större än 0 körs kodraden <code>print "Talet: " + str(number) + " är positivt!"</code>, i alla andra fall körs kodraden <code>print "Talet: " + str(number) + " är negativt!"</code>. En testkörning ger således följande resultat:</p>
+<p>Vårt vilkor i if-satserna ovan är <code>number &gt; 0</code>, där vi kontrollerar om talet <code>number</code> är större än 0. Om talet är större än 0 körs kodraden <code>print("Talet: " + str(number) + " är positivt!")</code>, i alla andra fall körs kodraden <code>print("Talet: " + str(number) + " är negativt!")</code>. En testkörning ger således följande resultat:</p>
 
 <p><img src="images/idle5.png" alt="Idle" /></p>
 
@@ -169,11 +169,11 @@
 
 <div class="highlight"><pre><code class="language-python" data-lang="python"><span class="lineno">1</span> <span class="n">number</span> <span class="o">=</span> <span class="mi">0</span>
 <span class="lineno">2</span> <span class="k">if</span> <span class="n">number</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">:</span>
-<span class="lineno">3</span>     <span class="k">print</span> <span class="s">&quot;Talet: &quot;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">number</span><span class="p">)</span> <span class="o">+</span> <span class="s">&quot; är positivt!&quot;</span>
+<span class="lineno">3</span>     <span class="k">print</span><span class="p">(</span><span class="s">&quot;Talet: &quot;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">number</span><span class="p">)</span> <span class="o">+</span> <span class="s">&quot; är positivt!&quot;</span><span class="p">)</span>
 <span class="lineno">4</span> <span class="k">elif</span> <span class="n">number</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
-<span class="lineno">5</span>     <span class="k">print</span> <span class="s">&quot;Talet är 0!&quot;</span>
+<span class="lineno">5</span>     <span class="k">print</span><span class="p">(</span><span class="s">&quot;Talet är 0!&quot;</span><span class="p">)</span>
 <span class="lineno">6</span> <span class="k">else</span><span class="p">:</span>
-<span class="lineno">7</span>     <span class="k">print</span> <span class="s">&quot;Talet: &quot;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">number</span><span class="p">)</span> <span class="o">+</span> <span class="s">&quot; är negativt!&quot;</span></code></pre></div>
+<span class="lineno">7</span>     <span class="k">print</span><span class="p">(</span><span class="s">&quot;Talet: &quot;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">number</span><span class="p">)</span> <span class="o">+</span> <span class="s">&quot; är negativt!&quot;</span><span class="p">)</span></code></pre></div>
 
 <p>Koden i exemplet ovan körs enligt följande steg:</p>
 
@@ -195,7 +195,7 @@
 
 <p>Notera att man endast kommer till steg 3 om <em>både</em> vilkoren i steg 1 och 2 är falska.</p>
 
-<p>Vilka olika vanliga operatorer/vilkorssatser som finns i Python kan ni läsa om <a href="http://www.greenteapress.com/thinkpython/html/thinkpython006.html#toc53">här</a>.</p>
+<p>Vilka olika vanliga operatorer/vilkorssatser som finns i Python kan ni läsa om <a href="http://greenteapress.com/thinkpython2/html/thinkpython2006.html#sec56">här</a>.</p>
 
 <h2 id="vningar">Övningar</h2>
 
@@ -220,7 +220,6 @@
 <div class="highlight"><pre><code class="language-python" data-lang="python"><span class="lineno">1</span> <span class="k">def</span> <span class="nf">max_3</span><span class="p">(</span><span class="n">num_1</span><span class="p">,</span> <span class="n">num_2</span><span class="p">,</span> <span class="n">num_3</span><span class="p">):</span></code></pre></div>
 
 <p>Använd funktionen <code>max_2</code> när du skapar den andra funktionen.</p>
-
 
         
 
