@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="content-type" content="text/html;charset=utf-8">
+  <title>ex_for.py</title>
+  <link rel="stylesheet" href="/assets/css/pycco.css">
+</head>
+<body>
+<div id='container'>
+  <div id="background"></div>
+
+  <table cellspacing=0 cellpadding=0>
+  <thead>
+    <tr>
+      <th class=docs><h1>ex_for.py</h1></th>
+      <th class=code></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr id='section-0'>
+      <td class=docs>
+        <div class="octowrap">
+          <a class="octothorpe" href="#section-0">#</a>
+        </div>
+
+      </td>
+      <td class=code>
+        <div class='highlight'><pre><div class="highlight"><pre></pre></div></pre></div>
+      </td>
+    </tr><tr id='section-1'>
+      <td class=docs>
+        <div class="octowrap">
+          <a class="octothorpe" href="#section-1">#</a>
+        </div>
+        <p>En for-loop går igenom en bestämd mängd element.
+I detta fall talen 1 t o m 5.</p>
+      </td>
+      <td class=code>
+        <div class='highlight'><pre><div class="highlight"><pre><span class="k">def</span> <span class="nf">ex1</span><span class="p">():</span>
+    <span class="k">print</span>(<span class="s">&quot;The numbers 1-5&quot;</span>)
+    <span class="k">for</span> <span class="n">num</span> <span class="ow">in</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="mi">4</span><span class="p">,</span><span class="mi">5</span><span class="p">]:</span>
+        <span class="k">print</span>(<span class="n">num</span>)</pre></div></pre></div>
+      </td>
+    </tr><tr id='section-2'>
+      <td class=docs>
+        <div class="octowrap">
+          <a class="octothorpe" href="#section-2">#</a>
+        </div>
+        <p>Elementen behöver inte vara tal, utan kan vara av vilken datatyp som helst. </p>
+      </td>
+      <td class=code>
+        <div class='highlight'><pre><div class="highlight"><pre><span class="k">def</span> <span class="nf">ex2a</span><span class="p">():</span>
+    <span class="k">print</span>(<span class="s">&quot;A list of strings&quot;</span>)
+    <span class="k">for</span> <span class="n">text</span> <span class="ow">in</span> <span class="p">[</span><span class="s">&#39;ABC&#39;</span><span class="p">,</span> <span class="s">&#39;DEF&#39;</span><span class="p">,</span> <span class="s">&#39;GHI&#39;</span><span class="p">]:</span>
+        <span class="k">print</span>(<span class="n">text</span>)</pre></div></pre></div>
+      </td>
+    </tr><tr id='section-3'>
+      <td class=docs>
+        <div class="octowrap">
+          <a class="octothorpe" href="#section-3">#</a>
+        </div>
+        <p>Elementen kan även vara av olika datatyp.</p>
+      </td>
+      <td class=code>
+        <div class='highlight'><pre><div class="highlight"><pre><span class="k">def</span> <span class="nf">ex2b</span><span class="p">():</span>
+    <span class="k">print</span>(<span class="s">&quot;A list of mixed items&quot;</span>)
+    <span class="k">for</span> <span class="n">element</span> <span class="ow">in</span> <span class="p">[</span><span class="s">&#39;ABC&#39;</span><span class="p">,</span> <span class="mi">10</span><span class="p">,</span> <span class="s">&#39;DEF&#39;</span><span class="p">,</span> <span class="mf">20.0</span><span class="p">,</span> <span class="s">&#39;GHI&#39;</span><span class="p">]:</span>
+        <span class="k">print</span>(<span class="n">element</span>)</pre></div></pre></div>
+      </td>
+    </tr><tr id='section-4'>
+      <td class=docs>
+        <div class="octowrap">
+          <a class="octothorpe" href="#section-4">#</a>
+        </div>
+        <h2><code>range</code></h2>
+      </td>
+      <td class=code>
+        <div class='highlight'><pre><div class="highlight"><pre></pre></div></pre></div>
+      </td>
+    </tr><tr id='section-5'>
+      <td class=docs>
+        <div class="octowrap">
+          <a class="octothorpe" href="#section-5">#</a>
+        </div>
+        <p>Funktionen <code>range</code> kan användas för att skapa en lista av element.
+Här skapas listan <code>[0,1,2,3,4]</code>, vilket resulterar i att loopen körs 5 varv.</p>
+      </td>
+      <td class=code>
+        <div class='highlight'><pre><div class="highlight"><pre><span class="k">def</span> <span class="nf">ex3a</span><span class="p">():</span>
+    <span class="k">print</span>(<span class="s">&quot;The text &#39;Hello&#39; five times&quot;</span>)
+    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">5</span><span class="p">):</span>
+        <span class="k">print</span>(<span class="s">&quot;Hello&quot;</span>)</pre></div></pre></div>
+      </td>
+    </tr><tr id='section-6'>
+      <td class=docs>
+        <div class="octowrap">
+          <a class="octothorpe" href="#section-6">#</a>
+        </div>
+        <p>Man kan själv specificera startvärde om man inte vill ha <code>0</code>. </p>
+      </td>
+      <td class=code>
+        <div class='highlight'><pre><div class="highlight"><pre><span class="k">def</span> <span class="nf">ex3b</span><span class="p">():</span>
+    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">5</span><span class="p">,</span> <span class="mi">10</span><span class="p">):</span>
+        <span class="k">print</span>()<span class="n">i</span>)</pre></div></pre></div>
+      </td>
+    </tr><tr id='section-7'>
+      <td class=docs>
+        <div class="octowrap">
+          <a class="octothorpe" href="#section-7">#</a>
+        </div>
+        <p>Man kan också ange andra inkrement (steg) än standardvärdet 1.
+Här skapas listan <code>[0,2,4,6,8]</code>. För att utskriften ska bli lite roligare
+så utförs också en liten beräkning.</p>
+      </td>
+      <td class=code>
+        <div class='highlight'><pre><div class="highlight"><pre><span class="k">def</span> <span class="nf">ex4</span><span class="p">():</span>
+    <span class="k">print</span>(<span class="s">&quot;Number</span><span class="se">\t</span><span class="s">Square&quot;</span>)
+    <span class="k">for</span> <span class="n">number</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">10</span><span class="p">,</span> <span class="mi">2</span><span class="p">):</span>
+        <span class="n">square</span> <span class="o">=</span> <span class="n">number</span> <span class="o">*</span> <span class="n">number</span>
+        <span class="k">print</span>(<span class="n">number</span><span class="p">,</span> <span class="s">&quot;</span><span class="se">\t</span><span class="s">&quot;</span><span class="p">,</span> <span class="n">square</span>)</pre></div></pre></div>
+      </td>
+    </tr><tr id='section-8'>
+      <td class=docs>
+        <div class="octowrap">
+          <a class="octothorpe" href="#section-8">#</a>
+        </div>
+        <p>En for-loop går ett bestämt antal varv - men antalet skulle kunna bestämmas
+av användaren.</p>
+      </td>
+      <td class=code>
+        <div class='highlight'><pre><div class="highlight"><pre><span class="k">def</span> <span class="nf">ex5</span><span class="p">():</span>
+    <span class="k">print</span>(<span class="s">&quot;THE REPEATER&quot;</span>)
+    <span class="n">name</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s">&quot;Your name: &quot;</span><span class="p">)</span>
+    <span class="n">num_iterations</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s">&quot;How many times: &quot;</span><span class="p">)</span>
+    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">num_iterations</span><span class="p">):</span>
+        <span class="k">print</span>(<span class="n">name</span><span class="p">,</span> <span class="n">i</span>)</pre></div></pre></div>
+      </td>
+    </tr><tr id='section-9'>
+      <td class=docs>
+        <div class="octowrap">
+          <a class="octothorpe" href="#section-9">#</a>
+        </div>
+        <h2>"Ackumulator"</h2>
+      </td>
+      <td class=code>
+        <div class='highlight'><pre><div class="highlight"><pre></pre></div></pre></div>
+      </td>
+    </tr><tr id='section-10'>
+      <td class=docs>
+        <div class="octowrap">
+          <a class="octothorpe" href="#section-10">#</a>
+        </div>
+        <p>En loop som summerar alla tal i ett intervall kallas för ackumulator.
+Notera hur operatorn <code>+=</code> används.</p>
+      </td>
+      <td class=code>
+        <div class='highlight'><pre><div class="highlight"><pre><span class="k">def</span> <span class="nf">ex6</span><span class="p">():</span>
+    <span class="n">total</span> <span class="o">=</span> <span class="mi">0</span>
+    <span class="k">for</span> <span class="n">number</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">10</span><span class="p">,</span><span class="mi">21</span><span class="p">):</span>
+        <span class="n">total</span> <span class="o">+=</span> <span class="n">number</span>
+    <span class="k">print</span>(<span class="s">&quot;The sum of 10-20 is&quot;</span><span class="p">,</span> <span class="n">total</span>)</pre></div></pre></div>
+      </td>
+    </tr><tr id='section-11'>
+      <td class=docs>
+        <div class="octowrap">
+          <a class="octothorpe" href="#section-11">#</a>
+        </div>
+        <h2>Nästlade loopar</h2>
+      </td>
+      <td class=code>
+        <div class='highlight'><pre><div class="highlight"><pre></pre></div></pre></div>
+      </td>
+    </tr><tr id='section-12'>
+      <td class=docs>
+        <div class="octowrap">
+          <a class="octothorpe" href="#section-12">#</a>
+        </div>
+        <p>Man kan utföra det mesta inuti en loop - t ex en annan loop!
+Detta kallas för att "nästla" loopar.</p>
+      </td>
+      <td class=code>
+        <div class='highlight'><pre><div class="highlight"><pre><span class="k">def</span> <span class="nf">ex6a</span><span class="p">():</span>
+    <span class="k">for</span> <span class="n">hour</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">24</span><span class="p">):</span>
+        <span class="k">for</span> <span class="n">minute</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">60</span><span class="p">):</span>
+            <span class="k">print</span>(<span class="n">hour</span><span class="p">,</span> <span class="s">&#39;:&#39;</span> <span class="p">,</span> <span class="n">minute</span>)</pre></div></pre></div>
+      </td>
+    </tr><tr id='section-13'>
+      <td class=docs>
+        <div class="octowrap">
+          <a class="octothorpe" href="#section-13">#</a>
+        </div>
+        <p>Här är ett exempel där antalet varv den inre loopen går, beror på vilket
+varvet i den yttre loopen.</p>
+      </td>
+      <td class=code>
+        <div class='highlight'><pre><div class="highlight"><pre><span class="k">def</span> <span class="nf">ex6b</span><span class="p">():</span>
+    <span class="k">for</span> <span class="n">row_num</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">10</span><span class="p">,</span> <span class="mi">30</span><span class="p">):</span>
+        <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">row_num</span><span class="p">):</span>
+            <span class="k">print</span>(<span class="s">&quot;.&quot;</span><span class="p">,</span>)
+        <span class="k">print</span>("")
+    <span class="k">print</span>(<span class="s">&quot;DONE&quot;</span>)</pre></div></pre></div>
+      </td>
+    </tr><tr id='section-14'>
+      <td class=docs>
+        <div class="octowrap">
+          <a class="octothorpe" href="#section-14">#</a>
+        </div>
+        <h2>Bonusexempel</h2>
+      </td>
+      <td class=code>
+        <div class='highlight'><pre><div class="highlight"><pre></pre></div></pre></div>
+      </td>
+    </tr><tr id='section-15'>
+      <td class=docs>
+        <div class="octowrap">
+          <a class="octothorpe" href="#section-15">#</a>
+        </div>
+        <p>Man kan loopa igenom andra typer än bara listor på element.
+Här går for-loopen en textsträng, tecken för tecken.</p>
+      </td>
+      <td class=code>
+        <div class='highlight'><pre><div class="highlight"><pre><span class="k">def</span> <span class="nf">ex7</span><span class="p">():</span>
+    <span class="n">name</span> <span class="o">=</span> <span class="s">&quot;Frodo&quot;</span>
+    <span class="k">for</span> <span class="n">char</span> <span class="ow">in</span> <span class="n">name</span><span class="p">:</span>
+        <span class="k">print</span>(<span class="n">char</span>)
+
+</pre></div></pre></div>
+      </td>
+    </tr>
+  </table>
+</div>
+</body>
