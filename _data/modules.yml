@@ -16,9 +16,9 @@
   number: m3
   description: En introduktion till for- och while-loopar samt if-satser i Python
 
-#- name: Modul 4 - Listor och lexikon
-#  number: m4
-#  description: En introduktion datahantering i Python
+- name: Modul 4 - Listor och lexikon
+  number: m4
+  description: En introduktion datahantering i Python
 
 #- name: Modul 5 - Fil- och felhantering
 #  number: m5
