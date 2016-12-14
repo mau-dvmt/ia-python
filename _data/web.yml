@@ -13,7 +13,7 @@ assignments:
       file: wiki
 
 lectures:
-    - name: 1. Intro till Bottle (Star Wars-tema)
+    - name: 1. Intro till Bottle
       file: F01
-    - name: 2. Bottle - repetition från grunden
-      file: F02
+#   - name: 2. Bottle - repetition från grunden
+#     file: F02
