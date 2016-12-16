@@ -8,6 +8,13 @@ code: web
 
 Webbprogrammering är en av de mest populära tillämpningarna för Python. Det passar bra som fördjupning efter att ha gått igenom den grundläggande programmeringen i modul 1-5.
 
+## ScalableLearning - Videos om webbapplikationer
+
+Till denna modul finns det videoinspelningar som jag gjort. De är kompletterande till föreläsningarna som vi haft i denna modul, och går igenom alla koncept grundligt. All kod som skrivs i videoinspelningarna finns även tillgänglig. För att få tillgång till dessa videos, och möjlighet att ställa frågor till videoinspelningarna så följ dessa instuktioner:
+
+1. Surfa till [https://www.scalable-learning.com/#/](https://www.scalable-learning.com/#/) och skapa ett konto med valfri epostadress.
+2. Lägg till denna kursen genom att välja  “Join Course” från menyn “Courses” och ange följande nyckel för kusen: DA354A : YELAT-29268
+
 ## Webbramverk
 
 Det finns många konkurrerande ramverk och bibliotek webbprogrammering med Python. Alla delar det grundläggande målet i att förenkla vanliga uppgifter samt att ge en struktur att bygga sitt program efter.
