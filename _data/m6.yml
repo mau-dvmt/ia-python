@@ -7,7 +7,11 @@ exercises:
 #    - name: 2. Flera klasser i OOP
 #      file: L02
 
+lectures:
+    - name: 1. Introduktion till OOP
+      file: F01
+
 # Inlämningsuppgifter
-assignments:
-    - name: Inlämningsuppgift 5
-      file: U1
+#assignments:
+#    - name: Inlämningsuppgift 5
+#      file: U1
