@@ -8,15 +8,15 @@ title: Modul 1 - Introdution till Python
 
 ## Översikt av modul 1
 
-Inom övningar i JavaScript har ni tidigare stött på många grundläggande programmeringskoncept. Ni har:
+I modul 1 kommer vi att titta på några grundläggande koncept &amp; byggstenar i programmering. Vi kommer att titta på hur man kan:
 
-- lagrat data, bland annat av typerna heltal och textsträng, i variabler,
-- tagit emot input från användaren, gjort olika typer av beräkningar baserat på detta, för att presentera resultat i form av output,
-- styrt programflöde med hjälp av selektion (if / else if / else) och iteration (for och while-loopar),
-- organiserat programdelar i fristående funktioner, av olika abstraktionsnivå,
-- med mera!
+- lagra data, bland annat av typerna heltal och textsträng, i variabler,
+- ta emot input från användaren, göra olika typer av beräkningar baserat på detta, sedan presentera resultat i form av output,
+- styra programflöde med hjälp av selektion (if / else if / else) och iteration (for och while-loopar),
+- organisera programdelar i fristående funktioner, av olika abstraktionsnivå,
+- och mera!
 
-Denna laboration syftar till att repetera många av dessa koncept, men i ett (för många) nytt programspråk, _Python_.
+Denna laboration syftar till att introducera många av dessa koncept, i ett (för många) nytt programspråk, _Python_.
 
 ### Instruktioner
 

@@ -2,7 +2,7 @@
 
 This site contains open educational resources for learning to program using Python. It is created for the Information Architecture program at Malmö University.
 
-Published at [programmering.iakurs.se](http://programmering.iakurs.se/)
+Published at [da354a.ia-mah.se](http://da354a.ia-mah.se)
 
 
 ## Credits
