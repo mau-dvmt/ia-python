@@ -121,7 +121,7 @@ Labbtillfällena är i grunden fria att disponera, men i tabellen nedan anges s�
         <td><em>Deadline: Inlämningsuppgift 3</em></td>
 	</tr>
     <tr class="laboration odd">
-        <td>15/10</td>
+        <td>15/12</td>
 		<td>09-10, 10-12</td>
         <td>Inför laboration + laboration</td>
     </tr>
