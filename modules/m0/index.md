@@ -69,15 +69,15 @@ Labbtillfällena är i grunden fria att disponera, men i tabellen nedan anges s�
         <td>08-12</td>
         <td>Laboration 3: If-satser och loopar</td>
     </tr>
+    <tr class="tenta assignment odd">
+        <td colspan="2">29/11</td>
+        <td><em>Deadline: Inlämningsuppgift 1</em></td>
+    </tr>
     <tr class="lecture odd">
         <td>30/11</td>
         <td>15-17</td>
         <td>Föreläsning - Listor och lexikon</td>
     </tr>
-	<tr class="tenta assignment odd">
-		<td colspan="2">29/11</td>
-        <td><em>Deadline: Inlämningsuppgift 1</em></td>
-	</tr>
     <tr class="laboration odd">
         <td>1/12</td>
         <td>09-10, 10-12</td>
