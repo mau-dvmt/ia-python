@@ -55,10 +55,6 @@ Vi kommer här att gå igenom moduler i Python. Till en början tittar vi på de
 
 1. [Moduler i Python](exercises/L05.html)
 
-##### Extra läsning
-
-- [Interactive Python - Python modules](http://interactivepython.org/runestone/static/thinkcspy/toc.html#python-modules) (obs. Python 2)
-
 ---
 
 Du uppmanas att aktivt gå igenom dessa delar, reflektera över vad du gör och diskutera eventuella frågor med kurskamrater och laborationshandlerade.
