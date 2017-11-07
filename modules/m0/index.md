@@ -20,7 +20,7 @@ Labbtillfällena är i grunden fria att disponera, men i tabellen nedan anges s�
     <tr class="lecture even">
         <td rowspan="2">45</td>
         <td>8/11</td>
-        <td>10-12</td>
+        <td>13-15</td>
         <td>Kursintroduktion</td>
     </tr>
     <tr class="laboration even">
@@ -37,7 +37,7 @@ Labbtillfällena är i grunden fria att disponera, men i tabellen nedan anges s�
     </tr>
     <tr class="lecture odd">
         <td>15/11</td>
-        <td>10-12</td>
+        <td>13-15</td>
         <td>Föreläsning - Funktioner</td>
     </tr>
     <tr class="laboration odd">
@@ -54,7 +54,7 @@ Labbtillfällena är i grunden fria att disponera, men i tabellen nedan anges s�
     </tr>
     <tr class="lecture even">
         <td>22/11</td>
-        <td>08-10</td>
+        <td>13-15</td>
         <td>Föreläsning - If-satser och loopar</td>
     </tr>
     <tr class="laboration even">
@@ -92,7 +92,7 @@ Labbtillfällena är i grunden fria att disponera, men i tabellen nedan anges s�
     </tr>
     <tr class="lecture even">
         <td>6/12</td>
-        <td>10-12</td>
+        <td>13-15</td>
         <td>Föreläsning - Fil- och felhantering</td>
     </tr>
 	<tr class="tenta assignment even">
@@ -113,7 +113,7 @@ Labbtillfällena är i grunden fria att disponera, men i tabellen nedan anges s�
     </tr>
 	<tr class="lecture odd">
 		<td>13/12</td>
-		<td>10-12</td>
+		<td>13-15</td>
 		<td>Föreläsning - Python och webben</td>
 	</tr>
 	<tr class="tenta assignment odd">
