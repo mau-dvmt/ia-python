@@ -34,7 +34,7 @@ Förutom det material som finns i övningarna finns här tips på mer material a
 
 #### Extra läsning
 
-- [Codecademy - Conditionals and flow](http://www.codecademy.com/en/tracks/python)
+- [Codecademy - Conditionals and flow](http://www.codecademy.com/en/tracks/python) (obs. Python 2)
 
 ### Del 2 - Iterationer
 
@@ -58,7 +58,7 @@ Förutom det material som finns i övningarna finns här tips på mer material a
 
 #### Extra läsning
 
- - [Codecademy - Loops](http://www.codecademy.com/en/tracks/python)
+ - [Codecademy - Loops](http://www.codecademy.com/en/tracks/python) (obs. Python 2)
 
  ---
 
