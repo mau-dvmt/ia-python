@@ -15,5 +15,5 @@ assignments:
 lectures:
     - name: 1. Fil- och felhantering
       file: F01
-#    - name: 2. Fil- och felhantering (Johan)
-#      file: F02
+    - name: 2. Fil- och felhantering (Extra)
+      file: F02
