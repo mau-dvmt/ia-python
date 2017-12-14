@@ -8,12 +8,16 @@ code: web
 
 Webbprogrammering är en av de mest populära tillämpningarna för Python. Det passar bra som fördjupning efter att ha gått igenom den grundläggande programmeringen i modul 1-5.
 
+<!--
+
 ## ScalableLearning - Videos om webbapplikationer
 
 Till denna modul finns det videoinspelningar som jag gjort. De är kompletterande till föreläsningarna som vi haft i denna modul, och går igenom alla koncept grundligt. All kod som skrivs i videoinspelningarna finns även tillgänglig. För att få tillgång till dessa videos, och möjlighet att ställa frågor till videoinspelningarna så följ dessa instuktioner:
 
 1. Surfa till [https://www.scalable-learning.com/#/](https://www.scalable-learning.com/#/) och skapa ett konto med valfri epostadress.
 2. Lägg till denna kursen genom att välja  “Join Course” från menyn “Courses” och ange följande nyckel för kusen: DA354A : YELAT-29268
+
+-->
 
 ## Webbramverk
 
@@ -40,7 +44,9 @@ Istället för egenpåhittade övningar rekommenderas den [tutorial som finns p�
 
 Viktiga delar av funktionaliteten i Bottle visas även i [detta exempelprojekt](https://github.com/Tibbelit/Example-bottle-app). Du kan även ladda hem koden via den länken (som t.ex. en ZIP-fil).
 
+<!--
 [Så här ser det ut när man kör projektet](http://tibbelit2.pythonanywhere.com/). (Publicerat gratis via [PythonAnywhere](https://www.pythonanywhere.com).)
+-->
 
 ## Uppgift
 
