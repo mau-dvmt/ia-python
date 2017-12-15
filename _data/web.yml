@@ -15,7 +15,7 @@ assignments:
 lectures:
     - name: 1. Intro till Bottle
       file: F01
-#    - name: 2. Fler ex. på bottle och Python
-#      file: F02
+    - name: 2. Mer Bottle
+      file: F04
     - name: Videoföreläsningar
       file: F03
