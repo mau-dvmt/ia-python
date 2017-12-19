@@ -88,4 +88,4 @@ Uppgiften kan ge VG - men det finns många olika förbättringar som alla kan g�
 ## Redovisning
 Redovisa genom att ladda upp programmets källkod på It’s Learning.
 
-Lämplig inlämningstid för modul 5: senast söndag 2017-01-15.
+Lämplig inlämningstid för modul 5: senast söndag 2017-01-07.
