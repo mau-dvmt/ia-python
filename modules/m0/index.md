@@ -146,7 +146,7 @@ Labbtillfällena är i grunden fria att disponera, men i tabellen nedan anges s�
 	<tr class="lecture odd">
 		<td>10/1</td>
 		<td>10-12</td>
-		<td>Föreläsning: Extra</td>
+		<td>Föreläsning: Introduktion till OOP</td>
 	</tr>
     <tr class="laboration odd">
         <td>12/1</td>
