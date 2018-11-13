@@ -20,10 +20,11 @@ I den minimala wikin kan man skapa, ändra och läsa artiklar. Detta är också 
 
 Wikins innehåll är enkelt: artiklar som har en titel och brödtext. Kärnproblemet som måste lösas är hur artiklarna ska sparas.
 
-Att använda en enkel databas hade passat bra - men det lämnar vi till databaskursen. (Eller, det är tillåtet om du absolut vill.) Använd istället enkla textfiler - då kan artikelns titel vara filnamnet, och brödtexten blir filens innehåll. Innehållet kan till och med vara HTML, som ett enkelt sätt att möjliggöra rikare innehåll.
+Att använda en enkel databas hade passat bra - men det lämnar vi till databaskursen (eller, det är tillåtet om du absolut vill). Använd istället enkla textfiler - då kan artikelns titel vara filnamnet, och brödtexten blir filens innehåll. Innehållet kan till och med vara HTML, som ett enkelt sätt att möjliggöra rikare innehåll.
 
 Förslagsvis skapar du en undermapp som endast innehåller artikelfiler.
 
+Ett annat sätt att spara artiklarna skulle kunna vara genom `JSON`, om ni är mer bekväma med detta.
 
 ### Gränssnitt och funktionalitet
 
@@ -87,4 +88,4 @@ Uppgiften kan ge VG - men det finns många olika förbättringar som alla kan g�
 ## Redovisning
 Redovisa genom att ladda upp programmets källkod på It’s Learning.
 
-Lämplig inlämningstid för modul 5: senast söndag 2017-01-15.
+Lämplig inlämningstid för modul 5: senast söndag 2017-01-07.

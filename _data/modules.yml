@@ -28,9 +28,9 @@
   number: web
   description: Introduktion till webbprogrammering
 
-- name: Extra - Objektorientering
-  number: m6
-  description: Introduktion till klasser och objekt i Python
+#- name: Extra - Objektorientering
+#  number: m6
+#  description: Introduktion till klasser och objekt i Python
 
 #- name: Modul 7 - Arv (IA 2)
 #  number: m7
