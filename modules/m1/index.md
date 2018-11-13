@@ -35,11 +35,6 @@ En inledning där du får bekanta dig Pythons interaktiva exekveringsfönster, s
 1. [Bekanta dig med Python & IDLE](exercises/L01.html)
 2. [Skriva Python-kod i egna filer](exercises/L02.html)
 
-##### Extra läsning
-
-- [Codecademy - Python Syntax](http://www.codecademy.com/en/tracks/python) (*Obs.* Python 2)
-- [Learn Python the hard way - A Good First Program](http://learnpythonthehardway.org/book/ex1.html) (*Obs.* Python 2)
-
 ---
 
 #### Del 2 - Variabler, användarinput, datatyper
@@ -58,7 +53,6 @@ En introduktion till variabler, användarinput och datatyper i Python. Avsnittet
 
 ##### Extra läsning
 
-- [Codecademy - Strings & Console Output](http://www.codecademy.com/en/tracks/python) (*Obs.* Python 2)
 - [Learn Python the hard way - Numbers and Math](http://learnpythonthehardway.org/book/ex3.html) (*Obs.* Python 2)
 - [Learn Python the hard way - Variables And Names](http://learnpythonthehardway.org/book/ex4.html) (*Obs.* Python 2)
 - [Learn Python the hard way - More Variables and Printing](http://learnpythonthehardway.org/book/ex5.html) (*Obs.* Python 2)

@@ -132,7 +132,7 @@
 
         <div class="content">
         
-            <h1 id="att-returnera-vrden">3. Att returnera värden</h1>
+            <h1 id="3-att-returnera-värden">3. Att returnera värden</h1>
 
 <h2 id="introduktion">Introduktion</h2>
 
@@ -140,52 +140,52 @@
 
 <p>Exempel: låt säga att vi vill låta användaren beräkna arean av en rektangel. Då skulle det vara smidigt om vår funktion <code>area</code> skulle göra beräkningen och sedan skicka tillbaka resultatet av beräkningen till oss - så att vi kan göra vad vi vill med resultatet, t.ex. skriva ut det. Se följande exempel:</p>
 
-<div class="highlight"><pre><code class="language-python" data-lang="python"><span class="lineno"> 1</span> <span class="k">def</span> <span class="nf">area</span><span class="p">(</span><span class="n">height</span><span class="p">,</span> <span class="n">width</span><span class="p">):</span>
-<span class="lineno"> 2</span>     <span class="sd">&#39;&#39;&#39;</span>
-<span class="lineno"> 3</span> <span class="sd">		Funktionen returnerar arean för en rektangel</span>
-<span class="lineno"> 4</span> <span class="sd">     &#39;&#39;&#39;</span>
-<span class="lineno"> 5</span>     <span class="k">return</span> <span class="n">height</span><span class="o">*</span><span class="n">width</span>
-<span class="lineno"> 6</span> 
-<span class="lineno"> 7</span> <span class="k">print</span><span class="p">(</span><span class="s">&quot;-&quot;</span><span class="o">*</span><span class="mi">20</span><span class="p">)</span>
-<span class="lineno"> 8</span> <span class="k">print</span><span class="p">(</span><span class="s">&quot;Vi beräknar arean av en rektangel&quot;</span><span class="p">)</span>
-<span class="lineno"> 9</span> <span class="k">print</span><span class="p">(</span><span class="s">&quot;-&quot;</span><span class="o">*</span><span class="mi">20</span><span class="p">)</span>
-<span class="lineno">10</span> <span class="n">h</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s">&quot;Vad är höjden på rektangeln? &quot;</span><span class="p">))</span>
-<span class="lineno">11</span> <span class="n">w</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s">&quot;Vad är bredden på rektangeln? &quot;</span><span class="p">))</span>
-<span class="lineno">12</span> <span class="n">result</span> <span class="o">=</span> <span class="n">area</span><span class="p">(</span><span class="n">h</span><span class="p">,</span> <span class="n">w</span><span class="p">)</span>
-<span class="lineno">13</span> <span class="k">print</span><span class="p">(</span><span class="s">&quot;Arean är: &quot;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">result</span><span class="p">))</span></code></pre></div>
+<figure class="highlight"><pre><code class="language-python" data-lang="python"><span></span><span class="lineno"> 1 </span><span class="k">def</span> <span class="nf">area</span><span class="p">(</span><span class="n">height</span><span class="p">,</span> <span class="n">width</span><span class="p">):</span>
+<span class="lineno"> 2 </span>    <span class="sd">&#39;&#39;&#39;</span>
+<span class="lineno"> 3 </span><span class="sd">		Funktionen returnerar arean för en rektangel</span>
+<span class="lineno"> 4 </span><span class="sd">     &#39;&#39;&#39;</span>
+<span class="lineno"> 5 </span>    <span class="k">return</span> <span class="n">height</span><span class="o">*</span><span class="n">width</span>
+<span class="lineno"> 6 </span>
+<span class="lineno"> 7 </span><span class="k">print</span><span class="p">(</span><span class="s2">&quot;-&quot;</span><span class="o">*</span><span class="mi">20</span><span class="p">)</span>
+<span class="lineno"> 8 </span><span class="k">print</span><span class="p">(</span><span class="s2">&quot;Vi beräknar arean av en rektangel&quot;</span><span class="p">)</span>
+<span class="lineno"> 9 </span><span class="k">print</span><span class="p">(</span><span class="s2">&quot;-&quot;</span><span class="o">*</span><span class="mi">20</span><span class="p">)</span>
+<span class="lineno">10 </span><span class="n">h</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s2">&quot;Vad är höjden på rektangeln? &quot;</span><span class="p">))</span>
+<span class="lineno">11 </span><span class="n">w</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s2">&quot;Vad är bredden på rektangeln? &quot;</span><span class="p">))</span>
+<span class="lineno">12 </span><span class="n">result</span> <span class="o">=</span> <span class="n">area</span><span class="p">(</span><span class="n">h</span><span class="p">,</span> <span class="n">w</span><span class="p">)</span>
+<span class="lineno">13 </span><span class="k">print</span><span class="p">(</span><span class="s2">&quot;Arean är: &quot;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">result</span><span class="p">))</span></code></pre></figure>
 
 <p>Resultatet av beräkningen <code>area(h, w)</code> sparas i variabeln <code>result</code>. När man kör koden ovan får man följande resultat:</p>
 
 <p><img src="images/idle7.png" alt="" /></p>
 
-<h3 id="vning-1---vlkomstfunktion">Övning 1 - Välkomstfunktion</h3>
+<h3 id="övning-1---välkomstfunktion">Övning 1 - Välkomstfunktion</h3>
 
 <p>Vi ska nu göra en funktion som frågar efter besökarens namn och sedan returnerar namnet (det som användaren skriver in). Funktionen ska heta <code>get_name</code> och inte ha någon parameter. Ni ska skriva funktionen så att den fungerar med följande kod:</p>
 
-<div class="highlight"><pre><code class="language-python" data-lang="python"><span class="lineno">1</span> <span class="n">name</span> <span class="o">=</span> <span class="n">get_name</span><span class="p">()</span>
-<span class="lineno">2</span> <span class="k">print</span><span class="p">(</span><span class="s">&quot;*&quot;</span><span class="o">*</span><span class="mi">30</span><span class="p">)</span>
-<span class="lineno">3</span> <span class="k">print</span><span class="p">(</span><span class="s">&quot;Hej &quot;</span> <span class="o">+</span> <span class="n">name</span> <span class="o">+</span> <span class="s">&quot;!&quot;</span><span class="p">)</span>
-<span class="lineno">4</span> <span class="k">print</span><span class="p">(</span><span class="s">&quot;Vad kul att du vill köra mitt program!&quot;</span><span class="p">)</span></code></pre></div>
+<figure class="highlight"><pre><code class="language-python" data-lang="python"><span></span><span class="lineno">1 </span><span class="n">name</span> <span class="o">=</span> <span class="n">get_name</span><span class="p">()</span>
+<span class="lineno">2 </span><span class="k">print</span><span class="p">(</span><span class="s2">&quot;*&quot;</span><span class="o">*</span><span class="mi">30</span><span class="p">)</span>
+<span class="lineno">3 </span><span class="k">print</span><span class="p">(</span><span class="s2">&quot;Hej &quot;</span> <span class="o">+</span> <span class="n">name</span> <span class="o">+</span> <span class="s2">&quot;!&quot;</span><span class="p">)</span>
+<span class="lineno">4 </span><span class="k">print</span><span class="p">(</span><span class="s2">&quot;Vad kul att du vill köra mitt program!&quot;</span><span class="p">)</span></code></pre></figure>
 
 <p>Resultatet kan se ut såhär:</p>
 
 <p><img src="images/idle10.png" alt="" /></p>
 
-<h3 id="vning-2---fahrenheit-till-celcius">Övning 2 - Fahrenheit till Celcius</h3>
+<h3 id="övning-2---fahrenheit-till-celcius">Övning 2 - Fahrenheit till Celcius</h3>
 
 <p>Vi ska nu vända på formeln (jämfört med övningen i förra avsnittet) och omvandla Fahrenheit till Celcius. Formeln för detta är <code>(fahrenheit  -  32)  *  5/9 = celcius</code>. Funktionen ska heta <code>fahrenheit_to_celcius</code> ha en parameter, <code>fahrenheit</code>. Funktionen ska omvandla de grader Fahrenheit som skickas till den, och returnera resultatet i Celcius. För att dubbelkolla så att funktionen fungerar som den ska så kan ni kalla på funktionen med följande kod:</p>
 
-<div class="highlight"><pre><code class="language-python" data-lang="python"><span class="lineno">1</span> <span class="k">print</span><span class="p">(</span><span class="s">&quot;20° Fahrenheit är &quot;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">fahrenheit_to_celcius</span><span class="p">(</span><span class="mi">20</span><span class="p">))</span> <span class="o">+</span> <span class="s">&quot;° Celcius&quot;</span><span class="p">)</span>
-<span class="lineno">2</span> <span class="k">print</span><span class="p">(</span><span class="s">&quot;50° Fahrenheit är &quot;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">fahrenheit_to_celcius</span><span class="p">(</span><span class="mi">50</span><span class="p">))</span> <span class="o">+</span> <span class="s">&quot;° Celcius&quot;</span><span class="p">)</span>
-<span class="lineno">3</span> <span class="k">print</span><span class="p">(</span><span class="s">&quot;Din tur att välja&quot;</span><span class="p">)</span>
-<span class="lineno">4</span> <span class="n">fahrenheit</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s">&quot;Antal grader i Fahrenheit: &quot;</span><span class="p">))</span>
-<span class="lineno">5</span> <span class="k">print</span><span class="p">(</span><span class="nb">str</span><span class="p">(</span><span class="n">fahrenheit</span><span class="p">)</span> <span class="o">+</span> <span class="s">&quot;° Fahrenheit är &quot;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">fahrenheit_to_celcius</span><span class="p">(</span><span class="n">fahrenheit</span><span class="p">))</span> <span class="o">+</span> <span class="s">&quot;° Celcius&quot;</span><span class="p">)</span></code></pre></div>
+<figure class="highlight"><pre><code class="language-python" data-lang="python"><span></span><span class="lineno">1 </span><span class="k">print</span><span class="p">(</span><span class="s2">&quot;20° Fahrenheit är &quot;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">fahrenheit_to_celcius</span><span class="p">(</span><span class="mi">20</span><span class="p">))</span> <span class="o">+</span> <span class="s2">&quot;° Celcius&quot;</span><span class="p">)</span>
+<span class="lineno">2 </span><span class="k">print</span><span class="p">(</span><span class="s2">&quot;50° Fahrenheit är &quot;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">fahrenheit_to_celcius</span><span class="p">(</span><span class="mi">50</span><span class="p">))</span> <span class="o">+</span> <span class="s2">&quot;° Celcius&quot;</span><span class="p">)</span>
+<span class="lineno">3 </span><span class="k">print</span><span class="p">(</span><span class="s2">&quot;Din tur att välja&quot;</span><span class="p">)</span>
+<span class="lineno">4 </span><span class="n">fahrenheit</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s2">&quot;Antal grader i Fahrenheit: &quot;</span><span class="p">))</span>
+<span class="lineno">5 </span><span class="k">print</span><span class="p">(</span><span class="nb">str</span><span class="p">(</span><span class="n">fahrenheit</span><span class="p">)</span> <span class="o">+</span> <span class="s2">&quot;° Fahrenheit är &quot;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">fahrenheit_to_celcius</span><span class="p">(</span><span class="n">fahrenheit</span><span class="p">))</span> <span class="o">+</span> <span class="s2">&quot;° Celcius&quot;</span><span class="p">)</span></code></pre></figure>
 
 <p>Resultatet kan se ut såhär:</p>
 
 <p><img src="images/idle8.png" alt="" /></p>
 
-<h3 id="vning-3---yards-till-meter">Övning 3 - Yards till meter</h3>
+<h3 id="övning-3---yards-till-meter">Övning 3 - Yards till meter</h3>
 
 <p>Vi ska nu bygga en funktion som omvandlar yards till meter. En yard är 0,9144 meter. Funktionen ska heta <code>yards_to_meters</code> ha en parameter: <code>yards</code>. Funktionen ska returnera antalet meter. Ni ska (på samma sätt som övning 2) fråga användaren efter antalet yards som ska omvandlas och sedan använda er av funktion <code>yards_to_meters</code> för att göra själva omvandlingen. Resultatet ska se ut såhär:</p>
 

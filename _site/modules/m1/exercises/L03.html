@@ -100,45 +100,23 @@
         
 
         
-        <li>
-            <span class="course-overview-element">
-                Föreläsningar
-                <span class="expand">+</span>
-            </span>
-            <ul class="course-overview-submenu">
-                
-                <li>
-                    <a href="/modules/m1/lectures/F01.html" title="Gå till föreläsningen Kursintroduktion">
-                        Kursintroduktion
-                    </a>
-                </li>
-                
-                <li>
-                    <a href="/modules/m1/lectures/F02.html" title="Gå till föreläsningen Intro till Python">
-                        Intro till Python
-                    </a>
-                </li>
-                
-            </ul>
-        </li>
-        
     </ul>
 </div>
 
 
         <div class="content">
         
-            <h1 id="variabler--datatyper">3. Variabler &amp; datatyper</h1>
+            <h1 id="3-variabler--datatyper">3. Variabler &amp; datatyper</h1>
 
 <p>Precis som i andra programmeringsspråk så använder man i Python variabler för att spara olika värden, som kan vara bra att ha koll på. En variabel med värde skrivs såhär i Python:</p>
 
-<div class="highlight"><pre><code class="language-python" data-lang="python"><span class="lineno">1</span> <span class="n">variabelnamn</span> <span class="o">=</span> <span class="n">v</span><span class="err">ä</span><span class="n">rde</span></code></pre></div>
+<figure class="highlight"><pre><code class="language-python" data-lang="python"><span></span><span class="lineno">1 </span><span class="n">variabelnamn</span> <span class="o">=</span> <span class="n">v</span><span class="err">ä</span><span class="n">rde</span></code></pre></figure>
 
 <p>Exempel på olika variabler:</p>
 
-<div class="highlight"><pre><code class="language-python" data-lang="python"><span class="lineno">1</span> <span class="n">name</span> <span class="o">=</span> <span class="s">&quot;Anton&quot;</span>
-<span class="lineno">2</span> <span class="n">year</span> <span class="o">=</span> <span class="mi">2014</span>
-<span class="lineno">3</span> <span class="n">leap_year</span> <span class="o">=</span> <span class="bp">False</span></code></pre></div>
+<figure class="highlight"><pre><code class="language-python" data-lang="python"><span></span><span class="lineno">1 </span><span class="n">name</span> <span class="o">=</span> <span class="s2">&quot;Anton&quot;</span>
+<span class="lineno">2 </span><span class="n">year</span> <span class="o">=</span> <span class="mi">2018</span>
+<span class="lineno">3 </span><span class="n">leap_year</span> <span class="o">=</span> <span class="bp">False</span></code></pre></figure>
 
 <p>Som ni kanske noterat innehåller de tre olika variablerna ovan (name, year, leap_year) tre olika datatyper. De olika datatyperna finns till för att tydliggöra vilken typ av information som sparas i variabeln. Är det text, siffror eller sant/falskt värden som sparas i variabeln?</p>
 
@@ -150,16 +128,16 @@
 
 <p>Det finns fler datatyper i Python, men till en börjar så använder vi de tre i listan ovan.</p>
 
-<h2 id="vningar---variabler--datatyper">Övningar - Variabler &amp; datatyper</h2>
+<h2 id="övningar---variabler--datatyper">Övningar - Variabler &amp; datatyper</h2>
 
-<h3 id="en-frsta-vning-i-att-anvnda-variabler">En första övning i att använda variabler:</h3>
+<h3 id="en-första-övning-i-att-använda-variabler">En första övning i att använda variabler:</h3>
 
 <ol>
   <li>Skapa en ny Python-fil och skriv in följande kod</li>
 </ol>
 
-<div class="highlight"><pre><code class="language-python" data-lang="python"><span class="lineno">1</span> <span class="n">name</span> <span class="o">=</span> <span class="s">&quot;Anton&quot;</span>
-<span class="lineno">2</span> <span class="k">print</span><span class="p">(</span><span class="s">&quot;Hej &quot;</span> <span class="o">+</span> <span class="n">name</span> <span class="o">+</span> <span class="s">&quot;!&quot;</span><span class="p">)</span></code></pre></div>
+<figure class="highlight"><pre><code class="language-python" data-lang="python"><span></span><span class="lineno">1 </span><span class="n">name</span> <span class="o">=</span> <span class="s2">&quot;Anton&quot;</span>
+<span class="lineno">2 </span><span class="k">print</span><span class="p">(</span><span class="s2">&quot;Hej &quot;</span> <span class="o">+</span> <span class="n">name</span> <span class="o">+</span> <span class="s2">&quot;!&quot;</span><span class="p">)</span></code></pre></figure>
 
 <ol>
   <li>Kör koden i IDLE och se så att den fungerar</li>
@@ -167,28 +145,28 @@
   <li>Kör koden i IDLE och kontrollera så att ditt namn nu skrivs ut</li>
 </ol>
 
-<h4 id="att-tnka-p-vid-utskrifter-med-textstrngar--tal">Att tänka på vid utskrifter med textsträngar &amp; tal</h4>
+<h4 id="att-tänka-på-vid-utskrifter-med-textsträngar--tal">Att tänka på vid utskrifter med textsträngar &amp; tal</h4>
 
 <p>Till skillnad från vissa andra programmeringsspråk (t.ex. JavaScript) så kan man i Python inte konkatenera (lägga ihop) en textsträng och ett tal. Följande exempel fungerar alltså inte:</p>
 
-<div class="highlight"><pre><code class="language-python" data-lang="python"><span class="lineno">1</span> <span class="n">product</span> <span class="o">=</span> <span class="s">&quot;T-shirt&quot;</span>
-<span class="lineno">2</span> <span class="n">price</span> <span class="o">=</span> <span class="mi">100</span>
-<span class="lineno">3</span> <span class="k">print</span><span class="p">(</span><span class="s">&quot;Produkten: &quot;</span> <span class="o">+</span> <span class="n">product</span> <span class="o">+</span> <span class="s">&quot; kostar &quot;</span> <span class="o">+</span> <span class="n">price</span> <span class="o">+</span> <span class="s">&quot;SEK&quot;</span><span class="p">)</span></code></pre></div>
+<figure class="highlight"><pre><code class="language-python" data-lang="python"><span></span><span class="lineno">1 </span><span class="n">product</span> <span class="o">=</span> <span class="s2">&quot;T-shirt&quot;</span>
+<span class="lineno">2 </span><span class="n">price</span> <span class="o">=</span> <span class="mi">100</span>
+<span class="lineno">3 </span><span class="k">print</span><span class="p">(</span><span class="s2">&quot;Produkten: &quot;</span> <span class="o">+</span> <span class="n">product</span> <span class="o">+</span> <span class="s2">&quot; kostar &quot;</span> <span class="o">+</span> <span class="n">price</span> <span class="o">+</span> <span class="s2">&quot;SEK&quot;</span><span class="p">)</span></code></pre></figure>
 
 <p>Kör man koden ovan så kommer man att få följande fel:</p>
 
-<div class="highlight"><pre><code class="language-python" data-lang="python"><span class="lineno">1</span> <span class="n">Traceback</span> <span class="p">(</span><span class="n">most</span> <span class="n">recent</span> <span class="n">call</span> <span class="n">last</span><span class="p">):</span>
-<span class="lineno">2</span>   <span class="n">File</span> <span class="s">&quot;C:/Users/TSANTI/Desktop/temp.py&quot;</span><span class="p">,</span> <span class="n">line</span> <span class="mi">3</span><span class="p">,</span> <span class="ow">in</span> <span class="o">&lt;</span><span class="n">module</span><span class="o">&gt;</span>
-<span class="lineno">3</span>     <span class="k">print</span><span class="p">(</span><span class="s">&quot;Produkten: &quot;</span> <span class="o">+</span> <span class="n">product</span> <span class="o">+</span> <span class="s">&quot; kostar &quot;</span> <span class="o">+</span> <span class="n">price</span> <span class="o">+</span> <span class="s">&quot;SEK&quot;</span><span class="p">)</span>
-<span class="lineno">4</span> <span class="ne">TypeError</span><span class="p">:</span> <span class="n">Can</span><span class="s">&#39;t convert &#39;</span><span class="nb">int</span><span class="s">&#39; object to str implicitly</span></code></pre></div>
+<figure class="highlight"><pre><code class="language-python" data-lang="python"><span></span><span class="lineno">1 </span><span class="n">Traceback</span> <span class="p">(</span><span class="n">most</span> <span class="n">recent</span> <span class="n">call</span> <span class="n">last</span><span class="p">):</span>
+<span class="lineno">2 </span>  <span class="n">File</span> <span class="s2">&quot;C:/Users/tsanti/Desktop/main.py&quot;</span><span class="p">,</span> <span class="n">line</span> <span class="mi">3</span><span class="p">,</span> <span class="ow">in</span> <span class="o">&lt;</span><span class="n">module</span><span class="o">&gt;</span>
+<span class="lineno">3 </span>    <span class="k">print</span><span class="p">(</span><span class="s2">&quot;Produkten: &quot;</span> <span class="o">+</span> <span class="n">product</span> <span class="o">+</span> <span class="s2">&quot; kostar &quot;</span> <span class="o">+</span> <span class="n">price</span> <span class="o">+</span> <span class="s2">&quot;SEK&quot;</span><span class="p">)</span>
+<span class="lineno">4 </span><span class="ne">TypeError</span><span class="p">:</span> <span class="n">can</span> <span class="n">only</span> <span class="n">concatenate</span> <span class="nb">str</span> <span class="p">(</span><span class="ow">not</span> <span class="s2">&quot;int&quot;</span><span class="p">)</span> <span class="n">to</span> <span class="nb">str</span></code></pre></figure>
 
 <p>Den sista raden i felmeddelande talar om att vi inte kan konkatenera en sträng (str) med ett tal (int). Detta kan man lösa genom att göra om talet till en sträng, genom funktionen <code>str()</code>, se fungerande kod:</p>
 
-<div class="highlight"><pre><code class="language-python" data-lang="python"><span class="lineno">1</span> <span class="n">product</span> <span class="o">=</span> <span class="s">&quot;T-shirt&quot;</span>
-<span class="lineno">2</span> <span class="n">price</span> <span class="o">=</span> <span class="mi">100</span>
-<span class="lineno">3</span> <span class="k">print</span><span class="p">(</span><span class="s">&quot;Produkten: &quot;</span> <span class="o">+</span> <span class="n">product</span> <span class="o">+</span> <span class="s">&quot; kostar &quot;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">price</span><span class="p">)</span> <span class="o">+</span> <span class="s">&quot;SEK&quot;</span><span class="p">)</span></code></pre></div>
+<figure class="highlight"><pre><code class="language-python" data-lang="python"><span></span><span class="lineno">1 </span><span class="n">product</span> <span class="o">=</span> <span class="s2">&quot;T-shirt&quot;</span>
+<span class="lineno">2 </span><span class="n">price</span> <span class="o">=</span> <span class="mi">100</span>
+<span class="lineno">3 </span><span class="k">print</span><span class="p">(</span><span class="s2">&quot;Produkten: &quot;</span> <span class="o">+</span> <span class="n">product</span> <span class="o">+</span> <span class="s2">&quot; kostar &quot;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">price</span><span class="p">)</span> <span class="o">+</span> <span class="s2">&quot;SEK&quot;</span><span class="p">)</span></code></pre></figure>
 
-<h3 id="en-andra-vnng-i-att-anvnda-variabler">En andra övnng i att använda variabler:</h3>
+<h3 id="en-andra-övnng-i-att-använda-variabler">En andra övnng i att använda variabler:</h3>
 
 <p>Vi ska nu göra ett enkelt program som beräknar summan av två tal. De två talen ska anges i vars en variabel och summan ska sedan skrivas ut genom att använda “print”-funktionen, resultatet ska se ut såhär (fast med valfria tal):</p>
 
@@ -199,7 +177,7 @@
   <li>Kopiera in koden nedan till er Python-fil (och spara filen på lämplig plats)</li>
 </ol>
 
-<div class="highlight"><pre><code class="language-python" data-lang="python"><span class="lineno">1</span> <span class="k">print</span><span class="p">(</span><span class="s">&quot;Summan av &quot;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">first_number</span><span class="p">)</span> <span class="o">+</span> <span class="s">&quot; och &quot;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">second_number</span><span class="p">)</span> <span class="o">+</span> <span class="s">&quot; är &quot;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">first_number</span> <span class="o">+</span> <span class="n">second_number</span><span class="p">))</span></code></pre></div>
+<figure class="highlight"><pre><code class="language-python" data-lang="python"><span></span><span class="lineno">1 </span><span class="k">print</span><span class="p">(</span><span class="s2">&quot;Summan av &quot;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">first_number</span><span class="p">)</span> <span class="o">+</span> <span class="s2">&quot; och &quot;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">second_number</span><span class="p">)</span> <span class="o">+</span> <span class="s2">&quot; är &quot;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">first_number</span> <span class="o">+</span> <span class="n">second_number</span><span class="p">))</span></code></pre></figure>
 
 <p>Ni behöver nu skapa variablerna “firstNumber” och “secondNumber” för att ert program ska fungera.</p>
 
@@ -211,9 +189,9 @@
 
 <p>Man kan alltid fråga pythontolken om vilken datatyp ett värde har. Till exempel:</p>
 
-<div class="highlight"><pre><code class="language-python" data-lang="python"><span class="o">&gt;&gt;&gt;</span> <span class="n">x</span> <span class="o">=</span> <span class="mi">10</span>
+<figure class="highlight"><pre><code class="language-python" data-lang="python"><span></span><span class="o">&gt;&gt;&gt;</span> <span class="n">x</span> <span class="o">=</span> <span class="mi">10</span>
 <span class="o">&gt;&gt;&gt;</span> <span class="nb">type</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
-<span class="o">&lt;</span><span class="nb">type</span> <span class="s">&#39;int&#39;</span><span class="o">&gt;</span></code></pre></div>
+<span class="o">&lt;</span><span class="nb">type</span> <span class="s1">&#39;int&#39;</span><span class="o">&gt;</span></code></pre></figure>
 
 
         

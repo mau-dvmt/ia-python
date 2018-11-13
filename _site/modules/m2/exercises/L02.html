@@ -132,7 +132,7 @@
 
         <div class="content">
         
-            <h1 id="argument-och-parametrar">2. Argument och parametrar</h1>
+            <h1 id="2-argument-och-parametrar">2. Argument och parametrar</h1>
 
 <h2 id="introduktion">Introduktion</h2>
 
@@ -140,46 +140,46 @@
 
 <p>Vi ska i denna övningen titta på hur vi kan göra de funktioner som vi bygger mer dynamiska. Detta genom att <em>skicka med</em> data till funktionerna som vi bygger. Den data som skickas från användaren när funktionen anropas kallas för <em>argument</em> medan den data som tas emot av funktionen kallas för <em>parameter</em>. Ett snabbt exempel:</p>
 
-<div class="highlight"><pre><code class="language-python" data-lang="python"><span class="lineno">1</span> <span class="k">def</span> <span class="nf">shout_out</span><span class="p">(</span><span class="n">text</span><span class="p">):</span>
-<span class="lineno">2</span>     <span class="sd">&#39;&#39;&#39;</span>
-<span class="lineno">3</span> <span class="sd">        Tar en sträng som input och skriver ut den i versaler</span>
-<span class="lineno">4</span> <span class="sd">    &#39;&#39;&#39;</span>
-<span class="lineno">5</span>     <span class="k">print</span><span class="p">(</span><span class="n">text</span><span class="o">.</span><span class="n">upper</span><span class="p">())</span>
-<span class="lineno">6</span> 
-<span class="lineno">7</span> <span class="n">shout_out</span><span class="p">(</span><span class="s">&quot;Vi testar!&quot;</span><span class="p">)</span>
-<span class="lineno">8</span> <span class="n">shout_out</span><span class="p">(</span><span class="s">&quot;En gång till!&quot;</span><span class="p">)</span></code></pre></div>
+<figure class="highlight"><pre><code class="language-python" data-lang="python"><span></span><span class="lineno">1 </span><span class="k">def</span> <span class="nf">shout_out</span><span class="p">(</span><span class="n">text</span><span class="p">):</span>
+<span class="lineno">2 </span>    <span class="sd">&#39;&#39;&#39;</span>
+<span class="lineno">3 </span><span class="sd">        Tar en sträng som input och skriver ut den i versaler</span>
+<span class="lineno">4 </span><span class="sd">    &#39;&#39;&#39;</span>
+<span class="lineno">5 </span>    <span class="k">print</span><span class="p">(</span><span class="n">text</span><span class="o">.</span><span class="n">upper</span><span class="p">())</span>
+<span class="lineno">6 </span>
+<span class="lineno">7 </span><span class="n">shout_out</span><span class="p">(</span><span class="s2">&quot;Vi testar!&quot;</span><span class="p">)</span>
+<span class="lineno">8 </span><span class="n">shout_out</span><span class="p">(</span><span class="s2">&quot;En gång till!&quot;</span><span class="p">)</span></code></pre></figure>
 
 <p>I exemplet ovan så är <code>text</code> parametern till funktionen <code>shout_out</code> och <code>Vi testar</code> är argumentet när funktionen anropas. Variabeln/parametern <code>text</code>i funktionen representerar alltså det som skickas som argument till funktionen. Vi kör funktionen två gånger, första gången representerar <code>text</code> i funktionen strängen <code>"Vi testar!"</code> och andra gången strängen <code>"En gång till!"</code>. Kör vi koden ovan så ser det ut såhär:</p>
 
 <p><img src="images/idle4.png" alt="" /></p>
 
-<h2 id="vningar">Övningar</h2>
+<h2 id="övningar">Övningar</h2>
 
-<h3 id="vning-1---areafunktion">Övning 1 - Areafunktion</h3>
+<h3 id="övning-1---areafunktion">Övning 1 - Areafunktion</h3>
 
 <p>Vi ska nu bygga en funktion som räknar ut arean för en rektangel. Funktionen har två parametrar, <code>height</code> och <code>width</code> som multiplicerat med varandra resulterar i arean för rektangeln. Er uppgift är att skriva klart funktionen nedan så att den blir komplett.</p>
 
-<div class="highlight"><pre><code class="language-python" data-lang="python"><span class="lineno">1</span> <span class="k">def</span> <span class="nf">area</span><span class="p">(</span><span class="n">width</span><span class="p">,</span> <span class="n">height</span><span class="p">):</span>
-<span class="lineno">2</span>     <span class="sd">&#39;&#39;&#39;</span>
-<span class="lineno">3</span> <span class="sd">        Funktionen beräknar och skriver ut arean för en rektangel</span>
-<span class="lineno">4</span> <span class="sd">    &#39;&#39;&#39;</span>
-<span class="lineno">5</span>     <span class="c"># Er kod här</span>
-<span class="lineno">6</span> 
-<span class="lineno">7</span> <span class="n">area</span><span class="p">(</span><span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">)</span>
-<span class="lineno">8</span> <span class="n">area</span><span class="p">(</span><span class="mi">7</span><span class="p">,</span> <span class="mi">12</span><span class="p">)</span>
-<span class="lineno">9</span> <span class="n">area</span><span class="p">(</span><span class="mi">32</span><span class="p">,</span> <span class="mi">23</span><span class="p">)</span></code></pre></div>
+<figure class="highlight"><pre><code class="language-python" data-lang="python"><span></span><span class="lineno">1 </span><span class="k">def</span> <span class="nf">area</span><span class="p">(</span><span class="n">width</span><span class="p">,</span> <span class="n">height</span><span class="p">):</span>
+<span class="lineno">2 </span>    <span class="sd">&#39;&#39;&#39;</span>
+<span class="lineno">3 </span><span class="sd">        Funktionen beräknar och skriver ut arean för en rektangel</span>
+<span class="lineno">4 </span><span class="sd">    &#39;&#39;&#39;</span>
+<span class="lineno">5 </span>    <span class="c1"># Er kod här</span>
+<span class="lineno">6 </span>
+<span class="lineno">7 </span><span class="n">area</span><span class="p">(</span><span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">)</span>
+<span class="lineno">8 </span><span class="n">area</span><span class="p">(</span><span class="mi">7</span><span class="p">,</span> <span class="mi">12</span><span class="p">)</span>
+<span class="lineno">9 </span><span class="n">area</span><span class="p">(</span><span class="mi">32</span><span class="p">,</span> <span class="mi">23</span><span class="p">)</span></code></pre></figure>
 
 <p>När ni skrivit klart funktionen ska resultatet vara:</p>
 
 <p><img src="images/idle5.png" alt="" /></p>
 
-<h3 id="vning-2---celcius-till-fahrenheit">Övning 2 - Celcius till Fahrenheit</h3>
+<h3 id="övning-2---celcius-till-fahrenheit">Övning 2 - Celcius till Fahrenheit</h3>
 
 <p>Vi ska nu bygga en funktion som omvandlar temperatur i Celcius till Fahrenheit. Formeln för detta är: <code>fahrenheit = celcius  *  9/5 + 32</code>. Er uppgift är att skriva funktionen <code>celcius_to_fahrenheit</code> som ska ta antalet grader i Celcius som en parameter och ska fungera med följande anrop:</p>
 
-<div class="highlight"><pre><code class="language-python" data-lang="python"><span class="lineno">1</span> <span class="n">celcius_to_fahrenheit</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span>
-<span class="lineno">2</span> <span class="n">celcius_to_fahrenheit</span><span class="p">(</span><span class="mi">15</span><span class="p">)</span>
-<span class="lineno">3</span> <span class="n">celcius_to_fahrenheit</span><span class="p">(</span><span class="mi">30</span><span class="p">)</span></code></pre></div>
+<figure class="highlight"><pre><code class="language-python" data-lang="python"><span></span><span class="lineno">1 </span><span class="n">celcius_to_fahrenheit</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span>
+<span class="lineno">2 </span><span class="n">celcius_to_fahrenheit</span><span class="p">(</span><span class="mi">15</span><span class="p">)</span>
+<span class="lineno">3 </span><span class="n">celcius_to_fahrenheit</span><span class="p">(</span><span class="mi">30</span><span class="p">)</span></code></pre></figure>
 
 <p>Och funktionens utskrifter ska se ut på följande sätt:</p>
 

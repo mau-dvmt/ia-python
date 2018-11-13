@@ -132,30 +132,30 @@
 
         <div class="content">
         
-            <h1 id="introduktion-till-funktioner">1. Introduktion till funktioner</h1>
+            <h1 id="1-introduktion-till-funktioner">1. Introduktion till funktioner</h1>
 
-<h2 id="syntax-fr-funktioner">Syntax för funktioner</h2>
+<h2 id="syntax-för-funktioner">Syntax för funktioner</h2>
 
 <p>En funktion i Python skapas genom att man använder nyckelordet <code>def</code> följt utav det namn som man vi ge sin funktion. Skulle man alltså vilja skapa en funktion som heter <code>my_function</code> så skriver man:</p>
 
-<div class="highlight"><pre><code class="language-python" data-lang="python"><span class="lineno">1</span> <span class="k">def</span> <span class="nf">my_function</span><span class="p">():</span>
-<span class="lineno">2</span>     <span class="c"># Do something</span>
-<span class="lineno">3</span>     <span class="k">return</span></code></pre></div>
+<figure class="highlight"><pre><code class="language-python" data-lang="python"><span></span><span class="lineno">1 </span><span class="k">def</span> <span class="nf">my_function</span><span class="p">():</span>
+<span class="lineno">2 </span>    <span class="c1"># Do something</span>
+<span class="lineno">3 </span>    <span class="k">return</span></code></pre></figure>
 
 <p><strong>Notera</strong> att man inte (som t.ex. i JavaScript) använder <code>{</code> och <code>}</code> för att deklarera vad som tillhör en funktion, utan istället så bestämmer <em>indenteringen</em> vilken kod som tillhör vilken funktion. Studerar vi exemplet ovan så ser vi att den kod som tillhör funktionen <code>my_function</code> är indenterad med 4st blankslag. Det är därför mycket viktigt att man har koll på sin indentering, inte bara för att man vill skriva tydlig och lättläst kod - utan för att det annars blir syntaxfel när man vill köra sitt program.</p>
 
-<h3 id="en-frsta-funktion">En första funktion</h3>
+<h3 id="en-första-funktion">En första funktion</h3>
 
 <p>För att se hur det fungerar att både skapa, och sedan köra en funktion, kommer här ett exempel. Funktion vi skapar döper vi till <code>welcome</code> och syftet med funktionen är helt enkelt att skriva ut en välkomnshälsning. Koden för funktionen är följande:</p>
 
-<div class="highlight"><pre><code class="language-python" data-lang="python"><span class="lineno">1</span> <span class="k">def</span> <span class="nf">welcome</span><span class="p">():</span>
-<span class="lineno">2</span>     <span class="k">print</span><span class="p">(</span><span class="s">&quot;--------------------------------&quot;</span><span class="p">)</span>
-<span class="lineno">3</span>     <span class="k">print</span><span class="p">(</span><span class="s">&quot;  Välkommen till mitt program!  &quot;</span><span class="p">)</span>
-<span class="lineno">4</span>     <span class="k">print</span><span class="p">(</span><span class="s">&quot;--------------------------------&quot;</span><span class="p">)</span></code></pre></div>
+<figure class="highlight"><pre><code class="language-python" data-lang="python"><span></span><span class="lineno">1 </span><span class="k">def</span> <span class="nf">welcome</span><span class="p">():</span>
+<span class="lineno">2 </span>    <span class="k">print</span><span class="p">(</span><span class="s2">&quot;--------------------------------&quot;</span><span class="p">)</span>
+<span class="lineno">3 </span>    <span class="k">print</span><span class="p">(</span><span class="s2">&quot;  Välkommen till mitt program!  &quot;</span><span class="p">)</span>
+<span class="lineno">4 </span>    <span class="k">print</span><span class="p">(</span><span class="s2">&quot;--------------------------------&quot;</span><span class="p">)</span></code></pre></figure>
 
 <p>När man vill köra en funktion i Python skriver man namnet på den funktion som man vill köra. Vill vi köra funktionen <code>welcome</code> skriver vi alltså:</p>
 
-<div class="highlight"><pre><code class="language-python" data-lang="python"><span class="lineno">1</span> <span class="n">welcome</span><span class="p">()</span></code></pre></div>
+<figure class="highlight"><pre><code class="language-python" data-lang="python"><span></span><span class="lineno">1 </span><span class="n">welcome</span><span class="p">()</span></code></pre></figure>
 
 <p><strong>Övning:</strong> Testa att kopiera in koden ovan i en egen Python-fil och kör sedan programmet i IDLE för att se så att funktionen körs som förväntat.</p>
 
@@ -163,38 +163,38 @@
 
 <p>Det är ofta bra att dokumentera sin kod i form utav kommentarer, så att man har koll på vad en viss del kod gör i sitt program. I Python kan man även dokumentera vad en funktion gör, vilket är smidigt när man snabbt behöver kolla upp en funktion (utan att behöva gå igenom koden). Detta gör man genom tre enkla citat-tecken <code>'''</code> följt av en kommentar och avslutar sedan med ytterliggare <code>'''</code>. Skulle vi kommentera vår funktion som vi skrev ovan skulle det kunna se ut såhär:</p>
 
-<div class="highlight"><pre><code class="language-python" data-lang="python"><span class="lineno">1</span> <span class="k">def</span> <span class="nf">welcome</span><span class="p">():</span>
-<span class="lineno">2</span>     <span class="sd">&#39;&#39;&#39;</span>
-<span class="lineno">3</span> <span class="sd">        Funktionen skriver ut ett välkomstmeddelande till besökaren</span>
-<span class="lineno">4</span> <span class="sd">    &#39;&#39;&#39;</span>
-<span class="lineno">5</span>     <span class="k">print</span><span class="p">(</span><span class="s">&quot;--------------------------------&quot;</span><span class="p">)</span>
-<span class="lineno">6</span>     <span class="k">print</span><span class="p">(</span><span class="s">&quot;  Välkommen till mitt program!  &quot;</span><span class="p">)</span>
-<span class="lineno">7</span>     <span class="k">print</span><span class="p">(</span><span class="s">&quot;--------------------------------&quot;</span><span class="p">)</span></code></pre></div>
+<figure class="highlight"><pre><code class="language-python" data-lang="python"><span></span><span class="lineno">1 </span><span class="k">def</span> <span class="nf">welcome</span><span class="p">():</span>
+<span class="lineno">2 </span>    <span class="sd">&#39;&#39;&#39;</span>
+<span class="lineno">3 </span><span class="sd">        Funktionen skriver ut ett välkomstmeddelande till besökaren</span>
+<span class="lineno">4 </span><span class="sd">    &#39;&#39;&#39;</span>
+<span class="lineno">5 </span>    <span class="k">print</span><span class="p">(</span><span class="s2">&quot;--------------------------------&quot;</span><span class="p">)</span>
+<span class="lineno">6 </span>    <span class="k">print</span><span class="p">(</span><span class="s2">&quot;  Välkommen till mitt program!  &quot;</span><span class="p">)</span>
+<span class="lineno">7 </span>    <span class="k">print</span><span class="p">(</span><span class="s2">&quot;--------------------------------&quot;</span><span class="p">)</span></code></pre></figure>
 
 <p>Vill vi sedan (när vi kör programmet i IDLE) ta reda på vad vi skrivt för kommentar för vår funktion <code>welcome</code> så skriver vi:</p>
 
-<div class="highlight"><pre><code class="language-python" data-lang="python"><span class="lineno">1</span> <span class="n">help</span><span class="p">(</span><span class="n">welcome</span><span class="p">)</span></code></pre></div>
+<figure class="highlight"><pre><code class="language-python" data-lang="python"><span></span><span class="lineno">1 </span><span class="n">help</span><span class="p">(</span><span class="n">welcome</span><span class="p">)</span></code></pre></figure>
 
 <p>Då visas vår dokumentation kring funktionen att visas på detta sätt:</p>
 
 <p><img src="images/idle1.png" alt="IDLE" /></p>
 
-<h2 id="vningar">Övningar</h2>
+<h2 id="övningar">Övningar</h2>
 
-<h3 id="vning-1">Övning 1</h3>
+<h3 id="övning-1">Övning 1</h3>
 
 <p>I denna övningen ska vi utgå från befinglig kod och “lägga in” koden i en funktion. Funktionen ska heta <code>multiply</code>, och bestå utan koden nedan:</p>
 
-<div class="highlight"><pre><code class="language-python" data-lang="python"><span class="lineno">1</span> <span class="k">print</span><span class="p">(</span><span class="s">&quot;I detta program beräknas produkten av två tal&quot;</span><span class="p">)</span>
-<span class="lineno">2</span> <span class="n">num_1</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s">&quot;Ange tal 1: &quot;</span><span class="p">))</span>
-<span class="lineno">3</span> <span class="n">num_2</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s">&quot;Ange tal 2: &quot;</span><span class="p">))</span>
-<span class="lineno">4</span> <span class="n">product</span> <span class="o">=</span> <span class="n">num_1</span> <span class="o">*</span> <span class="n">num_2</span>
-<span class="lineno">5</span> <span class="k">print</span><span class="p">(</span><span class="s">&quot;Produkten av &quot;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">num_1</span><span class="p">)</span> <span class="o">+</span> <span class="s">&quot; och &quot;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">num_2</span><span class="p">)</span> <span class="o">+</span> <span class="s">&quot; är: &quot;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">product</span><span class="p">))</span>
-<span class="lineno">6</span> <span class="k">print</span><span class="p">(</span><span class="s">&quot;--------------------------------&quot;</span><span class="p">)</span></code></pre></div>
+<figure class="highlight"><pre><code class="language-python" data-lang="python"><span></span><span class="lineno">1 </span><span class="k">print</span><span class="p">(</span><span class="s2">&quot;I detta program beräknas produkten av två tal&quot;</span><span class="p">)</span>
+<span class="lineno">2 </span><span class="n">num_1</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s2">&quot;Ange tal 1: &quot;</span><span class="p">))</span>
+<span class="lineno">3 </span><span class="n">num_2</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s2">&quot;Ange tal 2: &quot;</span><span class="p">))</span>
+<span class="lineno">4 </span><span class="n">product</span> <span class="o">=</span> <span class="n">num_1</span> <span class="o">*</span> <span class="n">num_2</span>
+<span class="lineno">5 </span><span class="k">print</span><span class="p">(</span><span class="s2">&quot;Produkten av &quot;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">num_1</span><span class="p">)</span> <span class="o">+</span> <span class="s2">&quot; och &quot;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">num_2</span><span class="p">)</span> <span class="o">+</span> <span class="s2">&quot; är: &quot;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">product</span><span class="p">))</span>
+<span class="lineno">6 </span><span class="k">print</span><span class="p">(</span><span class="s2">&quot;--------------------------------&quot;</span><span class="p">)</span></code></pre></figure>
 
 <p>När ni skrivit klart funktionen så ska den köras <strong>tre</strong> gånger. Funktionen ska även dokumenteras enligt beskrivningen ovan (genom <code>''' dina kommentarer '''</code>). <strong>Tänk på</strong> att vara noga med indenteringen för funktionen.</p>
 
-<h3 id="vning-2">Övning 2</h3>
+<h3 id="övning-2">Övning 2</h3>
 
 <p>Hittills har vi nu gjort två funktioner.</p>
 
@@ -205,8 +205,8 @@
 
 <p>I denna övningen ska vi lägga in båda funktionerna (som ju nu är väldokumenterade) i samma Python-fil och sedan köra båda funktionerna (som bildar vårt program) enligt:</p>
 
-<div class="highlight"><pre><code class="language-python" data-lang="python"><span class="lineno">1</span> <span class="n">welcome</span><span class="p">()</span>
-<span class="lineno">2</span> <span class="n">multiply</span><span class="p">()</span></code></pre></div>
+<figure class="highlight"><pre><code class="language-python" data-lang="python"><span></span><span class="lineno">1 </span><span class="n">welcome</span><span class="p">()</span>
+<span class="lineno">2 </span><span class="n">multiply</span><span class="p">()</span></code></pre></figure>
 
 <p>Funktionsanropen ska i detta läget ligga <em>efter</em> att funktionerna är definierade. Annars kommer ni få ett meddelande som säger att funktionerna som ni försöker köra inte är definierade (tänk på att datorn läser koden uppifrån och ner). Om allt fungerar som det ska bör resultatet se ut något i stil med:</p>
 
@@ -214,8 +214,8 @@
 
 <p>Testa även så att din dokumentation fungerar som förväntat till dina funktioner:</p>
 
-<div class="highlight"><pre><code class="language-python" data-lang="python"><span class="lineno">1</span> <span class="n">help</span><span class="p">(</span><span class="n">welcome</span><span class="p">)</span>
-<span class="lineno">2</span> <span class="n">help</span><span class="p">(</span><span class="n">multiply</span><span class="p">)</span></code></pre></div>
+<figure class="highlight"><pre><code class="language-python" data-lang="python"><span></span><span class="lineno">1 </span><span class="n">help</span><span class="p">(</span><span class="n">welcome</span><span class="p">)</span>
+<span class="lineno">2 </span><span class="n">help</span><span class="p">(</span><span class="n">multiply</span><span class="p">)</span></code></pre></figure>
 
 <p>Resultatet bör bli liknande:</p>
 

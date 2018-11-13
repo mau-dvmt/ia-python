@@ -100,54 +100,32 @@
         
 
         
-        <li>
-            <span class="course-overview-element">
-                Föreläsningar
-                <span class="expand">+</span>
-            </span>
-            <ul class="course-overview-submenu">
-                
-                <li>
-                    <a href="/modules/m1/lectures/F01.html" title="Gå till föreläsningen Kursintroduktion">
-                        Kursintroduktion
-                    </a>
-                </li>
-                
-                <li>
-                    <a href="/modules/m1/lectures/F02.html" title="Gå till föreläsningen Intro till Python">
-                        Intro till Python
-                    </a>
-                </li>
-                
-            </ul>
-        </li>
-        
     </ul>
 </div>
 
 
         <div class="content">
         
-            <h1 id="anvndarinput">4. Användarinput</h1>
+            <h1 id="4-användarinput">4. Användarinput</h1>
 
 <p>Hittills har vi bestämt värdet på de variabler som vi skapat, t.ex. vad vi heter, vilka tal vi vill räkna med osv. Denna information skulle ju bli mer intressant om vi kan få den från personen som använder vårt program. Vi kan i Python fråga användaren efter input/indata till vårt program genom funktionen <code>input()</code>.</p>
 
 <p>Vill vi fråga användaren efter dennes namn (och spara det som användaren skriver in i variabeln <code>name</code>) så kan vi skriva:</p>
 
-<div class="highlight"><pre><code class="language-python" data-lang="python"><span class="lineno">1</span> <span class="n">name</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s">&quot;Vad heter du? &quot;</span><span class="p">)</span></code></pre></div>
+<figure class="highlight"><pre><code class="language-python" data-lang="python"><span></span><span class="lineno">1 </span><span class="n">name</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">&quot;Vad heter du? &quot;</span><span class="p">)</span></code></pre></figure>
 
 <p>Variabeln <code>name</code> kommer då att innehålla det namn som användaren angett i IDLE när programmet körs.</p>
 
 <p>Vill vi sedan välkomna användaren, så kan vi helt enkelt skriva ut det namn som användaren skrev in, genom att använda oss utav variabeln <code>namn</code>.</p>
 
-<div class="highlight"><pre><code class="language-python" data-lang="python"><span class="lineno">1</span> <span class="n">name</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s">&quot;Vad heter du? &quot;</span><span class="p">)</span>
-<span class="lineno">2</span> <span class="k">print</span><span class="p">(</span><span class="s">&quot;Hej &quot;</span> <span class="o">+</span> <span class="n">name</span> <span class="o">+</span> <span class="s">&quot;!&quot;</span><span class="p">)</span></code></pre></div>
+<figure class="highlight"><pre><code class="language-python" data-lang="python"><span></span><span class="lineno">1 </span><span class="n">name</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">&quot;Vad heter du? &quot;</span><span class="p">)</span>
+<span class="lineno">2 </span><span class="k">print</span><span class="p">(</span><span class="s2">&quot;Hej &quot;</span> <span class="o">+</span> <span class="n">name</span> <span class="o">+</span> <span class="s2">&quot;!&quot;</span><span class="p">)</span></code></pre></figure>
 
 <p>Det bör se ut något i stil med:</p>
 
 <p><img src="images/idle6.png" alt="Idle" /></p>
 
-<h2 id="vningsuppgift-1">Övningsuppgift 1</h2>
+<h2 id="övningsuppgift-1">Övningsuppgift 1</h2>
 
 <p>Vi ska nu utöka programmet ovan som hälsar personen välkommen. Vi ska, förutom att fråga efter personens namn, även fråga var personen bor och personens ålder. När vi är klara så ska det se ut något i denna stilen:</p>
 
@@ -166,7 +144,7 @@
   </li>
 </ol>
 
-<h2 id="vningsuppgift-2">Övningsuppgift 2</h2>
+<h2 id="övningsuppgift-2">Övningsuppgift 2</h2>
 
 <p>Vi ska nu bygga ett enkelt multiplikationsprogram. Programmet ska fråga användaren efter två tal, sedan visa produkten av dessa talen (se resultatet på bilden nedan). Programmets kod bör följa en struktur som liknar den ni använde vid övningsuppgift 1.</p>
 
@@ -176,7 +154,7 @@
   <li>Tänk på att den input som man får från användaren genom funktionen <code>input</code> är av datatypen sträng. Alltså - för att räkna med de tal som användaren skriver in behöver vi göra om numret till ett tal (till exempel genom att använda <code>int()</code>), t.ex. såhär:</li>
 </ul>
 
-<div class="highlight"><pre><code class="language-python" data-lang="python"><span class="lineno">1</span> <span class="n">first_number</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s">&quot;Tal 1: &quot;</span><span class="p">))</span></code></pre></div>
+<figure class="highlight"><pre><code class="language-python" data-lang="python"><span></span><span class="lineno">1 </span><span class="n">first_number</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s2">&quot;Tal 1: &quot;</span><span class="p">))</span></code></pre></figure>
 
 <p>I övrigt är det upp till er hur ni konstruerar programmet, så länge resultatet liknar utskriftsbilden ovan.</p>
 

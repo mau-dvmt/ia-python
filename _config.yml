@@ -3,15 +3,15 @@ name: Introduktion till programmering
 description: Introduktion till programmering för IA
 
 author:
-    name: Anton Tibblin & Fredrik Ohlin
+    name: Anton Tibblin
 
-url: http://mah-webb.github.io
+url: http://da354a.ia-mau.se
 
 highlighter: pygments
 
 markdown: kramdown
 
-exclude: ['Gemfile', 'Gemfile.lock', 'README.md']
+exclude: ['Gemfile', 'Gemfile.lock', 'README.md', 'vendor']
 
 include: ['.htaccess']
 
