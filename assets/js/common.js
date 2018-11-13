@@ -183,7 +183,7 @@
     // Make external links open in a new tab
     function setTargetForLinks() {
         var anchors = document.getElementsByTagName( 'a' ),
-            re = new RegExp( '^http://da354a.ia-mah.se' ),
+            re = new RegExp( '^http://da354a.ia-mau.se' ),
             re2 = new RegExp( '^http://localhost:4000' );
 
         for ( var i = 0, len = anchors.length; i < len; i++ ) {
