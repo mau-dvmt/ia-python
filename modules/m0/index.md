@@ -21,7 +21,7 @@ Labbtillfällena är i grunden fria att disponera, men i tabellen nedan anges s�
         <td rowspan="2">46</td>
         <td>14/11</td>
         <td>15-17</td>
-        <td>Kursintroduktion</td>
+        <td><a href="/modules/m1/lectures/F01.html">Kursintroduktion</a></td>
     </tr>
     <tr class="laboration even">
         <td>15/11</td>
