@@ -8,9 +8,9 @@
   number: m1
   description: En introduktion till Python och dess utvecklingsmiljö
 
-#- name: Modul 2 - Funktioner
-#  number: m2
-#  description: En introduktion till funktioner i Python
+- name: Modul 2 - Funktioner
+  number: m2
+  description: En introduktion till funktioner i Python
 
 #- name: Modul 3 - Iteration och selektion
 #  number: m3

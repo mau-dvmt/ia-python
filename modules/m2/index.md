@@ -37,7 +37,6 @@ Vidare tittar vi på hur man kan har paramtrar till sina funktioner och hur man 
 
 ##### Extra läsning
 
-- [Codecademy - Python Functions](http://www.codecademy.com/en/tracks/python) (obs. Python 2)
 - [Interactive Python - Functions](http://interactivepython.org/runestone/static/thinkcspy/Functions/functions.html) (obs. Python 2)
 - [Learn Python the hard way - Names, Variables, Code, Functions](http://learnpythonthehardway.org/book/ex18.html) (obs. Python 2)
 
