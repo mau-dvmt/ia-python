@@ -32,10 +32,6 @@ Förutom det material som finns i övningarna finns här tips på mer material a
 3. [Nästlade if-satser](exercises/L03.html)
 5. [Iteration och selection](exercises/L05.html)
 
-#### Extra läsning
-
-- [Codecademy - Conditionals and flow](http://www.codecademy.com/en/tracks/python) (obs. Python 2)
-
 ### Del 2 - Iterationer
 
 Förutom det material som finns i övningarna finns här tips på mer material att läsa:
@@ -55,16 +51,6 @@ Förutom det material som finns i övningarna finns här tips på mer material a
 
 * [for-loopar](ex_for.html)
 * [while-loopar](ex_while.html)
-
-#### Extra läsning
-
- - [Codecademy - Loops](http://www.codecademy.com/en/tracks/python) (obs. Python 2)
-
- ---
-
- Båda delarna tas upp i ordning i [Learn Python the Hard Way](http://learnpythonthehardway.org/book/), övning 27-33 (inte _så_ &quot;hard&quot;).
-
- ---
 
 ### Inlämningsuppgift
 
