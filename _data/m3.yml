@@ -14,12 +14,12 @@ exercises:
       file: L05
 
 # Inlämningsuppgifter
-#assignments:
-#    - name: Inlämningsuppgift 2
-#      file: U1
+assignments:
+    - name: Inlämningsuppgift 2
+      file: U1
 
-#lectures:
-#   - name: 1. Iteration och selektion
-#      file: F01
+lectures:
+   - name: 1. Iteration och selektion
+      file: F01
 #    - name: 2. Extra (sten, sax, påse)
 #      file: F02
