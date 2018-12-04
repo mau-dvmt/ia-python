@@ -32,10 +32,6 @@ Förutom det material som finns i övningarna finns här tips på mer material a
 
 - [Listexempel från föreläsning](ex_list.html)
 
-#### Extra läsning
-
-- [Codecademy - LISTS & DICTIONARIES](http://www.codecademy.com/en/tracks/python)
-
 ### Del 2 - Lexikon
 
 Förutom det material som finns i övningarna finns här tips på mer material att läsa:
