@@ -33,7 +33,6 @@ Förutom det material som finns i övningarna finns här tips på mer material a
 - [Learn Python the hard way - Exercise 15: Reading Files](http://learnpythonthehardway.org/book/ex15.html) (*obs, Python 2*)
 - [Learn Python the hard way - Exercise 16: Reading and Writing Files](http://learnpythonthehardway.org/book/ex16.html) (*obs, Python 2*)
 - [Learn Python the hard way - Exercise 17: More Files](http://learnpythonthehardway.org/book/ex17.html) (*obs, Python 2*)
-- [Codecademy - FILE INPUT AND OUTPUT](http://www.codecademy.com/en/tracks/python) (*obs, Python 2*)
 
 ### Del 2 - Felhantering
 
