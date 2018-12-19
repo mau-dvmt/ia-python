@@ -24,9 +24,9 @@
   number: m5
   description: Spara data i filer och hantera fel i Python
 
-#- name: Webbapplikationer
-#  number: web
-#  description: Introduktion till webbprogrammering
+- name: Webbapplikationer
+  number: web
+  description: Introduktion till webbprogrammering
 
 #- name: Extra - Objektorientering
 #  number: m6

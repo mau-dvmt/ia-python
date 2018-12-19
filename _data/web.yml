@@ -15,9 +15,9 @@ assignments:
 lectures:
     - name: 1. Intro till Bottle
       file: F01
-    - name: 2. Mer Bottle
-      file: F04
+#    - name: 2. Mer Bottle
+#      file: F04
     - name: Videoföreläsningar
       file: F03
-    - name: Extratillfälle
-      file: F05
+#    - name: Extratillfälle
+#      file: F05

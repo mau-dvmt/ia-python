@@ -42,7 +42,7 @@ Istället för egenpåhittade övningar rekommenderas den [tutorial som finns p�
 
 ### Exempelprojekt
 
-Viktiga delar av funktionaliteten i Bottle visas även i [detta exempelprojekt](https://github.com/Tibbelit/Example-bottle-app). Du kan även ladda hem koden via den länken (som t.ex. en ZIP-fil).
+Viktiga delar av funktionaliteten i Bottle visas även i [detta exempelprojekt](https://github.com/Tibbelit/Example-bottle-app) (Obs, använder ej JSON - men det är valfritt att göra det, eller inte). Du kan även ladda hem koden via den länken (som t.ex. en ZIP-fil).
 
 <!--
 [Så här ser det ut när man kör projektet](http://tibbelit2.pythonanywhere.com/). (Publicerat gratis via [PythonAnywhere](https://www.pythonanywhere.com).)
