@@ -16,7 +16,7 @@ lectures:
     - name: 1. Intro till Bottle
       file: F01
     - name: 2. Mer Bottle
-      file: F04
+      file: F02
     - name: Videoföreläsningar
       file: F03
 #    - name: Extratillfälle
