@@ -19,5 +19,5 @@ lectures:
       file: F02
     - name: Videoföreläsningar
       file: F03
-#    - name: Extratillfälle
-#      file: F05
+    - name: Extratillfälle - Webbapp
+      file: F06
