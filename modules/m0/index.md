@@ -29,20 +29,15 @@ Labbtillfällena är i grunden fria att disponera, men i tabellen nedan anges s�
         <td>Introduktion till Python + <a href="/modules/m1/">laboration</a></td>
     </tr>
     <tr class="laboration odd">
-        <td rowspan="3">47</td>
+        <td rowspan="2">47</td>
         <td>19/11</td>
         <td>08-12</td>
         <td>Laboration 1: <a href="/modules/m1/">Introduktion till Python</a></td>
     </tr>
     <tr class="lecture odd">
         <td>20/11</td>
-        <td>13-15</td>
-        <td>Föreläsning - Funktioner</td>
-    </tr>
-    <tr class="laboration odd">
-        <td>22/11</td>
-        <td>09-10, 10-12</td>
-        <td>Inför + laboration 2: Funktioner</td>
+        <td>13-17</td>
+        <td>Föreläsning + laboration - Funktioner</td>
     </tr>
     <tr class="laboration even">
         <td rowspan="4">48</td>
