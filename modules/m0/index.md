@@ -21,12 +21,12 @@ Labbtillfällena är i grunden fria att disponera, men i tabellen nedan anges s�
         <td rowspan="2">46</td>
         <td>13/11</td>
         <td>13-15</td>
-        <td><a href="/assets/zip/Introduktion-till-programmering.pdf">Kursintroduktion</a></td>
+        <td><a href="/modules/m1/lectures/F01.html">Kursintroduktion</a></td>
     </tr>
     <tr class="laboration even">
         <td>15/11</td>
         <td>08-10, 10-12</td>
-        <td>Introduktion till Python + <a href="/modules/m1/">laboration</a></td>
+        <td><a href="/modules/m1/lectures/F02.html">Introduktion till Python</a> + <a href="/modules/m1/">laboration</a></td>
     </tr>
     <tr class="laboration odd">
         <td rowspan="2">47</td>
