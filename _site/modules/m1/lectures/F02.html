@@ -100,6 +100,28 @@
         
 
         
+        <li>
+            <span class="course-overview-element">
+                Föreläsningar
+                <span class="expand">+</span>
+            </span>
+            <ul class="course-overview-submenu">
+                
+                <li>
+                    <a href="/modules/m1/lectures/F01.html" title="Gå till föreläsningen Kursintroduktion">
+                        Kursintroduktion
+                    </a>
+                </li>
+                
+                <li>
+                    <a href="/modules/m1/lectures/F02.html" title="Gå till föreläsningen Intro till Python">
+                        Intro till Python
+                    </a>
+                </li>
+                
+            </ul>
+        </li>
+        
     </ul>
 </div>
 
@@ -108,19 +130,34 @@
         
             <h1 id="introduktion-till-python">Introduktion till Python</h1>
 
-<iframe src="//www.slideshare.net/slideshow/embed_code/key/hOkFUOhOqqK3HW" width="595" height="485" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;" allowfullscreen=""> </iframe>
-<div style="margin-bottom:5px"> <strong> <a href="//www.slideshare.net/AntonTibblin/ht18-da354a-introduction-to-programming" title="HT18 - DA354A - Introduction to programming" target="_blank">HT18 - DA354A - Introduction to programming</a> </strong> from <strong><a href="https://www.slideshare.net/AntonTibblin" target="_blank">Anton Tibblin</a></strong> </div>
+<iframe src="//www.slideshare.net/slideshow/embed_code/key/z5RXDr7jpAddpI" width="595" height="485" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;" allowfullscreen=""> </iframe>
+<div style="margin-bottom:5px"> <strong> <a href="//www.slideshare.net/AntonTibblin/ht19-da354a-introduktion-till-python" title="HT19 - DA354A - Introduktion till Python" target="_blank">HT19 - DA354A - Introduktion till Python</a> </strong> from <strong><a href="https://www.slideshare.net/AntonTibblin" target="_blank">Anton Tibblin</a></strong> </div>
+
+<p><a href="/assets/pdf/intro-python.pdf">Ni kan även ladda ner presentationen här</a></p>
 
 <p>Bra referenswebbplats för Python kan t.ex. vara <a href="https://www.w3schools.com/python/default.asp">https://www.w3schools.com/python/default.asp</a></p>
 
 <h2 id="dagens-exempel">Dagens exempel</h2>
 
-<figure class="highlight"><pre><code class="language-python" data-lang="python"><span></span><span class="lineno">1 </span><span class="c1"># Min miniräknare</span>
-<span class="lineno">2 </span><span class="k">print</span><span class="p">(</span><span class="s2">&quot;Hej och välkommen till vår fina miniräknare!&quot;</span><span class="p">)</span>
-<span class="lineno">3 </span><span class="n">nr1</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s2">&quot;Ange tal 1: &quot;</span><span class="p">))</span>
-<span class="lineno">4 </span><span class="n">nr2</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s2">&quot;Ange tal 2: &quot;</span><span class="p">))</span>
-<span class="lineno">5 </span><span class="n">result</span> <span class="o">=</span> <span class="n">nr1</span> <span class="o">+</span> <span class="n">nr2</span>
-<span class="lineno">6 </span><span class="k">print</span><span class="p">(</span><span class="nb">str</span><span class="p">(</span><span class="n">nr1</span><span class="p">)</span> <span class="o">+</span> <span class="s2">&quot; + &quot;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">nr2</span><span class="p">)</span> <span class="o">+</span> <span class="s2">&quot; = &quot;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">result</span><span class="p">))</span></code></pre></figure>
+<figure class="highlight"><pre><code class="language-python" data-lang="python"><span></span><span class="lineno"> 1 </span><span class="n">clementin_pris</span> <span class="o">=</span> <span class="mi">5</span>
+<span class="lineno"> 2 </span><span class="n">banan_pris</span> <span class="o">=</span> <span class="mf">10.5</span>
+<span class="lineno"> 3 </span><span class="err">ä</span><span class="n">pple_pris</span> <span class="o">=</span> <span class="mi">15</span>
+<span class="lineno"> 4 </span>
+<span class="lineno"> 5 </span><span class="n">kostnad</span> <span class="o">=</span> <span class="mi">0</span>
+<span class="lineno"> 6 </span>
+<span class="lineno"> 7 </span><span class="n">antal_clementiner</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s2">&quot;Hur många clementiner vill du köpa? &quot;</span><span class="p">))</span>
+<span class="lineno"> 8 </span><span class="n">kostnad_clementiner</span> <span class="o">=</span> <span class="n">antal_clementiner</span><span class="o">*</span><span class="n">clementin_pris</span>
+<span class="lineno"> 9 </span><span class="n">kostnad</span> <span class="o">=</span> <span class="n">kostnad_clementiner</span>
+<span class="lineno">10 </span>
+<span class="lineno">11 </span><span class="n">antal_bananer</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">&quot;Hur många bananer vill du köpa? &quot;</span><span class="p">)</span>
+<span class="lineno">12 </span><span class="n">kostnad_bananer</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="n">antal_bananer</span><span class="p">)</span><span class="o">*</span><span class="n">banan_pris</span>
+<span class="lineno">13 </span><span class="n">kostnad</span> <span class="o">=</span> <span class="n">kostnad</span> <span class="o">+</span> <span class="n">kostnad_bananer</span>
+<span class="lineno">14 </span>
+<span class="lineno">15 </span><span class="n">antal_</span><span class="err">ä</span><span class="n">pplen</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">&quot;Hur många äpplen vill du köpa? &quot;</span><span class="p">)</span>
+<span class="lineno">16 </span><span class="n">kostnad_</span><span class="err">ä</span><span class="n">pplen</span> <span class="o">=</span> <span class="err">ä</span><span class="n">pple_pris</span><span class="o">*</span><span class="nb">int</span><span class="p">(</span><span class="n">antal_</span><span class="err">ä</span><span class="n">pplen</span><span class="p">)</span>
+<span class="lineno">17 </span><span class="n">kostnad</span> <span class="o">=</span> <span class="n">kostnad</span> <span class="o">+</span> <span class="n">kostnad_</span><span class="err">ä</span><span class="n">pplen</span>
+<span class="lineno">18 </span>
+<span class="lineno">19 </span><span class="k">print</span><span class="p">(</span><span class="s2">&quot;Du har handlat för: &quot;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">kostnad</span><span class="p">)</span> <span class="o">+</span> <span class="s2">&quot;kr&quot;</span><span class="p">)</span></code></pre></figure>
 
 
         

@@ -37,13 +37,13 @@ Labbtillfällena är i grunden fria att disponera, men i tabellen nedan anges s�
     <tr class="lecture odd">
         <td>20/11</td>
         <td>13-17</td>
-        <td>Föreläsning + laboration - Funktioner</td>
+        <td>Föreläsning + <a href="/modules/m2/">laboration</a> - Funktioner</td>
     </tr>
     <tr class="laboration even">
         <td rowspan="4">48</td>
         <td>26/11</td>
         <td>08-12</td>
-        <td>Laboration 2: Funktioner</td>
+        <td>Laboration 2: <a href="/modules/m2/">Funktioner</a></td>
     </tr>
     <tr class="lecture even">
         <td>27/11</td>
@@ -57,7 +57,7 @@ Labbtillfällena är i grunden fria att disponera, men i tabellen nedan anges s�
     </tr>
     <tr class="tenta assignment even">
         <td colspan="2">1/12</td>
-        <td><strong>Deadline: Inlämningsuppgift 1</strong></td>
+        <td><strong>Deadline: <a href="/modules/m2/assignments/U1.html">Inlämningsuppgift 1</a></strong></td>
     </tr>
     <tr class="laboration odd">
         <td rowspan="4">49</td>
