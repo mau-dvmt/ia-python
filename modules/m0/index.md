@@ -26,7 +26,7 @@ Labbtillfällena är i grunden fria att disponera, men i tabellen nedan anges s�
     <tr class="laboration even">
         <td>15/11</td>
         <td>08-10, 10-12</td>
-        <td><a href="/modules/m1/lectures/F02.html">Introduktion till Python</a> + <a href="/modules/m1/">laboration</a></td>
+        <td><a href="/modules/m1/lectures/F02.html">Introduktion till Python</a> + <a href="/modules/m1/">laboration 1</a></td>
     </tr>
     <tr class="laboration odd">
         <td rowspan="2">47</td>
@@ -37,7 +37,7 @@ Labbtillfällena är i grunden fria att disponera, men i tabellen nedan anges s�
     <tr class="lecture odd">
         <td>20/11</td>
         <td>13-17</td>
-        <td>Föreläsning + <a href="/modules/m2/">laboration</a> - Funktioner</td>
+        <td>Föreläsning + <a href="/modules/m2/">laboration 2</a> - Funktioner</td>
     </tr>
     <tr class="laboration even">
         <td rowspan="4">48</td>
