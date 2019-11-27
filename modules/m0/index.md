@@ -53,7 +53,7 @@ Labbtillfällena är i grunden fria att disponera, men i tabellen nedan anges s�
     <tr class="laboration even">
         <td>29/11</td>
         <td>09-10, 10-12</td>
-        <td>Inför + laboration 3: If-satser och loopar</td>
+        <td>Inför + <a href="/modules/m3/">laboration 3</a>: If-satser och loopar</td>
     </tr>
     <tr class="tenta assignment even">
         <td colspan="2">1/12</td>
@@ -63,7 +63,7 @@ Labbtillfällena är i grunden fria att disponera, men i tabellen nedan anges s�
         <td rowspan="4">49</td>
         <td>3/12</td>
         <td>8-12</td>
-        <td>Laboration 3: If-satser och loopar</td>
+        <td>Laboration 3: <a href="/modules/m3/">If-satser och loopar</a></td>
     </tr>    
     <tr class="lecture odd">
         <td>4/12</td>
@@ -77,7 +77,7 @@ Labbtillfällena är i grunden fria att disponera, men i tabellen nedan anges s�
     </tr>
     <tr class="tenta assignment odd">
 		<td colspan="2">8/12</td>
-        <td><strong>Deadline: Inlämningsuppgift 2</strong></td>
+        <td><strong>Deadline: <a href="/modules/m3/assignments/U1.html">Inlämningsuppgift 2</a></strong></td>
 	</tr>
     <tr class="laboration even">
         <td rowspan="4">50</td>
