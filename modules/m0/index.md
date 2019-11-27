@@ -48,7 +48,7 @@ Labbtillfällena är i grunden fria att disponera, men i tabellen nedan anges s�
     <tr class="lecture even">
         <td>27/11</td>
         <td>13-15</td>
-        <td>Föreläsning - If-satser och loopar</td>
+        <td>Föreläsning - <a href="/modules/m3/lectures/F01.html">If-satser och loopar</a></td>
     </tr>
     <tr class="laboration even">
         <td>29/11</td>
