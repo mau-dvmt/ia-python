@@ -26,5 +26,5 @@ lectures:
     - name: 1. Funktioner
       file: F01
 
-#    - name: 2. Funktioner (extra)
-#      file: F02
+    - name: 2. Funktioner (extra)
+      file: F02
