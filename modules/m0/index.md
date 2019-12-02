@@ -53,7 +53,7 @@ Labbtillfällena är i grunden fria att disponera, men i tabellen nedan anges s�
     <tr class="laboration even">
         <td>29/11</td>
         <td>09-10, 10-12</td>
-        <td>Inför + <a href="/modules/m3/">laboration 3</a>: If-satser och loopar</td>
+        <td><a href="/modules/m3/lectures/F02.html">Inför</a> + <a href="/modules/m3/">laboration 3</a>: If-satser och loopar</td>
     </tr>
     <tr class="tenta assignment even">
         <td colspan="2">1/12</td>
