@@ -44,10 +44,6 @@ Förutom det material som finns i övningarna finns här tips på mer material a
 
 - [Introduktion till lexikon](exercises/L02.html)
 
-#### Extra läsning
-
- - [Codecademy - LISTS & DICTIONARIES](http://www.codecademy.com/en/tracks/python)
-
  ---
  
  Båda delarna tas upp i ordning i [Learn Python the Hard Way](http://learnpythonthehardway.org/book/), övning 38 och 39 (inte _så_ &quot;hard&quot;).
