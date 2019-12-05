@@ -12,13 +12,13 @@ exercises:
       file: L04
 
 # Inlämningsuppgifter
-#assignments:
-#    - name: Inlämningsuppgift 3
-#      file: U1
+assignments:
+    - name: Inlämningsuppgift 3
+      file: U1
 
-#lectures:
-#    - name: 1. Listor och lexikon
-#      file: F01
+lectures:
+    - name: 1. Listor och lexikon
+      file: F01
 #    - name: 2. Nästlade listor
 #      file: F02
 #    - name: 3. Nästalade listor

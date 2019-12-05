@@ -68,12 +68,12 @@ Labbtillfällena är i grunden fria att disponera, men i tabellen nedan anges s�
     <tr class="lecture odd">
         <td>4/12</td>
         <td>13-15</td>
-        <td>Föreläsning - Listor och lexikon</td>
+        <td>Föreläsning - <a href="/modules/m4/lectures/F01.html">Listor och lexikon</a></td>
     </tr>
     <tr class="laboration odd">
         <td>6/12</td>
-        <td>09-10, 10-12</td>
-        <td>Inför + laboration 4: Listor och lexikon</td>
+        <td>08-10, 10-12</td>
+        <td>Inför + laboration 4: <a href="/modules/m4/">Listor och lexikon</a></td>
     </tr>
     <tr class="tenta assignment odd">
 		<td colspan="2">8/12</td>
@@ -83,7 +83,7 @@ Labbtillfällena är i grunden fria att disponera, men i tabellen nedan anges s�
         <td rowspan="4">50</td>
         <td>10/12</td>
         <td>08-12</td>
-        <td>Laboration 4: Listor och lexikon</td>
+        <td>Laboration 4: <a href="/modules/m4/">Listor och lexikon</a></td>
     </tr>
     <tr class="lecture even">
         <td>11/12</td>
@@ -97,7 +97,7 @@ Labbtillfällena är i grunden fria att disponera, men i tabellen nedan anges s�
     </tr>
    	<tr class="tenta assignment even">
 		<td colspan="2">15/12</td>
-        <td><strong>Deadline: Inlämningsuppgift 3</strong></td>
+        <td><strong>Deadline: <a href="/modules/m4/assignments/U1.html">Inlämningsuppgift 3</a></strong></td>
 	</tr>
     <tr class="laboration odd">
         <td rowspan="4">51</td>
