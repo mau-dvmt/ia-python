@@ -73,7 +73,7 @@ Labbtillfällena är i grunden fria att disponera, men i tabellen nedan anges s�
     <tr class="laboration odd">
         <td>6/12</td>
         <td>08-10, 10-12</td>
-        <td>Inför + laboration 4: <a href="/modules/m4/">Listor och lexikon</a></td>
+        <td><a href="/modules/m4/lectures/F02.html">Inför</a> + laboration 4: <a href="/modules/m4/">Listor och lexikon</a></td>
     </tr>
     <tr class="tenta assignment odd">
 		<td colspan="2">8/12</td>
