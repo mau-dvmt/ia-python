@@ -12,8 +12,8 @@ assignments:
     - name: Inlämningsuppgift 4
       file: U1
 
-#lectures:
-#    - name: 1. Fil- och felhantering
-#      file: F01
+lectures:
+    - name: 1. Fil- och felhantering
+      file: F01
 #    - name: 2. Fil- och felhantering (Extra)
 #      file: F02

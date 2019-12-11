@@ -88,7 +88,7 @@ Labbtillfällena är i grunden fria att disponera, men i tabellen nedan anges s�
     <tr class="lecture even">
         <td>11/12</td>
         <td>13-15</td>
-        <td>Föreläsning - Fil- och felhantering</td>
+        <td>Föreläsning - <a href="/modules/m5/lectures/F01.html">Fil- och felhantering</a></td>
     </tr>
 	<tr class="laboration even">
         <td>13/12</td>
