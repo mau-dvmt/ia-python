@@ -93,7 +93,7 @@ Labbtillfällena är i grunden fria att disponera, men i tabellen nedan anges s�
 	<tr class="laboration even">
         <td>13/12</td>
         <td>09-10, 10-12</td>
-        <td>Inför + laboration 5 - <a href="/modules/m5/">Fil- och felhantering</a></td>
+        <td><a href="/modules/m5/lectures/F02.html">Inför</a> + laboration 5 - <a href="/modules/m5/">Fil- och felhantering</a></td>
     </tr>
    	<tr class="tenta assignment even">
 		<td colspan="2">15/12</td>
