@@ -12,7 +12,7 @@ assignments:
     - name: Inlämningsuppgift - Wiki
       file: wiki
 
-#lectures:
+lectures:
 #    - name: 1. Intro till Bottle
 #      file: F01
 #    - name: 2. Mer Bottle
