@@ -29,6 +29,8 @@ Det finns många konkurrerande ramverk och bibliotek webbprogrammering med Pytho
 
 Bottle, likt de flesta andra pythonprojekt, kan även installeras globalt på systemet med hjälp av så kallade pakethanterare (`pip` eller `easy_install`).
 
+Ni kan ladda ner bottle-filen för hand här: [https://bottlepy.org/bottle.py](https://bottlepy.org/bottle.py)
+
 ### Andra ramverk
 
 * [Flask](http://flask.pocoo.org) är i princip lika enkelt att använda som Bottle - båda kan kallas "mikroramverk". Flask är värt att nämna här på grund as dess popularitet, är vanligt att använda även för webbapplikationer i produktion. Flask bör installeras via `pip` eller `easy_install`.

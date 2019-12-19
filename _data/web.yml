@@ -13,8 +13,8 @@ assignments:
       file: wiki
 
 lectures:
-#    - name: 1. Intro till Bottle
-#      file: F01
+    - name: 1. Intro till Bottle
+      file: F01
 #    - name: 2. Mer Bottle
 #      file: F02
     - name: Videoföreläsningar

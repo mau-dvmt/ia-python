@@ -108,11 +108,11 @@ Labbtillfällena är i grunden fria att disponera, men i tabellen nedan anges s�
 	<tr class="lecture odd">
 		<td>19/12</td>
 		<td>13-15</td>
-		<td>Föreläsning - Python och webben</td>
+		<td>Föreläsning - <a href="/modules/web/lectures/F01.html">Python och webben</a></td>
 	</tr>
     <tr class="laboration odd">
         <td>20/12</td>
-		<td>09-10, 10-12</td>
+		<td>08.45-10, 10-12</td>
         <td>Inför + laboration extra</td>
     </tr>
     <tr class="tenta assignment odd">
@@ -137,7 +137,7 @@ Labbtillfällena är i grunden fria att disponera, men i tabellen nedan anges s�
 	</tr>
 	<tr class="tenta assignment even">
 		<td colspan="2">12/1</td>
-        <td><strong>Deadline: Inlämningsuppgift 5</strong></td>
+        <td><strong>Deadline: <a href="/modules/web/assignments/U1.html">Inlämningsuppgift 5</a></strong></td>
 	</tr>
     <tr class="laboration odd">
         <td rowspan="2">3</td>
