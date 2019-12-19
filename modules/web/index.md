@@ -38,7 +38,7 @@ Bottle, likt de flesta andra pythonprojekt, kan även installeras globalt på sy
 
 ## Komma igång med Bottle
 
-Istället för egenpåhittade övningar rekommenderas den [tutorial som finns på bottle.org](http://bottlepy.org/docs/dev/tutorial.html#quickstart-hello-world). Den visar viktiga koncept med korta exempel för varje. För [uppgiften](assignments/wiki.html) kommer du bara behöva vissa av delarna, men det skadar inte att titta igenom all dokumentation.
+Istället för egna påhittade övningar rekommenderas den [tutorial som finns på bottle.org](http://bottlepy.org/docs/dev/tutorial.html#quickstart-hello-world). Den visar viktiga koncept med korta exempel för varje. För [uppgiften](assignments/wiki.html) kommer du bara behöva vissa av delarna, men det skadar inte att titta igenom all dokumentation.
 
 ### Exempelprojekt
 

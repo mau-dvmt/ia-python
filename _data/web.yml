@@ -12,12 +12,12 @@ assignments:
     - name: Inlämningsuppgift - Wiki
       file: wiki
 
-lectures:
-    - name: 1. Intro till Bottle
-      file: F01
-    - name: 2. Mer Bottle
-      file: F02
+#lectures:
+#    - name: 1. Intro till Bottle
+#      file: F01
+#    - name: 2. Mer Bottle
+#      file: F02
     - name: Videoföreläsningar
       file: F03
-    - name: Extratillfälle - Webbapp
-      file: F06
+#    - name: Extratillfälle - Webbapp
+#      file: F06
