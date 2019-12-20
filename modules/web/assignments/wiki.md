@@ -88,4 +88,4 @@ Uppgiften kan ge VG - men det finns många olika förbättringar som alla kan g�
 ## Redovisning
 Redovisa genom att ladda upp programmets källkod på Canvas.
 
-Lämplig inlämningstid för modul 5: senast söndag 2019-01-13.
+Inlämningstid för modul 5: senast söndag 2020-01-12.
