@@ -113,7 +113,7 @@ Labbtillfällena är i grunden fria att disponera, men i tabellen nedan anges s�
     <tr class="laboration odd">
         <td>20/12</td>
 		<td>08.45-10, 10-12</td>
-        <td>Inför + laboration extra</td>
+        <td><a href="/modules/web/lectures/F02.html">Inför</a> + laboration extra</td>
     </tr>
     <tr class="tenta assignment odd">
 		<td colspan="2">22/12</td>
