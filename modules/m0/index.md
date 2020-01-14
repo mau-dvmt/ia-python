@@ -143,12 +143,12 @@ Labbtillfällena är i grunden fria att disponera, men i tabellen nedan anges s�
         <td rowspan="2">3</td>
         <td>14/1</td>
         <td>10-12</td>
-        <td>Föreläsning: Objektorienterad programmering</td>
+        <td>Föreläsning: <a href="/modules/m5/lectures/F01.html">Objektorienterad programmering</a></td>
     </tr>
     <tr class="laboration odd">
         <td>15/1</td>
         <td>13-17</td>
-        <td>Laboration: Extra</td>
+        <td>Laboration: <a href="/modules/m6/">OOP</a> + Extra</td>
     </tr>
 </table>
 
